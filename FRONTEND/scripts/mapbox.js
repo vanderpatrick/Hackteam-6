@@ -83,6 +83,6 @@ new_map.on("load", () => {
   const countryName = clickedFeature.properties.name;
   const countryCode = clickedFeature.properties.iso_3166_1_alpha_3;
 
-  test.innerHTML = handleTestEvent()
+   handleTestEvent(countryName)
   })
 });
