@@ -4,6 +4,24 @@
 
 ![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
 
+## Table of Content
+
+1. [Criteria](#criteria)
+2. [Intro](#intro)
+2. [User Experience](#user-experience)
+    1. [Project Goals](#project-goals)
+    1. [Target Audience](#target-audience)
+    2. [User Requirements and Expectations](#user-requirements-and-expectations)
+    3. [User Stories](#user-stories)
+    4. [Development Planes](#development-planes)
+3. [Design](#design)
+    1. [Colour Scheme](#colour-scheme)
+    2. [Typography](#typography)
+    3. [Imagery](#imagery)
+4. [Features](#features)
+    1. [Design Features](#design-features)
+    2. [Existing Features](#existing-features)
+
 ## Criteria
 
 In this section, we will briefly discuss how our team addressed the applicable criteria:
@@ -19,30 +37,40 @@ In this section, we will briefly discuss how our team addressed the applicable c
 _[TO DO]_
 One or two paragraphs providing an overview of our project, including the theme - whether it is one of the 7 themes or our own team's theme.
 
-## Goal and UX
+## User Experience
 
-#### Ideal User Demographic
+### Project Goals
+The primary goal of the project is to create an interactive website which allows users to find information about key events relating to the LGBTQ+ liberation movement in different countries. Additionally, the users are encouraged to submit suggestions of events they would like to be featured on the map.
 
-The ideal user for this website is:
+### Target Audience
+*	People interested in Queer history;
+*	People who want to learn more about liberation movements across the world;
+*	People identifying as a part of the LGBTQ+ community;
+*	People wanting to become better allies.
 
-- New User
-- Current User
+### User Requirements and Expectations
+* An intuitive navigation system;
+* A way to find relevant information easily;
+* Website functions to work as expected;
+* A visually appealing design;
+* Accessibility.
+* An easy way to contact the site owners.
 
 ### User Stories
 
-#### New User Goals
+#### **First-time user**
 
-1. As a new user, I want to easily navigate the site intuitively.
-2. As a new user, I want the instructions to be easily found, clear and concise.
-3. As a new user, I want attractive and relevant visuals and colour schemes that work with the content.
-   ...
+1. As a new user, I want to identify the purpose of the website.
+2. As a new user, I want to navigate the site intuitively and with ease.
+3. As a new user, I want the instructions to be easily found, clear, and concise.
+4. As a new user, I want the visual content to be attractive, appealing and relevant to the site content.
+5. As a new user, I want to be able to easily find more information about the project.
 
-#### Current User
+#### **Returning user**
+1.	As a returning user, I want to be able to send information about events I think should be featured on the map to the site owners.
+2.	As a returning user, I want to be able to view the site on a range of different devices.
+3.	As a returning user, I want to be able to contact the site owners to suggest an update to the information featured on the site.
 
-1. As a current user,
-2. As a current user,
-3. As a current user, I want to easily find instructions about how to use the site.
-   ...
 
 ### Development Planes
 
