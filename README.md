@@ -27,6 +27,16 @@
 5. [Features](#features)
    1. [Design Features](#design-features)
    2. [Existing Features](#existing-features)
+   3. [Features To Implement In The Future](#features-to-implement-in-the-future)
+6. [Technologies Used](#technologies-used)
+   1. [Main Languages Used](#main-languages-used)
+   2. [Frameworks, Libraries, and Programs Used](#frameworks-libraries-and-programs-used)
+7. [Testing](#testing)
+   1. [Testing User Stories](#testing-user-stories)
+   2. [Manual Testing](#manual-testing)
+   3. [Responsiveness](#responsiveness)
+   4. [Automated Testing](#automated-testing)
+8. [Credits](#credits)
 
 ## Criteria
 
@@ -305,9 +315,9 @@ The goal section provides a concise summary of the main objective or purpose of 
 
 #### Current User Goals:
 
-## Manual Testing
+### Manual Testing
 
-### Common Elements Testing
+#### Common Elements Testing
 
 Manual testing was conducted on the following elements that appear on every page:
 
@@ -362,7 +372,7 @@ Manual testing was conducted on the following elements that appear on every page
 
 [Back to top ⇧](#)
 
-### Home Page
+#### Home Page
 
 - Manual testing was conducted on the elements of the [Home Page](#).
 
@@ -373,7 +383,7 @@ Manual testing was conducted on the following elements that appear on every page
 
 </details>
 
-### Map Page
+#### Map Page
 
 - Hovering over the world map shows the country that is positioned under the mouse. By clicking on the chosen country, the modal appears with the information of the Pride event in that country. The map can be zoomed in or out.
 
@@ -393,7 +403,7 @@ Manual testing was conducted on the following elements that appear on every page
 
 </details>
 
-### Contact Page
+#### Contact Page
 
 - Manual testing was conducted on the Contact Page [Contact Page](#).
   ...
@@ -440,9 +450,9 @@ Manual testing was conducted on all three site pages for responsiveness:
 
 [Back to top ⇧](#)
 
-## Automated Testing
+### Automated Testing
 
-### Code Validation
+#### Code Validation
 
 The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the `HTML` and `CSS` code used. The [JSHint JavaScript Code Quality Tool](https://jshint.com/) was also used to validate the sites `JS` code. Python validation was made by the Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) validation web app.
 
@@ -515,7 +525,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 </details>
 
-### Browser Validation
+#### Browser Validation
 
 - Google Chrome
 
@@ -530,7 +540,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 [Back to top ⇧](#)
 
-### Lighthouse Validation
+#### Lighthouse Validation
 
 - Home Page
 
