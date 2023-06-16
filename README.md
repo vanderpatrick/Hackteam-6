@@ -187,6 +187,236 @@ The goal section provides a concise summary of the main objective or purpose of 
 
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
 
+## Testing
+
+### Testing User Stories
+
+#### New User Goals:
+
+#### Current User Goals:
+
+## Manual Testing
+
+### Common Elements Testing
+
+Manual testing was conducted on the following elements that appear on every page:
+
+- Clicking on the Navigation Bar's links will bring the user to the specified page.
+
+<details>
+
+<summary>Navbar links</summary>
+
+![Navbar links](#)
+
+</details>
+
+- Hovering over the Navigation bar elements will trigger the `hover` effect, highlighting the link for the user.
+
+<details>
+<summary>Navbar hover effect</summary>
+
+![Navbar hover effect](#)
+
+</details>
+     
+ 
+- Clicking on the Social Media links will open a new tab
+
+- Instagram
+
+<details>
+<summary>Instagram Social Media link</summary>
+
+![LinkedIn Social Media link](./assets/readme_files/testing/instagram.gif)
+
+</details>
+
+- GitHub
+
+<details>
+<summary>GitHub Social Media link</summary>
+
+![GitHub Social Media link](./assets/readme_files/testing/github.gif)
+
+</details>
+
+- Facebook
+
+<details>
+<summary>Facebook Social Media link</summary>
+
+![LinkedIn Social Media link](./assets/readme_files/testing/facebook.gif)
+
+</details>
+
+### Home Page
+
+Manual testing was conducted on the following elements of the [Home Page](#):
+
+#### World Map
+
+- Hovering over the world map shows the country that is positioned under the mouse. By clicking on the chosen country, the modal appears with the information of the Pride event in that country. The map can be zoomed in or out.
+
+<details>
+<summary>World Map hover and zoom</summary>
+
+![ World Map Hover and Zoom](#)
+
+</details>
+
+- By clicking on the chosen country on the world map, the modal appears with the information about the Pride event in said country. Modal is closed on clicking the "OK" button.
+
+<details>
+<summary>World Map click</summary>
+
+![ World Map Hover and Click](#)
+
+</details>
+
+...
+
+### Responsiveness
+
+Manual testing was conducted on all three site pages for responsiveness:
+
+- Responsiveness of Home Page.
+
+<details>
+<summary>Resposiveness - Home Page</summary>
+
+![Resposiveness - Home Page](#)
+
+</details>
+     
+- Responsiveness of About Page.
+
+<details>
+<summary>Resposiveness - Main World Map Page</summary>
+
+![Resposiveness - Main Page](#)
+
+</details>
+
+...
+
+- Responsiveness of 404 Page.
+
+<details>
+<summary>Resposiveness - 404 Page</summary>
+
+![Resposiveness - 404 Page](#)
+
+</details>
+
+## Automated Testing
+
+### Code Validation
+
+The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the `HTML` and `CSS` code used. The [JSHint JavaScript Code Quality Tool](https://jshint.com/) was also used to validate the sites `JS` code.
+
+**Results:**
+
+- Home Page
+
+<details>
+<summary>Home Page HTML Validation</summary>
+
+![Home Page HTML Validation](#)
+
+</details>
+
+- Main World Map Page
+
+<details>
+<summary>Main World Map Page HTML Validation</summary>
+
+![Main World Map Page HTML Validation](#)
+
+</details>
+
+- ...
+
+- 404 Page
+
+<details>
+<summary>404 Page HTML Validation Results</summary>
+
+![404 Page HTML Validation Results](#)
+
+</details>
+
+- CSS Stylesheet
+
+<details>
+<summary>Style Sheet Validation</summary>
+
+![Style Sheet Validation](#)
+
+</details>
+
+- JavaScript
+
+<details>
+<summary>JavaScript Validation</summary>
+
+![JavaScript Validation](#)
+
+</details>
+
+- Python
+
+<details>
+<summary>Python Validation</summary>
+
+![Python Validation](#)
+
+</details>
+
+### Browser Validation -> IF NECESSARY
+
+- Google Chrome
+
+<details>
+<summary>Google Chrome Validation </summary>
+
+![Google Chrome Test Image](#)
+
+</details>
+
+- ...
+
+### Lighthouse Validation
+
+- Home Page Lighthouse Validation
+
+<details>
+<summary>Home Page Lighthouse Validation</summary>
+
+![Home Page Lighthouse Validation](#)
+
+</details>
+
+-
+
+- Main World Map Page Lighthouse Validation
+
+<details>
+<summary>Main World Map Lighthouse Validation</summary>
+
+![Main World Map Lighthouse Validation](#)
+
+</details>
+
+- 404 Page Lighthouse Validation
+
+<details>
+<summary>404 Page Lighthouse Validation</summary>
+
+![404 Page Lighthouse Validation](#)
+
+</details>
+
 ## Credits
 
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
