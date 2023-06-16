@@ -19,33 +19,6 @@ In this section, we will briefly discuss how our team addressed the applicable c
 _[TO DO]_
 One or two paragraphs providing an overview of our project, including the theme - whether it is one of the 7 themes or our own team's theme.
 
-## Design, Layout and Structure
-
-### Wireframes
-
-For this project, we used [Balsamiq](https://balsamiq.com/) in the initial design phase, before the coding process. This enabled us to develop the website's structure, skeleton, layout and overall look and style. We created designs for desktop, tablet and mobile screens to ensure that responsiveness was at the forefront of the application from the beginning.
-
-<details><summary>Screenshots</summary>
-
-<img src="docs/wireframe_desktop.png">
-
-_Desktop Wireframes_
-
-<img src="docs/wireframe_ipad.png">
-
-_iPad Wireframes_
-
-<img src="docs/wireframe_mobile.png">
-
-_Phone Wireframes_
-
-</details>
-
-
-### Colour Scheme
-
-### Font
-
 ## Goal and UX
 
 #### Ideal User Demographic
@@ -151,7 +124,27 @@ The wireframes were created using a desktop version of [Figma](https://www.figma
 
 </details>
 
-### Design
+### Design,Layout and Structure
+
+### Wireframes
+
+For this project, we used [Balsamiq](https://balsamiq.com/) in the initial design phase, before the coding process. This enabled us to develop the website's structure, skeleton, layout and overall look and style. We created designs for desktop, tablet and mobile screens to ensure that responsiveness was at the forefront of the application from the beginning.
+
+<details><summary>Screenshots</summary>
+
+<img src="docs/wireframe_desktop.png">
+
+_Desktop Wireframes_
+
+<img src="docs/wireframe_ipad.png">
+
+_iPad Wireframes_
+
+<img src="docs/wireframe_mobile.png">
+
+_Phone Wireframes_
+
+</details>
 
 #### Colour Scheme
 
