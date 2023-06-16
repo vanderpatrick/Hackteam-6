@@ -11,7 +11,8 @@ const map = new mapboxgl.Map({
     container: map123,
     style: "mapbox://styles/mapbox/light-v10",
     center: [0, 20],
-    zoom: -4,
+    zoom: 3,
+    // zoom: -4,
     dragPan: false,
     renderWorldCopies: false,
     scrollZoom: false,
@@ -21,6 +22,13 @@ const map = new mapboxgl.Map({
 
 // On map load
 map.on("load", () => {
+    // remove labels from map
+    map.style.stylesheet.layers.forEach(function (layer) {
+        if (layer.type === "symbol") {
+            map.removeLayer(layer.id);
+        }
+    });
+
     // the layer for outlining countries (in white originally)
     map.addLayer({
         id: "countries-layer",
