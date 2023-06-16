@@ -81,6 +81,8 @@ The primary goal of the project is to create an interactive website which allows
 
 In order to create an interactive website that allows the user to get useful information about the history of the Pride movement in different countries, the following planes are made.
 
+[Back to top ⇧](#)
+
 #### Strategy
 
 Strategy incorporates user needs as well as product objectives. This website will focus on the following target audience, divided into three main categories:
@@ -165,6 +167,8 @@ _Phone Wireframes_
 
 </details>
 
+[Back to top ⇧](#)
+
 ### Design,Layout and Structure
 
 #### Colour Scheme
@@ -215,6 +219,8 @@ Each page within the site has a consistent and responsive navigation system. The
 
 - ...
 
+[Back to top ⇧](#)
+
 The goal section provides a concise summary of the main objective or purpose of the project or software described in this README. It addresses the following aspects:
 
 - ➡️ Problem Statement
@@ -222,9 +228,43 @@ The goal section provides a concise summary of the main objective or purpose of 
 - ➡️ Target Audience
 - ➡️ Benefits
 
-## Tech
+## Technologies Used
 
-In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
+### Main Languages Used
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): The standard markup language for creating web pages.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): Cascading Style Sheets used for styling the user interface. For more information, refer to the [CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS).
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): A programming language used for client-side scripting and frontend development.
+- [Python](https://www.python.org/): A versatile programming language used for backend development.
+
+### Frameworks, Libraries and Programs Used
+
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapid UI development. For more information, refer to the [Tailwind CSS documentation](https://tailwindcss.com/docs).
+- [REST API](https://restfulapi.net/): A set of architectural principles for building web services.
+- [Flask](https://flask.palletsprojects.com/): A lightweight web framework written in Python for building web applications.
+
+- [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/)
+  - Canva Color Palette Generator was used to make the initial colour palette.
+- [CSS Gradient](https://cssgradient.io/)
+- CSS Gradient web app was used to make gradient colour backgrounds.
+- [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
+  - Google fonts was used to import the fonts "xxx", into the style.css file. These fonts were used throughout the project.
+- [Font Awesome](https://fontawesome.com/ "Link to FontAwesome")
+  - Font Awesome was used on almost all pages throughout the website to import icons (e.g. social media icons) for UX purposes.
+- [GitPod](https://gitpod.io/ "Link to GitPod homepage")
+  - GitPod was used for writing code, committing, and then pushing to GitHub.
+- [GitHub](https://github.com/ "Link to GitHub")
+  - GitHub was used to store the project after pushing
+- [Balsamiq](https://balsamiq.com/ "Link to Balsamiq homepage")
+  - Balsamiq was used to create the wireframes during the design phase of the project.
+- [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage")
+
+  - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
+
+- [Peek](https://github.com/phw/peek)
+  - Peek was used to make screencasts for the documentation.
+
+[Back to top ⇧](#)
 
 ## Testing
 
@@ -289,6 +329,8 @@ Manual testing was conducted on the following elements that appear on every page
 
 </details>
 
+[Back to top ⇧](#)
+
 ### Home Page
 
 Manual testing was conducted on the following elements of the [Home Page](#):
@@ -347,6 +389,8 @@ Manual testing was conducted on all three site pages for responsiveness:
 ![Resposiveness - 404 Page](#)
 
 </details>
+
+[Back to top ⇧](#)
 
 ## Automated Testing
 
@@ -425,6 +469,8 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 - ...
 
+[Back to top ⇧](#)
+
 ### Lighthouse Validation
 
 - Home Page Lighthouse Validation
@@ -456,41 +502,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 </details>
 
-## Technologies Used
-
-### Main Languages Used
-
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): The standard markup language for creating web pages.
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): Cascading Style Sheets used for styling the user interface. For more information, refer to the [CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS).
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): A programming language used for client-side scripting and frontend development.
-- [Python](https://www.python.org/): A versatile programming language used for backend development.
-
-### Frameworks, Libraries and Programs Used
-
-- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapid UI development. For more information, refer to the [Tailwind CSS documentation](https://tailwindcss.com/docs).
-- [REST API](https://restfulapi.net/): A set of architectural principles for building web services.
-- [Flask](https://flask.palletsprojects.com/): A lightweight web framework written in Python for building web applications.
-
-- [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/)
-  - Canva Color Palette Generator was used to make the initial colour palette.
-- [CSS Gradient](https://cssgradient.io/)
-- CSS Gradient web app was used to make gradient colour backgrounds.
-- [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
-  - Google fonts was used to import the fonts "xxx", into the style.css file. These fonts were used throughout the project.
-- [Font Awesome](https://fontawesome.com/ "Link to FontAwesome")
-  - Font Awesome was used on almost all pages throughout the website to import icons (e.g. social media icons) for UX purposes.
-- [GitPod](https://gitpod.io/ "Link to GitPod homepage")
-  - GitPod was used for writing code, committing, and then pushing to GitHub.
-- [GitHub](https://github.com/ "Link to GitHub")
-  - GitHub was used to store the project after pushing
-- [Balsamiq](https://balsamiq.com/ "Link to Balsamiq homepage")
-  - Balsamiq was used to create the wireframes during the design phase of the project.
-- [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage")
-
-  - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
-
-- [Peek](https://github.com/phw/peek)
-  - Peek was used to make screencasts for the documentation. Fo.
+[Back to top ⇧](#)
 
 ## Credits
 
