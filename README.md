@@ -1,9 +1,12 @@
 # Hackteam-6
 
+# Out and About: Interactive World Map of Pride Events
+
+[Live link](https://vanderpatrick.github.io/Hackteam-6/)
+
 # 🌈 Pride Representation 🥳
 
 ![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
-
 
 <p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
 
@@ -13,10 +16,10 @@
 2. [Intro](#intro)
 3. [User Experience](#user-experience)
    1. [Project Goals](#project-goals)
-   1. [Target Audience](#target-audience)
-   1. [User Requirements and Expectations](#user-requirements-and-expectations)
-   1. [User Stories](#user-stories)
-   1. [Development Planes](#development-planes)
+   2. [Target Audience](#target-audience)
+   3. [User Requirements and Expectations](#user-requirements-and-expectations)
+   4. [User Stories](#user-stories)
+   5. [Development Planes](#development-planes)
 4. [Design](#design)
    1. [Colour Scheme](#colour-scheme)
    2. [Typography](#typography)
@@ -24,6 +27,16 @@
 5. [Features](#features)
    1. [Design Features](#design-features)
    2. [Existing Features](#existing-features)
+   3. [Features To Implement In The Future](#features-to-implement-in-the-future)
+6. [Technologies Used](#technologies-used)
+   1. [Main Languages Used](#main-languages-used)
+   2. [Frameworks, Libraries, and Programs Used](#frameworks-libraries-and-programs-used)
+7. [Testing](#testing)
+   1. [Testing User Stories](#testing-user-stories)
+   2. [Manual Testing](#manual-testing)
+   3. [Responsiveness](#responsiveness)
+   4. [Automated Testing](#automated-testing)
+8. [Credits](#credits)
 
 ## Criteria
 
@@ -37,8 +50,8 @@ In this section, we will briefly discuss how our team addressed the applicable c
 
 ## Intro
 
-_[TO DO]_
-One or two paragraphs providing an overview of our project, including the theme - whether it is one of the 7 themes or our own team's theme.
+Out and About is an exciting project that aims to create an interactive world map showcasing Pride events happening across different countries. The project focuses on promoting inclusivity, diversity, and the celebration of LGBTQ+ communities worldwide.
+With the Out and About platform, users will have the opportunity to explore a dynamic map that highlights some important Pride events. By clicking on specific countries, users can access some general information about each event, including dates, locations, and event descriptions or can contribute to the project by sending updated or missing information. Out and About aims to serve as a comprehensive resource for the LGBTQ+ community and allies, fostering a sense of unity and awareness about Pride celebrations worldwide.
 
 ## User Experience
 
@@ -80,7 +93,7 @@ The primary goal of the project is to create an interactive website which allows
 
 ### Development Planes
 
-In order to create an interactive website that allows the user to get useful information about the history of the Pride movement in different countries, the following planes are made.
+In order to create an interactive website that allows the user to get useful information about the history of the Pride events in different countries, the following planes are made.
 
 [Back to top ⇧](#)
 
@@ -91,23 +104,25 @@ Strategy incorporates user needs as well as product objectives. This website wil
 - **Roles:**
 
   - New users
-  - Current users
+  - Returning users
 
 - **Demographic:**
 
   - All ages
-  - ...
 
 - **Psychographic:**
+
   - Lifestyles:
+
     - Interest in LGBTQ+ community
     - Interest in human rights
-    - ...
+    - Interest in traveling and knowing about the LBTQ+ events of the country they visit
+
   - Personality/Attitudes:
     - Open-minded
     - Respectful
     - Inclusive
-    - ...
+    - Supportive of diversity
 
 The website is supposed to enable the **user** to:
 
@@ -127,15 +142,18 @@ Taking all into consideration, the following strategy table shows the corrispond
 
 #### Scope
 
-The scope plane defines requirements based on the goals established on the strategy plane. So, accordingly , the identified required features are broken into the following categories:
+The scope plane defines requirements based on the goals established on the strategy plane. So, accordingly, the identified required features are broken into the following categories:
 
 - Content Requirements:
   - ## The user will be looking for:
-    -
-    - ...
+    - the information about some significant Pride event in particular country.
+    - the information about the interaction on the Map Page.
+    - the form by which they will be able to contribute to the info on the site.
 - Functionality Requirements:
   - ## The user will be able to:
-    - ...
+    - easily navigate through the pages wether they want to know more about the site, use the world map interactively to retrieve the info, or send the contributing information.
+    - hover over the world map and select the country about which they want to retrieve the info about Pride.
+    - send the information about the Pride events that aren't presented on the world map or update the existing ones by contact form.
 
 #### Structure
 
@@ -176,10 +194,9 @@ _Phone Wireframes_
 
 The default colour scheme was made by [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/).
 
-   
-![Pastel Colour Palette](docs/images/pridepalette1.png)
+![Pastel Colour Palette](./docs/readme_images/pridepalette1.png)
 
-#ED8E98 
+#ED8E98
 #F7B685
 #F3EBA5
 #94C691
@@ -188,8 +205,7 @@ The default colour scheme was made by [Canva Color Palette Generator](https://ww
 
 linear-gradient(90deg, #ED8E89 0%, #F7B685 19%, #F3EBA5 39%, #94C691 60%, #9BD6D9 80%, #B4A8E0 100%);
 
-
-![Bright Colour Palette](docs/images/pridepalette2.png)
+![Bright Colour Palette](./docs/readme_images/pridepalette2.png)
 
 #E30303
 #E67E00
@@ -228,16 +244,16 @@ The images are taken from the different sources and are credited in the Credits 
 Each page within the site has a consistent and responsive navigation system. The details of features on the site are detailed below.
 
 - The **Header** with the **Navigation Bar** is positioned at the top of the page.
-- The **Footer** stays at the bottom of the screen at all times, on all screen sizes, except when the height of the screen is too small for the cards field. All social media links on the footer open in a new tab. They are Instagram, GitHub and Facebook pages of the _[SCRUM Master]_. The copyright info quotes _[COPYRIGHT INFO]_ . --> _X or we could add the GitHub links of the whole team??? X_
+- The **Footer** stays at the bottom of the screen at all times, on all screen sizes. All social media links on the footer open in a new tab. They are Instagram, GitHub and Facebook pages of the _[SCRUM Master]_. The copyright info quotes _[COPYRIGHT INFO]_ . --> _X or we could add the GitHub links of the whole team??? X_
 
 ### Existing Features
 
 - **Navigation Bar** - Appears on every page for a consistently easy and intuitive navigable system, except of the 404 page.
 - **Social Media Icons** - Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the developers Instagram, GitHub and Facebook accounts. The icons appear in the centre of the footer.
-- **[Home Page](# "HOMEPAGE NAME")** - Main Page that gives the feature of retrieving the info about the Pride Events History.
-- **[About Page](# "ABOUT PAGE")** - The page which brings the information about the creating team.
+- **[Home Page](# "PAGE")** - It is in fact the About page that contains the description of the page and instructions for the Map page features.
+- **[Map Page](# "MAP")** - An interactive page containing the world map on which the user can find the information about the significant Pride Events by hovering and clicking on a desired country.
+- **[Contact Page](# "CONTACT")** - The page on which there's a form for a user to fill in if wanting to contribute with an update or addition to the map information.
 - **[404 Page](# "404 PAGE")** - 404 error page Pride Themed .
-- **How to navigate** - A modal window brings the indications for the game and its functionalities.
 
 ### Features to Implement in the future
 
@@ -267,6 +283,8 @@ The goal section provides a concise summary of the main objective or purpose of 
 - [REST API](https://restfulapi.net/): A set of architectural principles for building web services.
 - [Flask](https://flask.palletsprojects.com/): A lightweight web framework written in Python for building web applications.
 - [Mapbox API](https://www.mapbox.com/): An open-source mapping platform for custom-designed maps and location-based applications.
+- [Render.com](https://render.com/): A cloud platform for deploying and scaling web applications. For more information, refer to the [Render documentation](https://render.com/docs).
+- [PostgreSQL](https://www.postgresql.org/): An open-source relational database management system. For more information, refer to the [PostgreSQL documentation](https://www.postgresql.org/docs).
 
 - [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/)
   - Canva Color Palette Generator was used to make the initial colour palette.
@@ -282,9 +300,7 @@ The goal section provides a concise summary of the main objective or purpose of 
   - GitHub was used to store the project after pushing
 - [Balsamiq](https://balsamiq.com/ "Link to Balsamiq homepage")
   - Balsamiq was used to create the wireframes during the design phase of the project.
-- [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage")
-
-  - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
+- [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage") - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
 
 - [Peek](https://github.com/phw/peek)
   - Peek was used to make screencasts for the documentation.
@@ -299,9 +315,9 @@ The goal section provides a concise summary of the main objective or purpose of 
 
 #### Current User Goals:
 
-## Manual Testing
+### Manual Testing
 
-### Common Elements Testing
+#### Common Elements Testing
 
 Manual testing was conducted on the following elements that appear on every page:
 
@@ -327,12 +343,19 @@ Manual testing was conducted on the following elements that appear on every page
  
 - Clicking on the Social Media links will open a new tab
 
-- Instagram
+- Facebook
 
 <details>
-<summary>Instagram Social Media link</summary>
+<summary>Facebook Social Media link</summary>
 
-![LinkedIn Social Media link](./assets/readme_files/testing/instagram.gif)
+![LinkedIn Social Media link](./assets/readme_files/testing/facebook.gif)
+
+- Twitter
+
+<details>
+<summary>Twitter Social Media link</summary>
+
+![Twitter Social Media link](./assets/readme_files/testing/twitter.gif)
 
 </details>
 
@@ -345,42 +368,45 @@ Manual testing was conducted on the following elements that appear on every page
 
 </details>
 
-- Facebook
-
-<details>
-<summary>Facebook Social Media link</summary>
-
-![LinkedIn Social Media link](./assets/readme_files/testing/facebook.gif)
-
 </details>
 
 [Back to top ⇧](#)
 
-### Home Page
+#### Home Page
 
-Manual testing was conducted on the following elements of the [Home Page](#):
+- Manual testing was conducted on the elements of the [Home Page](#).
 
-#### World Map
+<details>
+<summary>Home Page</summary>
+
+![Home Page](#)
+
+</details>
+
+#### Map Page
 
 - Hovering over the world map shows the country that is positioned under the mouse. By clicking on the chosen country, the modal appears with the information of the Pride event in that country. The map can be zoomed in or out.
 
 <details>
-<summary>World Map hover and zoom</summary>
+<summary>Map hover and zoom</summary>
 
-![ World Map Hover and Zoom](#)
+![Map Hover and Zoom](#)
 
 </details>
 
 - By clicking on the chosen country on the world map, the modal appears with the information about the Pride event in said country. Modal is closed on clicking the "OK" button.
 
 <details>
-<summary>World Map click</summary>
+<summary>Map click</summary>
 
-![ World Map Hover and Click](#)
+![Map Hover and Click](#)
 
 </details>
 
-...
+#### Contact Page
+
+- Manual testing was conducted on the Contact Page [Contact Page](#).
+  ...
 
 ### Responsiveness
 
@@ -395,16 +421,23 @@ Manual testing was conducted on all three site pages for responsiveness:
 
 </details>
      
-- Responsiveness of About Page.
+- Responsiveness of Map Page.
 
 <details>
-<summary>Resposiveness - Main World Map Page</summary>
+<summary>Resposiveness - Contact Page</summary>
 
-![Resposiveness - Main Page](#)
+![Resposiveness - Map Page](#)
 
 </details>
 
-...
+- Responsiveness of Contact Page.
+
+<details>
+<summary>Resposiveness - Contact</summary>
+
+![Resposiveness - Contact Page](#)
+
+</details>
 
 - Responsiveness of 404 Page.
 
@@ -417,11 +450,11 @@ Manual testing was conducted on all three site pages for responsiveness:
 
 [Back to top ⇧](#)
 
-## Automated Testing
+### Automated Testing
 
-### Code Validation
+#### Code Validation
 
-The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the `HTML` and `CSS` code used. The [JSHint JavaScript Code Quality Tool](https://jshint.com/) was also used to validate the sites `JS` code.
+The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the `HTML` and `CSS` code used. The [JSHint JavaScript Code Quality Tool](https://jshint.com/) was also used to validate the sites `JS` code. Python validation was made by the Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) validation web app.
 
 **Results:**
 
@@ -434,16 +467,23 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 </details>
 
-- Main World Map Page
+- Map Page
 
 <details>
-<summary>Main World Map Page HTML Validation</summary>
+<summary>Map Page HTML Validation</summary>
 
-![Main World Map Page HTML Validation](#)
+![Map Page HTML Validation](#)
 
 </details>
 
-- ...
+- Contact Page
+
+<details>
+<summary>Contact Page HTML Validation</summary>
+
+![Contact Page HTML Validation](#)
+
+</details>
 
 - 404 Page
 
@@ -453,6 +493,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 ![404 Page HTML Validation Results](#)
 
 </details>
+<br>
 
 - CSS Stylesheet
 
@@ -463,6 +504,8 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 </details>
 
+<br>
+
 - JavaScript
 
 <details>
@@ -471,6 +514,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 ![JavaScript Validation](#)
 
 </details>
+<br>
 
 - Python
 
@@ -481,7 +525,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 </details>
 
-### Browser Validation -> IF NECESSARY
+#### Browser Validation
 
 - Google Chrome
 
@@ -496,9 +540,9 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 [Back to top ⇧](#)
 
-### Lighthouse Validation
+#### Lighthouse Validation
 
-- Home Page Lighthouse Validation
+- Home Page
 
 <details>
 <summary>Home Page Lighthouse Validation</summary>
@@ -507,18 +551,25 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 </details>
 
--
-
-- Main World Map Page Lighthouse Validation
+- Map Page
 
 <details>
-<summary>Main World Map Lighthouse Validation</summary>
+<summary>Map Page Lighthouse Validation</summary>
 
-![Main World Map Lighthouse Validation](#)
+![Map Page Lighthouse Validation](#)
 
 </details>
 
-- 404 Page Lighthouse Validation
+- Contact Page
+
+<details>
+<summary>Contact Page Lighthouse Validation</summary>
+
+![Contact Page Lighthouse Validation](#)
+
+</details>
+
+- 404 Page
 
 <details>
 <summary>404 Page Lighthouse Validation</summary>
