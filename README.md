@@ -4,7 +4,7 @@
 
 ![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
 
-## Table of Content
+## Table of Contents
 
 1. [Criteria](#criteria)
 2. [Intro](#intro)
@@ -157,6 +157,29 @@ The wireframes were created using a desktop version of [Figma](https://www.figma
 #### Colour Scheme
 
 The default colour scheme was made by [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/).
+
+   
+![Pastel Colour Palette](docs/images/pridepalette1.png)
+
+#ED8E98 
+#F7B685
+#F3EBA5
+#94C691
+#9BD6D9
+#B4A8E0
+
+linear-gradient(90deg, #ED8E89 0%, #F7B685 19%, #F3EBA5 39%, #94C691 60%, #9BD6D9 80%, #B4A8E0 100%);
+
+
+![Bright Colour Palette](docs/images/pridepalette2.png)
+
+#E30303
+#E67E00
+#E6D600
+#00E642
+#0047E6
+#BD0BDB
+linear-gradient(90deg, #e30303 0%, #e67e00 19%, #e6d600 39%, #00e642 60%, #0047e6 80%, #bd0bdb 100%);
 
 <details>
 <summary>Colour Palette</summary>
