@@ -21,6 +21,13 @@ const map = new mapboxgl.Map({
 
 // On map load
 map.on("load", () => {
+    // remove labels from map
+    map.style.stylesheet.layers.forEach(function (layer) {
+        if (layer.type === "symbol") {
+            map.removeLayer(layer.id);
+        }
+    });
+
     // the layer for outlining countries (in white originally)
     map.addLayer({
         id: "countries-layer",
