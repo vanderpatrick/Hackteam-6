@@ -4,27 +4,25 @@
 
 ![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
 
-
 <p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
 
 ## Table of Content
 
 1. [Criteria](#criteria)
 2. [Intro](#intro)
-2. [User Experience](#user-experience)
-    1. [Project Goals](#project-goals)
-    1. [Target Audience](#target-audience)
-    2. [User Requirements and Expectations](#user-requirements-and-expectations)
-    3. [User Stories](#user-stories)
-    4. [Development Planes](#development-planes)
-3. [Design](#design)
-    1. [Colour Scheme](#colour-scheme)
-    2. [Typography](#typography)
-    3. [Imagery](#imagery)
-4. [Features](#features)
-    1. [Design Features](#design-features)
-    2. [Existing Features](#existing-features)
-
+3. [User Experience](#user-experience)
+   1. [Project Goals](#project-goals)
+   1. [Target Audience](#target-audience)
+   1. [User Requirements and Expectations](#user-requirements-and-expectations)
+   1. [User Stories](#user-stories)
+   1. [Development Planes](#development-planes)
+4. [Design](#design)
+   1. [Colour Scheme](#colour-scheme)
+   2. [Typography](#typography)
+   3. [Imagery](#imagery)
+5. [Features](#features)
+   1. [Design Features](#design-features)
+   2. [Existing Features](#existing-features)
 
 ## Criteria
 
@@ -44,21 +42,24 @@ One or two paragraphs providing an overview of our project, including the theme 
 ## User Experience
 
 ### Project Goals
+
 The primary goal of the project is to create an interactive website which allows users to find information about key events relating to the LGBTQ+ liberation movement in different countries. Additionally, the users are encouraged to submit suggestions of events they would like to be featured on the map.
 
 ### Target Audience
-*	People interested in Queer history;
-*	People who want to learn more about liberation movements across the world;
-*	People identifying as a part of the LGBTQ+ community;
-*	People wanting to become better allies.
+
+- People interested in Queer history;
+- People who want to learn more about liberation movements across the world;
+- People identifying as a part of the LGBTQ+ community;
+- People wanting to become better allies.
 
 ### User Requirements and Expectations
-* An intuitive navigation system;
-* A way to find relevant information easily;
-* Website functions to work as expected;
-* A visually appealing design;
-* Accessibility.
-* An easy way to contact the site owners.
+
+- An intuitive navigation system;
+- A way to find relevant information easily;
+- Website functions to work as expected;
+- A visually appealing design;
+- Accessibility.
+- An easy way to contact the site owners.
 
 ### User Stories
 
@@ -71,14 +72,16 @@ The primary goal of the project is to create an interactive website which allows
 5. As a new user, I want to be able to easily find more information about the project.
 
 #### **Returning user**
-1.	As a returning user, I want to be able to send information about events I think should be featured on the map to the site owners.
-2.	As a returning user, I want to be able to view the site on a range of different devices.
-3.	As a returning user, I want to be able to contact the site owners to suggest an update to the information featured on the site.
 
+1. As a returning user, I want to be able to send information about events I think should be featured on the map to the site owners.
+2. As a returning user, I want to be able to view the site on a range of different devices.
+3. As a returning user, I want to be able to contact the site owners to suggest an update to the information featured on the site.
 
 ### Development Planes
 
 In order to create an interactive website that allows the user to get useful information about the history of the Pride movement in different countries, the following planes are made.
+
+[Back to top ⇧](#)
 
 #### Strategy
 
@@ -164,6 +167,8 @@ _Phone Wireframes_
 
 </details>
 
+[Back to top ⇧](#)
+
 ### Design,Layout and Structure
 
 #### Colour Scheme
@@ -214,6 +219,8 @@ Each page within the site has a consistent and responsive navigation system. The
 
 - ...
 
+[Back to top ⇧](#)
+
 The goal section provides a concise summary of the main objective or purpose of the project or software described in this README. It addresses the following aspects:
 
 - ➡️ Problem Statement
@@ -221,9 +228,44 @@ The goal section provides a concise summary of the main objective or purpose of 
 - ➡️ Target Audience
 - ➡️ Benefits
 
-## Tech
+## Technologies Used
 
-In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
+### Main Languages Used
+
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): The standard markup language for creating web pages.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): Cascading Style Sheets used for styling the user interface. For more information, refer to the [CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS).
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): A programming language used for client-side scripting and frontend development.
+- [Python](https://www.python.org/): A versatile programming language used for backend development.
+
+### Frameworks, Libraries and Programs Used
+
+- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapid UI development. For more information, refer to the [Tailwind CSS documentation](https://tailwindcss.com/docs).
+- [REST API](https://restfulapi.net/): A set of architectural principles for building web services.
+- [Flask](https://flask.palletsprojects.com/): A lightweight web framework written in Python for building web applications.
+- [Mapbox API](https://www.mapbox.com/): An open-source mapping platform for custom-designed maps and location-based applications.
+
+- [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/)
+  - Canva Color Palette Generator was used to make the initial colour palette.
+- [CSS Gradient](https://cssgradient.io/)
+- CSS Gradient web app was used to make gradient colour backgrounds.
+- [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
+  - Google fonts was used to import the fonts "xxx", into the style.css file. These fonts were used throughout the project.
+- [Font Awesome](https://fontawesome.com/ "Link to FontAwesome")
+  - Font Awesome was used on almost all pages throughout the website to import icons (e.g. social media icons) for UX purposes.
+- [GitPod](https://gitpod.io/ "Link to GitPod homepage")
+  - GitPod was used for writing code, committing, and then pushing to GitHub.
+- [GitHub](https://github.com/ "Link to GitHub")
+  - GitHub was used to store the project after pushing
+- [Balsamiq](https://balsamiq.com/ "Link to Balsamiq homepage")
+  - Balsamiq was used to create the wireframes during the design phase of the project.
+- [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage")
+
+  - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
+
+- [Peek](https://github.com/phw/peek)
+  - Peek was used to make screencasts for the documentation.
+
+[Back to top ⇧](#)
 
 ## Testing
 
@@ -288,6 +330,8 @@ Manual testing was conducted on the following elements that appear on every page
 
 </details>
 
+[Back to top ⇧](#)
+
 ### Home Page
 
 Manual testing was conducted on the following elements of the [Home Page](#):
@@ -346,6 +390,8 @@ Manual testing was conducted on all three site pages for responsiveness:
 ![Resposiveness - 404 Page](#)
 
 </details>
+
+[Back to top ⇧](#)
 
 ## Automated Testing
 
@@ -424,6 +470,8 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 - ...
 
+[Back to top ⇧](#)
+
 ### Lighthouse Validation
 
 - Home Page Lighthouse Validation
@@ -454,6 +502,8 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 ![404 Page Lighthouse Validation](#)
 
 </details>
+
+[Back to top ⇧](#)
 
 ## Credits
 
