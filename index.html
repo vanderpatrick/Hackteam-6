@@ -19,7 +19,8 @@
     />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-
+    <link rel="stylesheet" href="https://use.typekit.net/vqv0klb.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
 
     <title>Out and About</title>
   </head>
@@ -28,16 +29,28 @@
         <!-- Navbar snippet taken from the Tailwind CSS Documentation -->
         <nav class="flex flex-wrap p-3 navbar items-center justify-between">
           <div class="flex flex-shrink-0 text-white mr-6">
-              <span class="font-bold text-xl tracking-tight" id="logo">Out-and-About</span>
+              <span class="font-bold text-xl" id="logo"><h1>Out-and-About</h1></span>
           </div>
-          <div>
-            <a href="index.html" class="px-3 text-white hover:text-red-500 active" aria-current="true">About</a>
-            <a href="map.html" class="px-3 text-white hover:text-yellow-400">Map</a>
-            <a href="contactform.html" class="px-3 text-white hover:text-green-500">Submit</a>
+           <!-- Dropdown menu snippet taken from https://flowbite.com/docs/ -->
+           <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 rounded-lg md:hidden text-white navlink" aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul class="flex flex-col font-large lg:mr-5 text-center md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                <li>
+                  <a href="index.html" class="text-white navlink active" aria-current="true">About</a>
+                </li>
+                <li>
+                  <a href="map.html" class="text-white navlink">Map</a>
+                </li>
+                <li>
+                  <a href="contactform.html" class="text-white navlink">Submit</a>
+                </li>
+              </ul></div>
           </div>
-        </nav>
+           </nav>
     
-
     <!--Full page div -->
     <div description = "title page container">
         <!-- Hero Image Div-->
@@ -84,6 +97,7 @@
 
     <script src="FRONTEND/scripts/mapbox.js" type="module" ></script>
     <script src="FRONTEND/scripts/modal.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
   </body>
  
 </html>

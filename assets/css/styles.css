@@ -5,7 +5,10 @@
 }
 
 #logo {
-    text-transform:capitalize;
+    text-transform: capitalize;
+    font-family: "gilbert-color", sans-serif;
+    letter-spacing: 2.5px;
+    font-weight: 800;
     background: -webkit-linear-gradient(0deg, #ED8E89 0%, #F7B685 19%, #F3EBA5 39%, #94C691 60%, #9BD6D9 80%, #B4A8E0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -21,4 +24,14 @@ footer {
     background: -webkit-linear-gradient(0deg, #ED8E89 0%, #F7B685 19%, #F3EBA5 39%, #94C691 60%, #9BD6D9 80%, #B4A8E0 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent; 
+}
+
+#dropdown {
+    background-color: #343333;  
+    }
+
+.navlink:hover {
+    background: -webkit-linear-gradient(0deg, #ED8E89 0%, #F7B685 19%, #F3EBA5 39%, #94C691 60%, #9BD6D9 80%, #B4A8E0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
