@@ -90,16 +90,35 @@ map.on("load", () => {
     // On clicking the countries layer
     map.on("click", "countries-layer", (e) => {
         const clickedFeature = e.features[0];
-        console.log(clickedFeature);
 
-        const countryName = clickedFeature.properties.name_en;
-        const countryCode = clickedFeature.properties.region;
+        const mapCountryName = clickedFeature.properties.name_en;
+        const mapCountryRegion = clickedFeature.properties.region;
 
-        Swal.fire({
-            title: countryName,
-            text: countryCode,
-            icon: "success",
-            confirmButtonText: "OK",
+        $.ajax({
+            type: "GET",
+            url: "https://pride-api.onrender.com/api/events",
+            success: function (data) {
+                console.log(data);
+
+                for (let i = 0; i < data.length; i++) {
+                    let apiCountryName = data[i].country;
+                    if (apiCountryName == mapCountryName) {
+                        let apiEvent = data[i].description;
+                        Swal.fire({
+                            title: apiCountryName,
+                            text: apiEvent,
+                            confirmButtonText: "Close",
+                        });
+                        break;
+                    } else {
+                        Swal.fire({
+                            title: mapCountryName,
+                            text: "Sorry we currently have no information on this country. Please head to the Submit page and tell us of any events you know have happened in this are. We would love to add them.",
+                            confirmButtonText: "Close",
+                        });
+                    }
+                }
+            },
         });
     });
 });
