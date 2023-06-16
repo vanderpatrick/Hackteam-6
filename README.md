@@ -242,6 +242,7 @@ The goal section provides a concise summary of the main objective or purpose of 
 - [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapid UI development. For more information, refer to the [Tailwind CSS documentation](https://tailwindcss.com/docs).
 - [REST API](https://restfulapi.net/): A set of architectural principles for building web services.
 - [Flask](https://flask.palletsprojects.com/): A lightweight web framework written in Python for building web applications.
+- [Mapbox API](https://www.mapbox.com/): An open-source mapping platform for custom-designed maps and location-based applications.
 
 - [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/)
   - Canva Color Palette Generator was used to make the initial colour palette.
