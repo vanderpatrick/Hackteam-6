@@ -23,8 +23,6 @@ One or two paragraphs providing an overview of our project, including the theme 
 
 ### Wireframes
 
-#### Wireframes
-
 For this project, we used [Balsamiq](https://balsamiq.com/) in the initial design phase, before the coding process. This enabled us to develop the website's structure, skeleton, layout and overall look and style. We created designs for desktop, tablet and mobile screens to ensure that responsiveness was at the forefront of the application from the beginning.
 
 <details><summary>Screenshots</summary>
