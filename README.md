@@ -177,7 +177,7 @@ _Phone Wireframes_
 
 The default colour scheme was made by [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/).
 
-![Pastel Colour Palette](docs/images/pridepalette1.png)
+![Pastel Colour Palette](./docs/readme_images/pridepalette1.png)
 
 #ED8E98
 #F7B685
@@ -188,7 +188,7 @@ The default colour scheme was made by [Canva Color Palette Generator](https://ww
 
 linear-gradient(90deg, #ED8E89 0%, #F7B685 19%, #F3EBA5 39%, #94C691 60%, #9BD6D9 80%, #B4A8E0 100%);
 
-![Bright Colour Palette](docs/images/pridepalette2.png)
+![Bright Colour Palette](./docs/readme_images/pridepalette2.png)
 
 #E30303
 #E67E00
