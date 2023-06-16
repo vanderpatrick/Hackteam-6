@@ -1,9 +1,10 @@
 # Hackteam-6
 
+# Out and About: Interactive World Map of Pride Events
+
 # 🌈 Pride Representation 🥳
 
 ![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
-
 
 <p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
 
@@ -37,8 +38,8 @@ In this section, we will briefly discuss how our team addressed the applicable c
 
 ## Intro
 
-_[TO DO]_
-One or two paragraphs providing an overview of our project, including the theme - whether it is one of the 7 themes or our own team's theme.
+Out and About is an exciting project that aims to create an interactive world map showcasing Pride events happening across different countries. The project focuses on promoting inclusivity, diversity, and the celebration of LGBTQ+ communities worldwide.
+With the Out and About platform, users will have the opportunity to explore a dynamic map that highlights some important Pride events. By clicking on specific countries, users can access some general information about each event, including dates, locations, and event descriptions or can contribute to the project by sending updated or missing information. Out and About aims to serve as a comprehensive resource for the LGBTQ+ community and allies, fostering a sense of unity and awareness about Pride celebrations worldwide.
 
 ## User Experience
 
@@ -176,10 +177,9 @@ _Phone Wireframes_
 
 The default colour scheme was made by [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/).
 
-   
 ![Pastel Colour Palette](docs/images/pridepalette1.png)
 
-#ED8E98 
+#ED8E98
 #F7B685
 #F3EBA5
 #94C691
@@ -187,7 +187,6 @@ The default colour scheme was made by [Canva Color Palette Generator](https://ww
 #B4A8E0
 
 linear-gradient(90deg, #ED8E89 0%, #F7B685 19%, #F3EBA5 39%, #94C691 60%, #9BD6D9 80%, #B4A8E0 100%);
-
 
 ![Bright Colour Palette](docs/images/pridepalette2.png)
 
