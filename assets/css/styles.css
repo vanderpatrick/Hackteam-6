@@ -1,8 +1,12 @@
 .navbar {
     background-color: #201b1b;
-    border-bottom: 5px solid red;
-    border-color: linear-gradient(90deg, #e30303 0%, #e67e00 19%, #e6d600 39%, #00e642 60%, #0047e6 80%, #bd0bdb 100%);
+    border-bottom: dotted 6px;
+    border-image: linear-gradient(90deg, #e30303 0%, #e67e00 19%, #e6d600 39%, #00e642 60%, #0047e6 80%, #bd0bdb 100%) 1;
 }
 
 #logo {
-    color: linear-gradient(90deg, #e30303 0%, #e67e00 19%, #e6d600 39%, #00e642 60%, #0047e6 80%, #bd0bdb 100%) }
+text-transform: uppercase;
+background: -webkit-linear-gradient(0deg, #e30303 0%, #e67e00 19%, #e6d600 39%, #00e642 60%, #0047e6 80%, #bd0bdb 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+     }
