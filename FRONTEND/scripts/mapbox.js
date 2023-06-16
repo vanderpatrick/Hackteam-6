@@ -89,28 +89,35 @@ map.on("load", () => {
 
     // On clicking the countries layer
     map.on("click", "countries-layer", (e) => {
+        // get data for clicked feature
         const clickedFeature = e.features[0];
 
+        // get country name from this data
         const mapCountryName = clickedFeature.properties.name_en;
         const mapCountryRegion = clickedFeature.properties.region;
 
+        // make call to api for events data
         $.ajax({
             type: "GET",
             url: "https://pride-api.onrender.com/api/events",
             success: function (data) {
-                console.log(data);
-
+                // Loop through events
                 for (let i = 0; i < data.length; i++) {
+                    // get country for event from api
                     let apiCountryName = data[i].country;
+                    // If the countries match up
                     if (apiCountryName == mapCountryName) {
-                        let apiEvent = data[i].description;
+                        // Get the description
+                        let apiEventDescription = data[i].description;
+                        // and load it into modal
                         Swal.fire({
                             title: apiCountryName,
-                            text: apiEvent,
+                            text: apiEventDescription,
                             confirmButtonText: "Close",
                         });
                         break;
                     } else {
+                      // If no data is in the database for the clicked country display generic message
                         Swal.fire({
                             title: mapCountryName,
                             text: "Sorry we currently have no information on this country. Please head to the Submit page and tell us of any events you know have happened in this are. We would love to add them.",
