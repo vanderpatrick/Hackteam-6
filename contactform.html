@@ -10,12 +10,13 @@
         height: 100%;
       }
     </style>
-
+    <link rel="stylesheet" href="assets/css/styles.css">
     <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
     <link
       href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
 
 
@@ -24,9 +25,15 @@
 
   <body class="flex flex-col">
     <!-- Header -->
-    <nav class="bg-gray-800 text-white py-4 sticky top-0">
-      <div class="container mx-auto px-4">
-        <p class="text-xl change font-bold">This is the Navbar</p>
+    <!-- Navbar snippet taken from the Tailwind CSS Documentation -->
+    <nav class="flex flex-wrap p-3 navbar items-center justify-between">
+      <div class="flex flex-shrink-0 text-white mr-6">
+          <span class="font-bold text-xl tracking-tight" id="logo">Out-and-About</span>
+      </div>
+      <div>
+        <a href="index.html" class="px-3 text-white hover:text-red-500 active">About</a>
+        <a href="map.html" class="px-3 text-white hover:text-yellow-400">Map</a>
+        <a href="contactform.html" class="px-3 text-white hover:text-green-500 active" aria-current="true">Submit</a>
       </div>
     </nav>
 

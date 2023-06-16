@@ -17,6 +17,7 @@
       href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
 
 
@@ -25,17 +26,16 @@
 
   <body class="flex flex-col">
     <!-- Navbar snippet taken from the Tailwind CSS Documentation -->
-    <nav class="flex flex-wrap p-3 navbar items-center justify-between sm:justify-center">
+    <nav class="flex flex-wrap p-3 navbar items-center justify-between">
       <div class="flex flex-shrink-0 text-white mr-6">
           <span class="font-bold text-xl tracking-tight" id="logo">Out-and-About</span>
       </div>
       <div>
         <a href="index.html" class="px-3 text-white hover:text-red-500">About</a>
-        <a href="map.html" class="px-3 text-white hover:text-yellow-400 active">Map</a>
+        <a href="map.html" class="px-3 text-white hover:text-yellow-400 active" aria-current="true">Map</a>
         <a href="contactform.html" class="px-3 text-white hover:text-green-500">Submit</a>
       </div>
     </nav>
-
     <div class="flex-grow container mx-auto py-8 px-4">
       <div id='map' style='width: 100%; height: 600px;'></div>
 
