@@ -144,19 +144,27 @@ The above mentioned information were organized in a site map, showing how users 
 
 </details>
 
-#### Skeleton
+#### Skeleton and Wireframes
 
-The wireframes were created using a desktop version of [Figma](https://www.figma.com/).
+For this project, we used [Balsamiq](https://balsamiq.com/) in the initial design phase, before the coding process. This enabled us to develop the website's structure, skeleton, layout and overall look and style. We created designs for desktop, tablet and mobile screens to ensure that responsiveness was at the forefront of the application from the beginning.
 
-<details>
-<summary>Figma Wireframes</summary>
-    
-![Home Page Wireframe](#)
-![About Page Wireframe](#)
+<details><summary>Screenshots</summary>
+
+<img src="docs/wireframe_desktop.png">
+
+_Desktop Wireframes_
+
+<img src="docs/wireframe_ipad.png">
+
+_iPad Wireframes_
+
+<img src="docs/wireframe_mobile.png">
+
+_Phone Wireframes_
 
 </details>
 
-### Design
+### Design,Layout and Structure
 
 #### Colour Scheme
 
