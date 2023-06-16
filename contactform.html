@@ -30,34 +30,48 @@
       </div>
     </nav>
 
-    <!--Full page div -->
-    <div description = "title page container">
-        <!-- Hero Image Div-->
-        <div description="Top Hero image container">
-            <div description = "title">
-                <h1 description = "title">Title of Webpage</h1>
-            </div>
-            <div description="img / slideshow on right">
-                <img src = "">
-            </div>
+    <!-- contact page container-->
+    <div description = "contact page">
+
+        <!-- contact title-->
+        <div description= "title for page">
+            <h2>Contact Us / Notify of event?</h2>
         </div>
 
-        <!--About us / How to section-->
-        <div description = "main section">
-            <div description = "H2 section">
-                <h2>About Us? / How to?</h2>
+        <!-- contact form -->
+
+        <div id="contact">
+
+            <form action="SHEETMONKEY.API HERE" method="post">
+
+            <div class="formdiv">
+                <label for="fname">Full Name</label>
+                <input type="text" name="fname" required>
+                <br>
             </div>
-            <div description = "rnd image">
-                <img src="">
+            <div class="formdiv">
+                    <label for="email" class="email">Email Address</label>
+                    <input type="email" name="email"required >
+                    <br>
             </div>
-            <div description = "website information">
-                <h2>This could be bullet pointed in a list?"(<ul>)" or a bunch of different paragraph points?</h2>
+            <div class="formdiv">
+                    <label for="event">Title of event</label>
+                    <input type="text" name="event">
+                    <br>
+            </div>      
+            <div class="formdiv">
+                    <label for="message" class="message">Event</label>
+                    <textarea name="message"wrap=soft required></textarea>
+                    <br>
             </div>
-            <div description = "Learn more?">
-                <h2>Learn more?</h2>
-            </div>
+            <input type="submit" class="submit">
+            </form>
+        </div>
+        <div description = "exit title">
+            <h2>Want to explore again?</h2>
         </div>
     </div>
+
 
     <button id="testButton">dashusaduh</button>
     <!-- Footer -->
