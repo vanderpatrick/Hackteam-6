@@ -6,6 +6,10 @@
 
 ## Table of Contents
 
+<p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
+
+## Table of Content
+
 1. [Criteria](#criteria)
 2. [Intro](#intro)
 2. [User Experience](#user-experience)
@@ -21,6 +25,7 @@
 4. [Features](#features)
     1. [Design Features](#design-features)
     2. [Existing Features](#existing-features)
+
 
 ## Criteria
 
@@ -140,19 +145,27 @@ The above mentioned information were organized in a site map, showing how users 
 
 </details>
 
-#### Skeleton
+#### Skeleton and Wireframes
 
-The wireframes were created using a desktop version of [Figma](https://www.figma.com/).
+For this project, we used [Balsamiq](https://balsamiq.com/) in the initial design phase, before the coding process. This enabled us to develop the website's structure, skeleton, layout and overall look and style. We created designs for desktop, tablet and mobile screens to ensure that responsiveness was at the forefront of the application from the beginning.
 
-<details>
-<summary>Figma Wireframes</summary>
-    
-![Home Page Wireframe](#)
-![About Page Wireframe](#)
+<details><summary>Screenshots</summary>
+
+<img src="docs/wireframe_desktop.png">
+
+_Desktop Wireframes_
+
+<img src="docs/wireframe_ipad.png">
+
+_iPad Wireframes_
+
+<img src="docs/wireframe_mobile.png">
+
+_Phone Wireframes_
 
 </details>
 
-### Design
+### Design,Layout and Structure
 
 #### Colour Scheme
 
@@ -235,6 +248,236 @@ The goal section provides a concise summary of the main objective or purpose of 
 ## Tech
 
 In the tech section, we provide information about the technology stack, dependencies, and any technical details related to the project.
+
+## Testing
+
+### Testing User Stories
+
+#### New User Goals:
+
+#### Current User Goals:
+
+## Manual Testing
+
+### Common Elements Testing
+
+Manual testing was conducted on the following elements that appear on every page:
+
+- Clicking on the Navigation Bar's links will bring the user to the specified page.
+
+<details>
+
+<summary>Navbar links</summary>
+
+![Navbar links](#)
+
+</details>
+
+- Hovering over the Navigation bar elements will trigger the `hover` effect, highlighting the link for the user.
+
+<details>
+<summary>Navbar hover effect</summary>
+
+![Navbar hover effect](#)
+
+</details>
+     
+ 
+- Clicking on the Social Media links will open a new tab
+
+- Instagram
+
+<details>
+<summary>Instagram Social Media link</summary>
+
+![LinkedIn Social Media link](./assets/readme_files/testing/instagram.gif)
+
+</details>
+
+- GitHub
+
+<details>
+<summary>GitHub Social Media link</summary>
+
+![GitHub Social Media link](./assets/readme_files/testing/github.gif)
+
+</details>
+
+- Facebook
+
+<details>
+<summary>Facebook Social Media link</summary>
+
+![LinkedIn Social Media link](./assets/readme_files/testing/facebook.gif)
+
+</details>
+
+### Home Page
+
+Manual testing was conducted on the following elements of the [Home Page](#):
+
+#### World Map
+
+- Hovering over the world map shows the country that is positioned under the mouse. By clicking on the chosen country, the modal appears with the information of the Pride event in that country. The map can be zoomed in or out.
+
+<details>
+<summary>World Map hover and zoom</summary>
+
+![ World Map Hover and Zoom](#)
+
+</details>
+
+- By clicking on the chosen country on the world map, the modal appears with the information about the Pride event in said country. Modal is closed on clicking the "OK" button.
+
+<details>
+<summary>World Map click</summary>
+
+![ World Map Hover and Click](#)
+
+</details>
+
+...
+
+### Responsiveness
+
+Manual testing was conducted on all three site pages for responsiveness:
+
+- Responsiveness of Home Page.
+
+<details>
+<summary>Resposiveness - Home Page</summary>
+
+![Resposiveness - Home Page](#)
+
+</details>
+     
+- Responsiveness of About Page.
+
+<details>
+<summary>Resposiveness - Main World Map Page</summary>
+
+![Resposiveness - Main Page](#)
+
+</details>
+
+...
+
+- Responsiveness of 404 Page.
+
+<details>
+<summary>Resposiveness - 404 Page</summary>
+
+![Resposiveness - 404 Page](#)
+
+</details>
+
+## Automated Testing
+
+### Code Validation
+
+The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the `HTML` and `CSS` code used. The [JSHint JavaScript Code Quality Tool](https://jshint.com/) was also used to validate the sites `JS` code.
+
+**Results:**
+
+- Home Page
+
+<details>
+<summary>Home Page HTML Validation</summary>
+
+![Home Page HTML Validation](#)
+
+</details>
+
+- Main World Map Page
+
+<details>
+<summary>Main World Map Page HTML Validation</summary>
+
+![Main World Map Page HTML Validation](#)
+
+</details>
+
+- ...
+
+- 404 Page
+
+<details>
+<summary>404 Page HTML Validation Results</summary>
+
+![404 Page HTML Validation Results](#)
+
+</details>
+
+- CSS Stylesheet
+
+<details>
+<summary>Style Sheet Validation</summary>
+
+![Style Sheet Validation](#)
+
+</details>
+
+- JavaScript
+
+<details>
+<summary>JavaScript Validation</summary>
+
+![JavaScript Validation](#)
+
+</details>
+
+- Python
+
+<details>
+<summary>Python Validation</summary>
+
+![Python Validation](#)
+
+</details>
+
+### Browser Validation -> IF NECESSARY
+
+- Google Chrome
+
+<details>
+<summary>Google Chrome Validation </summary>
+
+![Google Chrome Test Image](#)
+
+</details>
+
+- ...
+
+### Lighthouse Validation
+
+- Home Page Lighthouse Validation
+
+<details>
+<summary>Home Page Lighthouse Validation</summary>
+
+![Home Page Lighthouse Validation](#)
+
+</details>
+
+-
+
+- Main World Map Page Lighthouse Validation
+
+<details>
+<summary>Main World Map Lighthouse Validation</summary>
+
+![Main World Map Lighthouse Validation](#)
+
+</details>
+
+- 404 Page Lighthouse Validation
+
+<details>
+<summary>404 Page Lighthouse Validation</summary>
+
+![404 Page Lighthouse Validation](#)
+
+</details>
 
 ## Credits
 
