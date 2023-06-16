@@ -283,12 +283,11 @@ The goal section provides a concise summary of the main objective or purpose of 
 - [Balsamiq](https://balsamiq.com/ "Link to Balsamiq homepage")
   - Balsamiq was used to create the wireframes during the design phase of the project.
 - [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage")
-
   - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
-
 - [Peek](https://github.com/phw/peek)
   - Peek was used to make screencasts for the documentation.
-
+- [Flowbite](https://flowbite.com/docs/getting-started/quickstart/ "Link to the Flowbite documentation)
+  - Flowbite was used to create a dropdown button in the navigation bar.
 [Back to top ⇧](#)
 
 ## Testing
