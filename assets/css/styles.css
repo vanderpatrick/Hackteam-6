@@ -1,12 +1,24 @@
 .navbar {
-    background-color: #201b1b;
-    border-bottom: dotted 6px;
+    background-color: #343333;
+    border-bottom: dashed 6px;
     border-image: linear-gradient(90deg, #e30303 0%, #e67e00 19%, #e6d600 39%, #00e642 60%, #0047e6 80%, #bd0bdb 100%) 1;
 }
 
 #logo {
-text-transform: uppercase;
-background: -webkit-linear-gradient(0deg, #e30303 0%, #e67e00 19%, #e6d600 39%, #00e642 60%, #0047e6 80%, #bd0bdb 100%);
--webkit-background-clip: text;
--webkit-text-fill-color: transparent;
+    text-transform:capitalize;
+    background: -webkit-linear-gradient(0deg, #ED8E89 0%, #F7B685 19%, #F3EBA5 39%, #94C691 60%, #9BD6D9 80%, #B4A8E0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
      }
+
+footer {
+    background-color: #343333;  
+    border-top: dashed 6px;
+    border-image: linear-gradient(200deg, #e30303 0%, #e67e00 19%, #e6d600 39%, #00e642 60%, #0047e6 80%, #bd0bdb 100%) 1;  
+}
+
+.footer-text {
+    background: -webkit-linear-gradient(0deg, #ED8E89 0%, #F7B685 19%, #F3EBA5 39%, #94C691 60%, #9BD6D9 80%, #B4A8E0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}

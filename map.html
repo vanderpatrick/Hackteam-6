@@ -17,6 +17,7 @@
       href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
 
 
@@ -27,12 +28,12 @@
     <!-- Navbar snippet taken from the Tailwind CSS Documentation -->
     <nav class="flex flex-wrap p-3 navbar items-center justify-between" style='width: 100vw; height: 12vh;'>
       <div class="flex flex-shrink-0 text-white mr-6">
-          <span class="font-semibold text-xl tracking-tight" id="logo">Out and About</span>
+          <span class="font-bold text-xl tracking-tight" id="logo">Out-and-About</span>
       </div>
-      <div class="hover:text-white">
-        <a href="map.html" class="px-3 text-red-500 hover:text-white">Map</a>
-        <a href="about.html" class="px-3 text-yellow-200 hover:text-white">About</a>
-        <a href="form.html" class="px-3 text-teal-200 hover:text-white">Submit</a>
+      <div>
+        <a href="index.html" class="px-3 text-white hover:text-red-500">About</a>
+        <a href="map.html" class="px-3 text-white hover:text-yellow-400 active" aria-current="true">Map</a>
+        <a href="contactform.html" class="px-3 text-white hover:text-green-500">Submit</a>
       </div>
     </nav>
 
@@ -41,13 +42,20 @@
 
       </div>
     </div>
-
     
-    <footer class="bg-gray-800 text-white py-4 sticky bottom-0" style='width: 100vw; height: 10vh;'>
-      <div class="container mx-auto px-4 text-center">
-        <p>&copy; 2023 This is the Sticky Footer. All rights reserved.</p>
-      </div>
+     <!-- Footer -->
+     <footer class="fixed bottom-0 flex-grow w-full text-center">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 place-items-center m-3">
+        <div class="footer-text">Idk what goes here</div>
+        <div class="text-white">
+            <a class="m-1 hover:text-red-500" href="http://facebook.com" target="_blank" rel="noopener" aria-label="Our Facebook Page (opens in a new tab)"><i class="fab fa-facebook-f"></i></a>
+            <a class="m-1 hover:text-yellow-400" href="http://twitter.com" target="_blank" rel="noopener" aria-label="Our Twitter Page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+            <a class="m-1 hover:text-blue-500" href="https://github.com/vanderpatrick/Hackteam-6" target="_blank" rel="noopener" aria-label="Our Github repo (opens in a new tab)"><i class="fa-brands fa-github"></i></i></a>      
+        </div>
+        <div class="footer-text">© 2023 Team Out and About</div>
+      </div></div>
     </footer>
+
     <script src="FRONTEND/scripts/mapbox.js" type="module" ></script>
     <script src="FRONTEND/scripts/modal.js" type="module"></script>
   </body>
