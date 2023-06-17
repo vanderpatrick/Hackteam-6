@@ -4,9 +4,12 @@
     border-image: linear-gradient(90deg, #e30303 0%, #e67e00 19%, #e6d600 39%, #00e642 60%, #0047e6 80%, #bd0bdb 100%) 1;
 }
 
-#logo {
-text-transform: uppercase;
+#logo, .rainbow-text {
 background: -webkit-linear-gradient(0deg, #e30303 0%, #e67e00 19%, #e6d600 39%, #00e642 60%, #0047e6 80%, #bd0bdb 100%);
 -webkit-background-clip: text;
 -webkit-text-fill-color: transparent;
-     }
+}
+
+#logo {
+    text-transform: uppercase;
+}
