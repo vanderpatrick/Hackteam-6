@@ -1,9 +1,9 @@
 from flask_restx import Resource, Namespace 
 from datetime import datetime
 
-from .api_models import event_model, event_input_model
+from .api_models import event_model, event_input_model, contact_model, contact_input_model
 from .extensions import db
-from .models import Event
+from .models import Event, Contact
 
 # Create a namespace (i.e. base_url/api/)
 ns = Namespace("api")
@@ -39,19 +39,18 @@ class EventsListAPI(Resource):
         return event, 201
 
 # Route and function for filtering by year
-@ns.route("/events/<int:year>")
-class EventByYear(Resource):
+@ns.route("/events/<string:country>")
+class EventByCountry(Resource):
 
     @ns.marshal_list_with(event_model)
-    def get(self, year):
+    def get(self, country):
         all_events = Event.query.all()
         events_this_year = []
         for event in all_events:
-            print(str(event.date)[:4])
-            if str(event.date)[:4] == str(year):
+            if str(event.date)[:4] == str(country):
                 events_this_year.append(event)
 
-        return events_this_year
+        return events_this_year[0]
 
 # Create route for deleting and editing
 @ns.route("/events/<int:id>")
@@ -67,7 +66,6 @@ class EventByYear(Resource):
     @ns.marshal_with(event_model)
     def put(self, id):
         event = Event.query.get(id)
-        event.event = ns.payload["event"]
         event.date = datetime.strptime(ns.payload["date"], '%Y-%m-%d')
         event.country = ns.payload["country"]
         event.region = ns.payload["region"]
@@ -77,3 +75,28 @@ class EventByYear(Resource):
         event.long = ns.payload["long"]
         db.session.commit()
         return event
+
+# create route for seeing all events and adding an event
+@ns.route("/contacts")
+class ContactAPI(Resource):
+    # see all events in db
+    # marshall is to return the format defined in event_model
+    @ns.marshal_list_with(contact_model)
+    def get(self):
+        return Contact.query.all()
+    
+    # Create event in db
+    # expect sets the format of payload expected
+    @ns.expect(contact_input_model)
+    @ns.marshal_with(contact_model)
+    def post(self):
+        
+        contact = Contact(
+            email = ns.payload["email"],
+            country = ns.payload["country"],
+            description = ns.payload["description"],
+        )
+        db.session.add(contact)
+        db.session.commit()
+
+        return contact, 201
