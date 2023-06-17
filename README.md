@@ -272,35 +272,47 @@ The goal section provides a concise summary of the main objective or purpose of 
 
 ### Main Languages Used
 
-- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML): The standard markup language for creating web pages.
-- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS): Cascading Style Sheets used for styling the user interface. For more information, refer to the [CSS documentation](https://developer.mozilla.org/en-US/docs/Web/CSS).
-- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript): A programming language used for client-side scripting and frontend development.
-- [Python](https://www.python.org/): A versatile programming language used for backend development.
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML "Link to HTML Docs home page")
+  - The HyperText Markup Language stands for the standard markup language for creating web pages.
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS "Link to CSS Docs home page")
+  - Cascading Style Sheets used for styling the user interface.
+- [JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript "Link to JavaScript Docs home page")
+  - A programming language used for client-side scripting and frontend development.
+- [Python](https://www.python.org/ "Link to Python home page")
+  - A versatile programming language used for backend development.
 
 ### Frameworks, Libraries and Programs Used
 
-- [Tailwind CSS](https://tailwindcss.com/): A utility-first CSS framework for rapid UI development. For more information, refer to the [Tailwind CSS documentation](https://tailwindcss.com/docs).
-- [REST API](https://restfulapi.net/): A set of architectural principles for building web services.
-- [Flask](https://flask.palletsprojects.com/): A lightweight web framework written in Python for building web applications.
-- [Mapbox API](https://www.mapbox.com/): An open-source mapping platform for custom-designed maps and location-based applications.
-- [Render.com](https://render.com/): A cloud platform for deploying and scaling web applications. For more information, refer to the [Render documentation](https://render.com/docs).
-- [PostgreSQL](https://www.postgresql.org/): An open-source relational database management system. For more information, refer to the [PostgreSQL documentation](https://www.postgresql.org/docs).
-
-- [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/)
+- [Tailwind CSS](https://tailwindcss.com/ "Link to Tailwind CSS home page")
+  - A utility-first CSS framework for rapid UI development.
+- [REST API](https://restfulapi.net/ "Link to REST API homepage")
+  - A set of architectural principles for building web services.
+- [Flask](https://flask.palletsprojects.com/ "Link to Flask home page")
+  - A lightweight web framework written in Python for building web applications.
+- [Mapbox API](https://www.mapbox.com/ "Link to Mapbox API homp page")
+  - An open-source mapping platform for custom-designed maps and location-based applications.
+- [Render.com](https://render.com/ "Link to Render home page")
+  - A cloud platform for deploying and scaling web applications.
+- [PostgreSQL](https://www.postgresql.org/ "Link to PostgreSQL home page")
+  - An open-source relational database management system.
+- [Flowbite](https://flowbite.com/docs/getting-started/quickstart/ "Link to Flowbite homepage")
+  - Flowbite was used to create a dropdown button in the navigation bar.
+- [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/ "Link to Canva home page")
   - Canva Color Palette Generator was used to make the initial colour palette.
 - [CSS Gradient](https://cssgradient.io/)
-- CSS Gradient web app was used to make gradient colour backgrounds.
+  - CSS Gradient web app was used to make gradient colour backgrounds.
 - [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
   - Google fonts was used to import the fonts "xxx", into the style.css file. These fonts were used throughout the project.
 - [Font Awesome](https://fontawesome.com/ "Link to FontAwesome")
   - Font Awesome was used on almost all pages throughout the website to import icons (e.g. social media icons) for UX purposes.
 - [GitPod](https://gitpod.io/ "Link to GitPod homepage")
   - GitPod was used for writing code, committing, and then pushing to GitHub.
-- [GitHub](https://github.com/ "Link to GitHub")
-  - GitHub was used to store the project after pushing
+- [GitHub](https://github.com/ "Link to GitHub") - GitHub was used to store the project after pushing
 - [Balsamiq](https://balsamiq.com/ "Link to Balsamiq homepage")
   - Balsamiq was used to create the wireframes during the design phase of the project.
-- [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage") - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
+- [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage")
+
+  - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
 
 - [Peek](https://github.com/phw/peek)
   - Peek was used to make screencasts for the documentation.

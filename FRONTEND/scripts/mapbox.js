@@ -1,3 +1,5 @@
+import popupModal from './modal.js';
+
 const api_key =
     "pk.eyJ1IjoidmFuZGVycGF0cmljayIsImEiOiJjbGl4Z3k0MGIwMjVsM2ZxaHZqb2N1eWRrIn0.0C1bvIus93BFOjdSBb2dMA";
 
@@ -5,6 +7,18 @@ mapboxgl.accessToken = api_key;
 
 // Create reference for map
 const map123 = document.querySelector("#map");
+
+// Colours to choose from
+const colorChoice = [
+    "#E30303",
+    "#E67E00",
+    "#E6D600",
+    "#00E642",
+    "#0047E6",
+    "#BD0BDB"]
+
+// Which color in colorCount
+let colorCount = 0
 
 // Create instance of Map
 const map = new mapboxgl.Map({
@@ -84,6 +98,20 @@ map.on("load", () => {
         }
     });
 
+    // When mouse leaves a country border change the colour
+    map.on("mouseleave", "countries-highlighted-layer", () => {
+        // If it was 5 reset to first color again
+        if (colorCount == 5) {
+            colorCount = 0
+        } else {
+            // otherwise use the next color
+            colorCount = colorCount + 1;
+        }
+        // set the color of the border
+        map.setPaintProperty('countries-highlighted-layer', 'line-color', colorChoice[colorCount]);
+
+    });
+
     // When the mouse leaves the county set the outline back to nothing (i.e. empty string)
     map.on("mouseleave", "countries-layer", () => {
         map.getCanvas().style.cursor = "";
@@ -107,21 +135,14 @@ map.on("load", () => {
         $.ajax({
             type: "GET",
             url: "https://pride-api.onrender.com/api/events",
-            success: function (data) {
+            success: function (eventsDataFromApi) {
                 // Loop through events
-                for (let i = 0; i < data.length; i++) {
+                for (let i = 0; i < eventsDataFromApi.length; i++) {
                     // get country for event from api
-                    let apiCountryName = data[i].country;
+                    let apiCountryName = eventsDataFromApi[i].country;
                     // If the countries match up
                     if (apiCountryName == mapCountryName) {
-                        // Get the description
-                        let apiEventDescription = data[i].description;
-                        // and load it into modal
-                        Swal.fire({
-                            title: apiCountryName,
-                            text: apiEventDescription,
-                            confirmButtonText: "Close",
-                        });
+                        popupModal(eventsDataFromApi[i])
                         break;
                     } else {
                       // If no data is in the database for the clicked country display generic message

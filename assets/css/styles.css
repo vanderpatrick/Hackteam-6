@@ -1,3 +1,4 @@
+/* NAVIGATION BAR */
 .navbar {
     background-color: #343333;
     border-bottom: dashed 6px;
@@ -13,6 +14,7 @@
         1;
 }
 
+<<<<<<< HEAD
 .hero-img {
     background-image: url(/assets/images/Screenshot\ 2023-06-16\ at\ 23.36.03.png);
     background-size: cover;
@@ -20,10 +22,31 @@
     color: white;
     width: 100%;
     height: 80vh;
+=======
+#dropdown {
+    background-color: #343333;  
+    }
+
+.navlink:hover {
+    background: -webkit-linear-gradient(
+        0deg,
+     #ED8E89 0%,
+     #F7B685 19%,
+     #F3EBA5 39%,
+     #94C691 60%, 
+     #9BD6D9 80%, 
+     #B4A8E0 100%
+     );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+>>>>>>> a87d39aae7bbb210c02c81ba07961ef2904da9bb
 }
 
 #logo {
-    text-transform: capitalize;
+    text-transform:  capitalize;
+    font-family: sans-serif;
+    letter-spacing: 2.5px;
+    font-weight: 800;
     background: -webkit-linear-gradient(
         0deg,
         #ed8e89 0%,
@@ -36,6 +59,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
+/* .hero-img {
+    background-color: #0047e6;
+    background-image: url(/assets/images/Screenshot\ 2023-06-16\ at\ 23.36.03.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 400px;
+    padding-bottom: 400px;
+} */
+
+/* FOOTER */
 
 footer {
     background-color: #343333;
@@ -62,6 +97,20 @@ footer {
         #9bd6d9 80%,
         #b4a8e0 100%
     );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* 404 page */
+.rainbow-text {
+    background: -webkit-linear-gradient(
+        0deg,
+        #e30303 0%,
+        #e67e00 19%,
+        #e6d600 39%,
+        #00e642 60%,
+        #0047e6 80%,
+        #bd0bdb 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
