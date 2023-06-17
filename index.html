@@ -1,103 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <style>
-      html,
-      body {
-        height: 100%;
-      }
-    </style>
 
-    <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
-    <link
-      href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
-      rel="stylesheet"
-    />
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
-    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' defer></script>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <style>
+    html,
+    body {
+      height: 100%;
+    }
+  </style>
 
-    <title>Out and About</title>
-  </head>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
+  <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' defer></script>
 
-  <body class="flex flex-col">
-        <!-- Navbar snippet taken from the Tailwind CSS Documentation -->
-        <nav class="flex flex-wrap p-3 navbar items-center justify-between">
-          <div class="flex flex-shrink-0 text-white mr-6">
-              <span class="font-bold text-xl" id="logo"><h1>Out-and-About</h1></span>
+  <title>Out and About</title>
+</head>
+
+<body class="flex flex-col">
+  <!-- Navbar snippet taken from the Tailwind CSS Documentation -->
+  <nav class="flex flex-wrap p-3 navbar items-center justify-between">
+    <div class="flex flex-shrink-0 text-white mr-6">
+      <span class="font-bold text-xl" id="logo">
+        <h1>Out-and-About</h1>
+      </span>
+    </div>
+    <!-- Dropdown menu snippet taken from https://flowbite.com/docs/ -->
+    <button data-collapse-toggle="navbar-dropdown" type="button"
+      class="inline-flex items-center p-2 ml-3 rounded-lg md:hidden text-white navlink" aria-controls="navbar-dropdown"
+      aria-expanded="false">
+      <span class="sr-only">Open main menu</span>
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+      <ul class="flex flex-col font-large lg:mr-5 text-center md:flex-row md:space-x-8 md:mt-0 md:border-0">
+        <li>
+          <a href="index.html" class="text-white navlink active" aria-current="true">About</a>
+        </li>
+        <li>
+          <a href="map.html" class="text-white navlink">Map</a>
+        </li>
+        <li>
+          <a href="contactform.html" class="text-white navlink">Submit</a>
+        </li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+
+  <!--Full page div -->
+  <header
+    class="w-full h-96 bg-[url('assets/images/phils_bg_img_out&ab.png')] bg-cover bg-center flex justify-center items-center">
+    <div class="flex flex-col justify-center items-center">
+      <h1 class=" text-center text-5xl text-white font-bold drop-shadow-lg">WELCOME TO
+        <span class="text-white">OUT AND ABOUT</span>
+      </h1>
+      <p class="mt-5 text-center text-lg text-white opacity-70">Where we explore the rich tapestries of the LGBTQ+
+        community</p>
+      <a class="mt-8 px-12 py-3 bg-gradient-to-r from-amber-500 to-red-600 hover:from-amber-600 hover:to-red-700 text-xl text-white/70 font-semibold drop-shadow-lg rounded-full"
+        href="#">Get Started</a>
+    </div>
+  </header>
+  <!-- <div class="container p-20">
+        <h1 class="text-4xl">Other Content</h1>
+    </div> -->
+
+  <section class="flex items-center py-10 bg-slate-900 xl:h-screen font-poppins">
+    <div class="justify-center flex-1 max-w-6xl py-4 mx-auto lg:py-6 md:px-6">
+      <div class="flex flex-wrap ">
+        <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0">
+          <div class="relative">
+            <img src="assets/images/about_us_image.png" alt=""
+              class="relative z-40 object-cover w-full h-96 lg:rounded-tr-[80px] lg:rounded-bl-[80px] rounded">
+            <div
+              class="absolute z-10 hidden w-full h-full bg-red-400 rounded-bl-[80px] rounded -bottom-6 right-6 lg:block">
+            </div>
+            <div
+              class="absolute z-50 text-red-400 transform -translate-y-1/2 cursor-pointer top-1/2 left-[46%] hover:text-red-500">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="w-14 h-14 bi bi-play-circle-fill" viewBox="0 0 16 16">
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z">
+                </path>
+              </svg>
+            </div>
           </div>
-           <!-- Dropdown menu snippet taken from https://flowbite.com/docs/ -->
-           <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 rounded-lg md:hidden text-white navlink" aria-controls="navbar-dropdown" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="w-full px-4 mb-10 lg:w-1/2 lg:mb-0 ">
+          <div class="relative">
+            <h1
+              class="absolute -top-20 left-0 text-[20px] lg:text-[100px] text-white font-bold  dark:text-gray-200 opacity-5 md:block hidden">
+              About Us
+            </h1>
+            <h1 class="pl-2 text-3xl font-bold border-l-8 border-red-400 md:text-5xl text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-yellow-600">
+              Explore Our World
+            </h1>
+          </div>
+          <p class="mt-6 mb-10 text-base leading-7 text-white dark:text-gray-400">
+            Welcome to Out and About, an interactive world map we have created to educate, enlighten, and celebrate the
+            diverse experiences of queer individuals and the movements that have propelled them forward. Here, we delve
+            into the rich tapestry of struggles, triumphs, and milestones that have shaped the LGBTQ+ community
+            throughout
+            history.
+            <br><br>
+            By exploring our interactive world map, you'll embark on a captivating journey through time, discovering the
+            remarkable stories that have unfolded across continents and cultures. From ancient civilizations that
+            revered
+            same-sex relationships to modern-day milestones in the fight for LGBTQ+ rights, our website brings together
+            a
+            vast collection of historical events, social movements, and influential figures.
+            <!-- The three dots -->
+            <span id="dots">...</span>
+            <span id="more" class="hidden">
+              Join us on this transformative journey through time and space, as we celebrate the triumphs, acknowledge
+              the
+              struggles, and honor the courageous individuals who have paved the way for a more inclusive world.
+              Together,
+              let us create a global community that embraces and uplifts the diverse tapestry of human identities and
+              experiences.
+            </span>
+          </p>
+          <button onclick="toggleText()" id="button"
+            class="px-4 py-3 text-gray-50 transition-all transform bg-red-400 rounded-[80px] hover:grow dark:hover:text-gray-100 dark:text-gray-100">
+            Read more
           </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-col font-large lg:mr-5 text-center md:flex-row md:space-x-8 md:mt-0 md:border-0">
-                <li>
-                  <a href="index.html" class="text-white navlink active" aria-current="true">About</a>
-                </li>
-                <li>
-                  <a href="map.html" class="text-white navlink">Map</a>
-                </li>
-                <li>
-                  <a href="contactform.html" class="text-white navlink">Submit</a>
-                </li>
-              </ul></div>
-          </div>
-           </nav>
-    
-    <!--Full page div -->
-    <div description = "title page container">
-        <!-- Hero Image Div-->
-        <div class="hero-img">
-            <div description = "title">
-                <h1 description = "title">Title of Webpage</h1>
-            </div>
-            <div description="img / slideshow on right">
-                <img src = "">
-            </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-        <!--About us / How to section-->
-        <div description = "main section">
-            <div description = "H2 section">
-                <h2>About Us? / How to?</h2>
-            </div>
-            <div description = "rnd image">
-                <img src="">
-            </div>
-            <div description = "website information">
-                <h2>This could be bullet pointed in a list?"(<ul>)" or a bunch of different paragraph points?</h2>
-            </div>
-            <div description = "Learn more?">
-                <h2>Learn more?</h2>
-            </div>
-        </div>
+  <!-- Commenting out while making changes 
+  <div description="title page container">
+     Hero Image Div
+    <div class="hero-img bg-auto bg-no-repeat bg-center">
+      <div description="title">
+        <h1 description="title">Title of Webpage</h1>
+      </div>
+      <div description="img / slideshow on right">
+        <img src="">
+      </div>
     </div>
 
-    <button id="testButton">dashusaduh</button>
-    <!-- Footer -->
-    <footer class="fixed bottom-0 flex-grow w-full text-center">
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 place-items-center m-3">
-        <div class="footer-text">Idk what goes here</div>
-        <div class="text-white">
-            <a class="m-1 hover:text-red-500" href="http://facebook.com" target="_blank" rel="noopener" aria-label="Our Facebook Page (opens in a new tab)"><i class="fab fa-facebook-f"></i></a>
-            <a class="m-1 hover:text-yellow-400" href="http://twitter.com" target="_blank" rel="noopener" aria-label="Our Twitter Page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
-            <a class="m-1 hover:text-blue-500" href="https://github.com/vanderpatrick/Hackteam-6" target="_blank" rel="noopener" aria-label="Our Github repo (opens in a new tab)"><i class="fa-brands fa-github"></i></i></a>      
-        </div>
-        <div class="footer-text">© 2023 Team Out and About</div>
-      </div></div>
-    </footer>
+    About us / How to section
+    <div description="main section">
+      <div description="H2 section">
+        <h2>About Us</h2>
+      </div>
+      <div description="rnd image">
+        <img src="" class="">
+      </div>
+      <div description="website information">
+        <p class="">Welcome to Out and About, an interactive world map we’ve created to educate, enlighten, and celebrate the
+          diverse experiences of queer individuals and the movements that have propelled them forward. Here, we delve
+          into the rich tapestry of struggles, triumphs, and milestones that have shaped the LGBTQ+ community throughout
+          history.
+          By exploring our interactive world map, you'll embark on a captivating journey through time, discovering the
+          remarkable stories that have unfolded across continents and cultures. From ancient civilizations that revered
+          same-sex relationships to modern-day milestones in the fight for LGBTQ+ rights, our website brings together a
+          vast collection of historical events, social movements, and influential figures.
+          Join us on this transformative journey through time and space, as we celebrate the triumphs, acknowledge the
+          struggles, and honor the courageous individuals who have paved the way for a more inclusive world. Together,
+          let us create a global community that embraces and uplifts the diverse tapestry of human identities and
+          experiences.
+        </p>
+      </div>
+      <div description="Learn more?">
+        <h2>Learn more?</h2>
+      </div>
+    </div>
+  </div>
+
+  <button id="testButton">dashusaduh</button>
+
+   Commenting out while making changes -->
+  <!-- Footer -->
+  <footer class="fixed bottom-0 flex-grow w-full text-center">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 place-items-center m-3">
+      <div class="footer-text">Idk what goes here</div>
+      <div class="text-white">
+        <a class="m-1 hover:text-red-500" href="http://facebook.com" target="_blank" rel="noopener"
+          aria-label="Our Facebook Page (opens in a new tab)"><i class="fab fa-facebook-f"></i></a>
+        <a class="m-1 hover:text-yellow-400" href="http://twitter.com" target="_blank" rel="noopener"
+          aria-label="Our Twitter Page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+        <a class="m-1 hover:text-blue-500" href="https://github.com/vanderpatrick/Hackteam-6" target="_blank"
+          rel="noopener" aria-label="Our Github repo (opens in a new tab)"><i class="fa-brands fa-github"></i></i></a>
+      </div>
+      <div class="footer-text">© 2023 Team Out and About</div>
+    </div>
+    </div>
+  </footer>
 
 
-    <script src="FRONTEND/scripts/mapbox.js" type="module" ></script>
-    <script src="FRONTEND/scripts/modal.js" type="module"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
-  </body>
- 
+  <script src="FRONTEND/scripts/mapbox.js" type="module"></script>
+  <script src="FRONTEND/scripts/modal.js" type="module"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
 </html>
