@@ -1,5 +1,6 @@
 body {
     font-family: "Oxygen", sans-serif;
+    font-family: "Oxygen", sans-serif;
 }
 
 /* NAVIGATION BAR */
@@ -57,4 +58,14 @@ footer {
 }
 #map {
     background-color: #0f182f;
+}
+
+#contact-img {
+    background-color: #0047e6;
+    background-image: url(/assets/images/Screenshot\ 2023-06-17\ at\ 23.39.26.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
