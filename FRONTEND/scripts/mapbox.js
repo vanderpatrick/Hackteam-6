@@ -6,6 +6,18 @@ mapboxgl.accessToken = api_key;
 // Create reference for map
 const map123 = document.querySelector("#map");
 
+// Colours to choose from
+const colorChoice = [
+    "#E30303",
+    "#E67E00",
+    "#E6D600",
+    "#00E642",
+    "#0047E6",
+    "#BD0BDB"]
+
+// Which color in colorCount
+let colorCount = 0
+
 // Create instance of Map
 const map = new mapboxgl.Map({
     container: map123,
@@ -82,6 +94,20 @@ map.on("load", () => {
                 hoveredCountryISO,
             ]);
         }
+    });
+
+    // When mouse leaves a country border change the colour
+    map.on("mouseleave", "countries-highlighted-layer", () => {
+        // If it was 5 reset to first color again
+        if (colorCount == 5) {
+            colorCount = 0
+        } else {
+            // otherwise use the next color
+            colorCount = colorCount + 1;
+        }
+        // set the color of the border
+        map.setPaintProperty('countries-highlighted-layer', 'line-color', colorChoice[colorCount]);
+
     });
 
     // When the mouse leaves the county set the outline back to nothing (i.e. empty string)
