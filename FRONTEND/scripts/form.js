@@ -1,11 +1,13 @@
 const form = document.querySelector('form');
 
 form.addEventListener('submit', function (event) {
+  console.log(event);
   event.preventDefault();
 
   const formData = new FormData(form);
 
   const jsonData = JSON.stringify(Object.fromEntries(formData));
+  console.log(jsonData);
 
   fetch('https://pride-api.onrender.com/api/contacts', {
     method: 'POST',
