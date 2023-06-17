@@ -1,53 +1,19 @@
-/* NAVIGATION BAR */
-.navbar {
-    background-color: #343333;
-    border-bottom: dashed 6px;
-    border-image: linear-gradient(
-            90deg,
-            #e30303 0%,
-            #e67e00 19%,
-            #e6d600 39%,
-            #00e642 60%,
-            #0047e6 80%,
-            #bd0bdb 100%
-        )
-        1;
+body {
+    font-family: "Oxygen", sans-serif;
 }
 
-#dropdown {
-    background-color: #343333;  
-    }
-
-.navlink:hover {
-    background: -webkit-linear-gradient(
-        0deg,
-     #ED8E89 0%,
-     #F7B685 19%,
-     #F3EBA5 39%,
-     #94C691 60%, 
-     #9BD6D9 80%, 
-     #B4A8E0 100%
-     );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+/* NAVIGATION BAR */
+.navbar {
+    border-bottom: solid 6px rgb(248 113 113);
+    font-family: "Oxygen", sans-serif;
+    font-weight: 900;
 }
 
 #logo {
-    text-transform:  capitalize;
-    font-family: sans-serif;
+    text-transform: capitalize;
+    font-family: "Oxygen", sans-serif;
     letter-spacing: 2.5px;
     font-weight: 800;
-    background: -webkit-linear-gradient(
-        0deg,
-        #ed8e89 0%,
-        #f7b685 19%,
-        #f3eba5 39%,
-        #94c691 60%,
-        #9bd6d9 80%,
-        #b4a8e0 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
 }
 
 /* .hero-img {
@@ -67,32 +33,8 @@
 /* FOOTER */
 
 footer {
-    background-color: #343333;
-    border-top: dashed 6px;
-    border-image: linear-gradient(
-            200deg,
-            #e30303 0%,
-            #e67e00 19%,
-            #e6d600 39%,
-            #00e642 60%,
-            #0047e6 80%,
-            #bd0bdb 100%
-        )
-        1;
-}
-
-.footer-text {
-    background: -webkit-linear-gradient(
-        0deg,
-        #ed8e89 0%,
-        #f7b685 19%,
-        #f3eba5 39%,
-        #94c691 60%,
-        #9bd6d9 80%,
-        #b4a8e0 100%
-    );
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    border-top: solid 6px rgb(248 113 113);
+    font-family: "Oxygen", sans-serif;
 }
 
 /* 404 page */
@@ -104,7 +46,21 @@ footer {
         #e6d600 39%,
         #00e642 60%,
         #0047e6 80%,
-        #bd0bdb 100%);
+        #bd0bdb 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+#map {
+    background-color: #0f182f;
+}
+
+#contact-img {
+    background-color: #0047e6;
+    background-image: url(/assets/images/Screenshot\ 2023-06-17\ at\ 23.39.26.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
