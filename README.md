@@ -255,6 +255,19 @@ Each page within the site has a consistent and responsive navigation system. The
 - **[Contact Page](# "CONTACT")** - The page on which there's a form for a user to fill in if wanting to contribute with an update or addition to the map information.
 - **[404 Page](# "404 PAGE")** - 404 error page Pride Themed .
 
+#### Database Models
+
+##### Pride Event
+
+This data model describes events that happen across the world.
+
+
+
+
+#### API for pride events
+
+
+
 ### Features to Implement in the future
 
 - ...
