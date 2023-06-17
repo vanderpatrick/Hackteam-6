@@ -104,3 +104,7 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+#map {
+    background-color: #0f182f;
+  }
+  
