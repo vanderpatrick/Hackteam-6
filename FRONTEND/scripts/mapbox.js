@@ -35,6 +35,7 @@ const map = new mapboxgl.Map({
 
 // On map load
 map.on("load", () => {
+    let intervalID;
     // remove labels from map
     map.style.stylesheet.layers.forEach(function (layer) {
         if (layer.type === "symbol") {
@@ -76,6 +77,18 @@ map.on("load", () => {
 
     // When the mouse moves over the country layer
     map.on("mousemove", "countries-layer", (e) => {
+        clearInterval(intervalID);
+        intervalID = setInterval(() => {
+            // Increment the colorCount variable
+            colorCount = (colorCount + 1) % colorChoice.length;
+
+            // Set the color of the border
+            map.setPaintProperty(
+                "countries-highlighted-layer",
+                "line-color",
+                colorChoice[colorCount]
+            );
+        }, 1500);
         // Change the mouse to style of pointer
         map.getCanvas().style.cursor = "pointer";
 
