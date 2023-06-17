@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
     <style>
       html,
       body {
@@ -16,32 +17,64 @@
       href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' defer></script>
 
-
-    <title>Sticky Navbar and Footer</title>
+    <title>Out and About</title>
   </head>
 
   <body class="flex flex-col">
-    <nav class="bg-gray-800 text-white py-4 sticky top-0">
-      <div class="container mx-auto px-4">
-        <p class="text-xl change font-bold">This is the Navbar</p>
-      </div>
-    </nav>
+    
+        <!-- Navbar snippet taken from the Tailwind CSS Documentation -->
+        <nav class="flex flex-wrap p-3 navbar items-center justify-between">
+          <div class="flex flex-shrink-0 text-white mr-6">
+              <span class="font-bold text-xl" id="logo"><h1>Out-and-About</h1></span>
+          </div>
+           <!-- Dropdown menu snippet taken from https://flowbite.com/docs/ -->
+           <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 rounded-lg md:hidden text-white navlink" aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul class="flex flex-col font-large lg:mr-5 text-center md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                <li>
+                  <a href="index.html" class="text-white navlink active" aria-current="true">About</a>
+                </li>
+                <li>
+                  <a href="map.html" class="text-white navlink">Map</a>
+                </li>
+                <li>
+                  <a href="contactform.html" class="text-white navlink">Submit</a>
+                </li>
+              </ul></div>
+          </div>
+           </nav>
 
-    <div class="flex-grow container mx-auto py-8 px-4">
-      <div id='map' style='width: 100%; height: 600px;'></div>
+
+    <div class="container">
+      <div id='map' style='width: 100vw; height: 80vh;'></div>
 
       </div>
     </div>
-    <button id="testButton">dashusaduh</button>
-    <footer class="bg-gray-800 text-white py-4 sticky bottom-0">
-      <div class="container mx-auto px-4 text-center">
-        <p>&copy; 2023 This is the Sticky Footer. All rights reserved.</p>
-      </div>
+    
+     <!-- Footer -->
+     <footer class="fixed bottom-0 flex-grow w-full text-center">
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 place-items-center m-3">
+        <div class="footer-text">Idk what goes here</div>
+        <div class="text-white">
+            <a class="m-1 hover:text-red-500" href="http://facebook.com" target="_blank" rel="noopener" aria-label="Our Facebook Page (opens in a new tab)"><i class="fab fa-facebook-f"></i></a>
+            <a class="m-1 hover:text-yellow-400" href="http://twitter.com" target="_blank" rel="noopener" aria-label="Our Twitter Page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
+            <a class="m-1 hover:text-blue-500" href="https://github.com/vanderpatrick/Hackteam-6" target="_blank" rel="noopener" aria-label="Our Github repo (opens in a new tab)"><i class="fa-brands fa-github"></i></i></a>      
+        </div>
+        <div class="footer-text">© 2023 Team Out and About</div>
+      </div></div>
     </footer>
+
     <script src="FRONTEND/scripts/mapbox.js" type="module" ></script>
     <script src="FRONTEND/scripts/modal.js" type="module"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
   </body>
  
 </html>
