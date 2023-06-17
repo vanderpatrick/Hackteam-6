@@ -1,4 +1,4 @@
-# Hackteam-6
+# Team Out and About
 
 # Out and About: Interactive World Map of Pride Events
 
@@ -50,7 +50,7 @@ In this section, we will briefly discuss how our team addressed the applicable c
 
 ## Intro
 
-Out and About is an exciting project that aims to create an interactive world map showcasing Pride events happening across different countries. The project focuses on promoting inclusivity, diversity, and the celebration of LGBTQ+ communities worldwide.
+Out and About is an exciting project that aims to create an interactive world map showcasing Pride events happening across different countries. This Full Stack project focuses on promoting inclusivity, diversity, and the celebration of LGBTQ+ communities worldwide.
 With the Out and About platform, users will have the opportunity to explore a dynamic map that highlights some important Pride events. By clicking on specific countries, users can access some general information about each event, including dates, locations, and event descriptions or can contribute to the project by sending updated or missing information. Out and About aims to serve as a comprehensive resource for the LGBTQ+ community and allies, fostering a sense of unity and awareness about Pride celebrations worldwide.
 
 ## User Experience
@@ -244,7 +244,7 @@ The images are taken from the different sources and are credited in the Credits 
 Each page within the site has a consistent and responsive navigation system. The details of features on the site are detailed below.
 
 - The **Header** with the **Navigation Bar** is positioned at the top of the page.
-- The **Footer** stays at the bottom of the screen at all times, on all screen sizes. All social media links on the footer open in a new tab. They are Instagram, GitHub and Facebook pages of the _[SCRUM Master]_. The copyright info quotes _[COPYRIGHT INFO]_ . --> _X or we could add the GitHub links of the whole team??? X_
+- The **Footer** stays at the bottom of the screen at all times, on all screen sizes. All social media links on the footer open in a new tab. They are Facebook, Twitter and GitHub pages. The copyright info quotes **© 2023 Team Out and About**.
 
 ### Existing Features
 
