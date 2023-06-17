@@ -15,25 +15,25 @@
 }
 
 #dropdown {
-    background-color: #343333;  
-    }
+    background-color: #343333;
+}
 
 .navlink:hover {
     background: -webkit-linear-gradient(
         0deg,
-     #ED8E89 0%,
-     #F7B685 19%,
-     #F3EBA5 39%,
-     #94C691 60%, 
-     #9BD6D9 80%, 
-     #B4A8E0 100%
-     );
+        #ed8e89 0%,
+        #f7b685 19%,
+        #f3eba5 39%,
+        #94c691 60%,
+        #9bd6d9 80%,
+        #b4a8e0 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 #logo {
-    text-transform:  capitalize;
+    text-transform: capitalize;
     font-family: sans-serif;
     letter-spacing: 2.5px;
     font-weight: 800;
@@ -50,15 +50,14 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* .hero-img {
-    background-color: #0047e6;
+.hero-img {
     background-image: url(/assets/images/Screenshot\ 2023-06-16\ at\ 23.36.03.png);
     background-size: cover;
     background-position: center;
     color: white;
-    padding-top: 400px;
-    padding-bottom: 400px;
-} */
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
 
 /* FOOTER */
 
@@ -100,7 +99,8 @@ footer {
         #e6d600 39%,
         #00e642 60%,
         #0047e6 80%,
-        #bd0bdb 100%);
+        #bd0bdb 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
