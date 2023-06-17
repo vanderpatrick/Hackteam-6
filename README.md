@@ -257,15 +257,143 @@ Each page within the site has a consistent and responsive navigation system. The
 
 #### Database Models
 
-##### Pride Event
+A PostgreSQL database hosted on render.com was used to hold the data collected for pride events. 
 
-This data model describes events that happen across the world.
+##### Pride Event Model
 
+Model describing a pride related event that happen across the world.
 
+| Key         | Name        | Type         | Extra Info      |
+|-------------|-------------|--------------|-----------------|
+| PrimaryKey  | id          | Integer      | Unique id       |
+|             | event       | String       | Title of Event  |
+|             | date        | Date         | Date event happened |
+|             | country     | String       | Country event happened in |
+|             | region      | String       | Region event happened in |
+|             | description | String       | Description of even |
+|             | image_link  | String       | Link to related image |
+|             | lat         | String       |                 |
+|             | long        | String       |                 |
 
+##### Contact Event Model
+
+Model describing the information provided through contact form
+
+| Key         | Name        | Type         | Extra Info      |
+|-------------|-------------|--------------|-----------------|
+| PrimaryKey  | id          | Integer      |                 |
+|             | email       | String       | email of contact|
+|             | country     | String       | Country event happened in |
+|             | description | String       | Description of even |
 
 #### API for pride events
 
+An API was built using Flask and flask_restx to handle different query's between the website and the database. It was hosted as a Web Service on render.com. The query's and url paths are explained below.
+
+BASE_URL = https://pride-api.onrender.com
+
+##### Get all events
+
+Type of HTTP request: GET
+
+URL: {BASE_URL}/api/events
+
+On a successful request it returns a status of `200` and all the events in the database as a list in the format of:
+
+```
+[
+  {
+    "id": 0,
+    "event": "string",
+    "date": "string",
+    "country": "string",
+    "region": "string",
+    "description": "string",
+    "image_link": "string",
+    "lat": "string",
+    "long": "string"
+  },
+  .
+  .
+  .
+]
+```
+
+##### Add an event
+
+Type of HTTP request: PUT
+
+URL: {BASE_URL}/api/events
+
+Package sent with PUT request is sent in the following format:
+
+```
+{
+  "event": "string",
+  "date": "string", // in the format of '%Y-%m-%d'
+  "country": "string",
+  "region": "string",
+  "description": "string",
+  "image_link": "string",
+  "lat": "string",
+  "long": "string"
+}
+```
+On a successful request it returns it returns `200` and the newly added event with an `id` in the 
+
+```
+
+```
+
+##### 
+
+Type of HTTP request: 
+
+URL: {BASE_URL}
+
+```
+
+```
+
+##### 
+
+Type of HTTP request: 
+
+URL: {BASE_URL}
+
+```
+
+```
+
+##### 
+
+Type of HTTP request: 
+
+URL: {BASE_URL}
+
+```
+
+```
+
+##### 
+
+Type of HTTP request: 
+
+URL: {BASE_URL}
+
+```
+
+```
+
+##### 
+
+Type of HTTP request: 
+
+URL: {BASE_URL}
+
+```
+
+```
 
 
 ### Features to Implement in the future

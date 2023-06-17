@@ -21,28 +21,48 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.18/dist/sweetalert2.all.min.js"></script>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
     <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js' defer></script>
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon-ao.png">
+  <link rel="manifest" href="/site.webmanifest">
     <title>Out and About</title>
   </head>
 
   <body class="flex flex-col">
     
-        <!-- Navbar snippet taken from the Tailwind CSS Documentation -->
-        <nav class="flex flex-wrap p-3 navbar items-center justify-between">
-          <div class="flex flex-shrink-0 text-white mr-6">
-              <a href="index.html" class="font-bold text-xl" id="logo"  aria-current="true">Out-and-About</a>
-          </div>
-           <!-- Dropdown menu snippet taken from https://flowbite.com/docs/ -->
-           <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 rounded-lg md:hidden text-white navlink" aria-controls="navbar-dropdown" aria-expanded="false">
-            <span class="sr-only">Open main menu</span>
-            <i class="fa-solid fa-bars"></i>
-          </button>
-          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
-            <ul class="flex flex-col font-large lg:mr-5 text-center md:flex-row md:space-x-8 md:mt-0 md:border-0">
-                <li>
-                  <a href="index.html" class="text-white navlink active" aria-current="true">About</a>
-                  <input type="text" id="searchInput" placeholder="Enter country name">
+<!-- Navbar snippet taken from the Tailwind CSS Documentation -->
+<nav class="flex flex-wrap p-3 navbar items-center justify-between bg-slate-900">
+  <div class="flex flex-shrink-0 text-red-400 mr-6">
+    <span class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-yellow-600" id="logo">
+      <a href="index.html"><h1>Out-and-About</h1></a>
+    </span>
+  </div>
+  <!-- Dropdown menu snippet taken from https://flowbite.com/docs/ -->
+  <button data-collapse-toggle="navbar-dropdown" type="button"
+    class="inline-flex items-center p-2 ml-3 rounded-lg md:hidden text-red-400 navlink" aria-controls="navbar-dropdown"
+    aria-expanded="false">
+    <span class="sr-only">Open main menu</span>
+    <i class="fa-solid fa-bars"></i>
+  </button>
+  <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+    <ul class="flex flex-col font-large lg:mr-5 text-center md:flex-row md:space-x-8 md:mt-0 md:border-0">
+      <li>
+        <a href="index.html" class="text-red-400 hover:text-yellow-600">Home</a>
+      </li>
+      <li>
+        <a href="map.html" class="text-red-400 hover:text-yellow-600 active" aria-current="true">Map</a>
+      </li>
+      <li>
+        <a href="contactform.html" class="text-red-400 hover:text-yellow-600">Submit</a>
+      </li>
+    </ul>
+  </div>
+  </div>
+</nav>
+     <input type="text" id="searchInput" placeholder="Enter country name">
 <button id="searchButton">Search</button>
+<<<<<<< HEAD
                 </li>
                 <li>
                   <a href="map.html" class="text-white navlink">Map</a>
@@ -56,23 +76,29 @@
 
 
     <div class="container-for-map">
+=======
+    <div class="container">
+>>>>>>> 201b39cd53b9ed6cef6bc003abab33e6063b83d7
       <div id='map' style='width: 100vw; height: 80vh;'></div>
 
       </div>
     </div>
     
-     <!-- Footer -->
-     <footer class="fixed bottom-0 flex-grow w-full text-center">
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 place-items-center m-3">
-        <div class="footer-text">Idk what goes here</div>
-        <div class="text-white">
-            <a class="m-1 hover:text-red-500" href="http://facebook.com" target="_blank" rel="noopener" aria-label="Our Facebook Page (opens in a new tab)"><i class="fab fa-facebook-f"></i></a>
-            <a class="m-1 hover:text-yellow-400" href="http://twitter.com" target="_blank" rel="noopener" aria-label="Our Twitter Page (opens in a new tab)"><i class="fab fa-twitter"></i></a>
-            <a class="m-1 hover:text-blue-500" href="https://github.com/vanderpatrick/Hackteam-6" target="_blank" rel="noopener" aria-label="Our Github repo (opens in a new tab)"><i class="fa-brands fa-github"></i></i></a>      
-        </div>
-        <div class="footer-text">© 2023 Team Out and About</div>
-      </div></div>
-    </footer>
+ <!-- Footer -->
+ <footer class="bottom-0 flex-grow w-full text-center bg-slate-900">
+  <div class="grid md:grid-cols-2 lg:grid-cols-2 place-items-center m-3">
+      <div class="text-red-400">
+      <a class="m-1" href="http://facebook.com" target="_blank" rel="noopener"
+        aria-label="Our Facebook Page (opens in a new tab)"><i class="fab fa-facebook-f hover:text-yellow-600"></i></a>
+      <a class="m-1" href="http://twitter.com" target="_blank" rel="noopener"
+        aria-label="Our Twitter Page (opens in a new tab)"><i class="fab fa-twitter hover:text-yellow-600"></i></a>
+      <a class="m-1" href="https://github.com/vanderpatrick/Hackteam-6" target="_blank"
+        rel="noopener" aria-label="Our Github repo (opens in a new tab)"><i class="fa-brands fa-github hover:text-yellow-600"></i></i></a>
+      <br><p class="text-red-400 text-xs">© 2023 Team Out and About</p>
+      </div>
+  <div class="text-red-400 hover:text-yellow-600 oxygen"><a href="contactform.html">Contribute to the map</a></div>
+  <div>
+</footer>
 
     <script src="FRONTEND/scripts/mapbox.js" type="module" ></script>
     <script src="FRONTEND/scripts/modal.js" type="module"></script>
