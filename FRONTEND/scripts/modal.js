@@ -1,13 +1,16 @@
-
-const handleTestEvent = () => {
+const popupModal = (eventDataFromApi) => {
   Swal.fire({
-    title: 'Test Event',
-    text: 'This is a test event!',
-    icon: 'info',
-    confirmButtonText: 'OK'
-  });
+    title: eventDataFromApi.event,
+    html:
+      '<p>' + eventDataFromApi.date + '</p>' + '<br/>' +
+      '<p>' + eventDataFromApi.country + ',' + eventDataFromApi.region + '</p>' + '<br/>' +
+      eventDataFromApi.description,
+    showCloseButton: true,
+    focusConfirm: false,
+    confirmButtonText:
+      'Exit',
+    confirmButtonAriaLabel: 'Exit',
+  })
 };
 
-
-
-export default handleTestEvent;
+export default popupModal;
