@@ -1,20 +1,20 @@
 body {
-    font-family: 'Oxygen', sans-serif;
+    font-family: "Oxygen", sans-serif;
 }
 
 /* NAVIGATION BAR */
 .navbar {
-    border-bottom: solid 6px rgb(248 113 113); 
-    font-family: 'Oxygen', sans-serif;
+    border-bottom: solid 6px rgb(248 113 113);
+    font-family: "Oxygen", sans-serif;
     font-weight: 900;
 }
 
 #logo {
-    text-transform:  capitalize;
-    font-family: 'Oxygen', sans-serif;
+    text-transform: capitalize;
+    font-family: "Oxygen", sans-serif;
     letter-spacing: 2.5px;
     font-weight: 800;
-    }
+}
 
 /* .hero-img {
     background-color: #0047e6;
@@ -34,7 +34,7 @@ body {
 
 footer {
     border-top: solid 6px rgb(248 113 113);
-    font-family: 'Oxygen', sans-serif;   
+    font-family: "Oxygen", sans-serif;
 }
 
 /* 404 page */
@@ -46,11 +46,21 @@ footer {
         #e6d600 39%,
         #00e642 60%,
         #0047e6 80%,
-        #bd0bdb 100%);
+        #bd0bdb 100%
+    );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 #map {
     background-color: #0f182f;
-  }
-  
+}
+
+#contact-img {
+    background-color: #0047e6;
+    background-image: url(/assets/images/Screenshot\ 2023-06-17\ at\ 23.39.26.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
