@@ -24,13 +24,27 @@ let colorCount = 0
 const map = new mapboxgl.Map({
     container: map123,
     style: "mapbox://styles/mapbox/light-v10",
-    center: [0, 20],
-    zoom: -4,
-    dragPan: false,
+    center: [0, 0],
+    zoom: -5,
+    // dragPan: false,
     renderWorldCopies: false,
     scrollZoom: false,
     boxZoom: false,
     doubleClickZoom: false,
+    style: {
+        version: 8,
+        sources: {
+
+        },
+        layers: [
+          {
+            id: 'background',
+            type: 'background',
+            paint: { 'background-color': '#0f172a' }
+          }
+        ]
+
+      },
 });
 
 // On map load
@@ -52,9 +66,8 @@ map.on("load", () => {
         },
         "source-layer": "country_boundaries",
         paint: {
-            "fill-color": "#ffffff",
-            "fill-opacity": 0.6,
-        },
+            "fill-color": "#F46D71",
+        }
     });
     // Then the layer that allows highlighting in blue on hover (hidden on load)
     map.addLayer({
