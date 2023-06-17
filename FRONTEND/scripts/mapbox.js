@@ -23,15 +23,29 @@ let colorCount = 0;
 
 // Create instance of Map
 const map = new mapboxgl.Map({
-  container: map123,
-  style: "mapbox://styles/mapbox/light-v10",
-  center: [0, 20],
-  zoom: -4,
-  dragPan: false,
-  renderWorldCopies: false,
-  scrollZoom: false,
-  boxZoom: false,
-  doubleClickZoom: false,
+    container: map123,
+    style: "mapbox://styles/mapbox/light-v10",
+    center: [0, 0],
+    zoom: -5,
+    // dragPan: false,
+    renderWorldCopies: false,
+    scrollZoom: false,
+    boxZoom: false,
+    doubleClickZoom: false,
+    style: {
+        version: 8,
+        sources: {
+
+        },
+        layers: [
+          {
+            id: 'background',
+            type: 'background',
+            paint: { 'background-color': '#0f172a' }
+          }
+        ]
+
+      },
 });
 // On map style load 
 map.on('style.load', function (){
@@ -48,38 +62,36 @@ map.on("load", () => {
     map.setPaintProperty('background', 'background-color', '#0f182')
   });
 
-
-  // the layer for outlining countries (in white originally)
-  map.addLayer({
-    id: "countries-layer",
-    type: "fill",
-    source: {
-      type: "vector",
-      url: "mapbox://mapbox.country-boundaries-v1",
-    },
-    "source-layer": "country_boundaries",
-    paint: {
-      "fill-color": "#ffffff",
-      "fill-opacity": 0.6,
-    },
-  });
-  // Then the layer that allows highlighting in blue on hover (hidden on load)
-  map.addLayer({
-    id: "countries-highlighted-layer",
-    type: "line",
-    source: {
-      type: "vector",
-      url: "mapbox://mapbox.country-boundaries-v1",
-    },
-    "source-layer": "country_boundaries",
-    paint: {
-      "line-color": "#0000ff",
-      "line-opacity": 1,
-      "line-width": 2,
-    },
-    // Initially hide the highlighted layer
-    filter: ["==", "iso_3166_1_alpha_2", ""],
-  });
+    // the layer for outlining countries (in white originally)
+    map.addLayer({
+        id: "countries-layer",
+        type: "fill",
+        source: {
+            type: "vector",
+            url: "mapbox://mapbox.country-boundaries-v1",
+        },
+        "source-layer": "country_boundaries",
+        paint: {
+            "fill-color": "#F46D71",
+        }
+    });
+    // Then the layer that allows highlighting in blue on hover (hidden on load)
+    map.addLayer({
+        id: "countries-highlighted-layer",
+        type: "line",
+        source: {
+            type: "vector",
+            url: "mapbox://mapbox.country-boundaries-v1",
+        },
+        "source-layer": "country_boundaries",
+        paint: {
+            "line-color": "#0000ff",
+            "line-opacity": 1,
+            "line-width": 2,
+        },
+        // Initially hide the highlighted layer
+        filter: ["==", "iso_3166_1_alpha_2", ""],
+    });
 
   // When the mouse moves over the country layer
   map.on("mousemove", "countries-layer", (e) => {
