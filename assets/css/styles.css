@@ -26,6 +26,10 @@ body {
     padding-bottom: 400px;
 } */
 
+.hero {
+    height: 1000px;
+}
+
 /* FOOTER */
 
 footer {
@@ -46,3 +50,7 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+#map {
+    background-color: #0f182f;
+  }
+  

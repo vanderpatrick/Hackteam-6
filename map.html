@@ -60,6 +60,32 @@
   </div>
   </div>
 </nav>
+        <!-- Navbar snippet taken from the Tailwind CSS Documentation -->
+        <nav class="flex flex-wrap p-3 navbar items-center justify-between">
+          <div class="flex flex-shrink-0 text-white mr-6">
+              <a href="index.html" class="font-bold text-xl" id="logo"  aria-current="true">Out-and-About</a>
+          </div>
+           <!-- Dropdown menu snippet taken from https://flowbite.com/docs/ -->
+           <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 ml-3 rounded-lg md:hidden text-white navlink" aria-controls="navbar-dropdown" aria-expanded="false">
+            <span class="sr-only">Open main menu</span>
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+            <ul class="flex flex-col font-large lg:mr-5 text-center md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                <li>
+                  <a href="index.html" class="text-white navlink active" aria-current="true">About</a>
+                  <input type="text" id="searchInput" placeholder="Enter country name">
+<button id="searchButton">Search</button>
+                </li>
+                <li>
+                  <a href="map.html" class="text-white navlink">Map</a>
+                </li>
+                <li>
+                  <a href="contactform.html" class="text-white navlink">Submit</a>
+                </li>
+              </ul></div>
+          </div>
+           </nav>
 
 
     <div class="container">
