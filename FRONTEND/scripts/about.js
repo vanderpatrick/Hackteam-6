@@ -1,4 +1,5 @@
-function toggleText() {
+document.getElementById("button").onclick = function () {
+    console.log("Testing");
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
     var button = document.getElementById("button");
@@ -11,7 +12,7 @@ function toggleText() {
         moreText.classList.add("hidden");
         
         // change text of the button
-        //button.innerHTML = "Read more";
+        button.innerHTML = "Read more";
     } else {
         // Hide the dots
         dots.classList.add("hidden");
@@ -22,4 +23,8 @@ function toggleText() {
         // Change text of the button
         button.innerHTML = "Read less";
     }
+
+    
 }
+
+console.log("Test 2");
