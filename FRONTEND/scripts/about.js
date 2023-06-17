@@ -1,8 +1,8 @@
-document.getElementById("button").onclick = function () {
-    console.log("Testing");
+document.getElementById("readbutton").onclick = function () {
+
     var dots = document.getElementById("dots");
     var moreText = document.getElementById("more");
-    var button = document.getElementById("button");
+    var button = document.getElementById("readbutton");
 
     if (dots.classList.contains("hidden")) {
         // Show the dots
@@ -26,5 +26,3 @@ document.getElementById("button").onclick = function () {
 
     
 }
-
-console.log("Test 2");
