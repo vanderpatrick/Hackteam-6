@@ -1,3 +1,5 @@
+import popupModal from './modal.js';
+
 const api_key =
     "pk.eyJ1IjoidmFuZGVycGF0cmljayIsImEiOiJjbGl4Z3k0MGIwMjVsM2ZxaHZqb2N1eWRrIn0.0C1bvIus93BFOjdSBb2dMA";
 
@@ -133,21 +135,14 @@ map.on("load", () => {
         $.ajax({
             type: "GET",
             url: "https://pride-api.onrender.com/api/events",
-            success: function (data) {
+            success: function (eventsDataFromApi) {
                 // Loop through events
-                for (let i = 0; i < data.length; i++) {
+                for (let i = 0; i < eventsDataFromApi.length; i++) {
                     // get country for event from api
-                    let apiCountryName = data[i].country;
+                    let apiCountryName = eventsDataFromApi[i].country;
                     // If the countries match up
                     if (apiCountryName == mapCountryName) {
-                        // Get the description
-                        let apiEventDescription = data[i].description;
-                        // and load it into modal
-                        Swal.fire({
-                            title: apiCountryName,
-                            text: apiEventDescription,
-                            confirmButtonText: "Close",
-                        });
+                        popupModal(eventsDataFromApi[i])
                         break;
                     } else {
                       // If no data is in the database for the clicked country display generic message
