@@ -47,7 +47,7 @@ class EventByCountry(Resource):
         all_events = Event.query.all()
         events_this_year = []
         for event in all_events:
-            if str(event.date)[:4] == str(country):
+            if event.country == country:
                 events_this_year.append(event)
 
         return events_this_year[0]
