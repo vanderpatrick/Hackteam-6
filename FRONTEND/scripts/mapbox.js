@@ -1,5 +1,4 @@
 import requestCountry from "./country-search.js";
-import requestPoints from "./load-markers.js";
 
 const api_key =
     "pk.eyJ1IjoidmFuZGVycGF0cmljayIsImEiOiJjbGl4Z3k0MGIwMjVsM2ZxaHZqb2N1eWRrIn0.0C1bvIus93BFOjdSBb2dMA";
@@ -48,124 +47,70 @@ const map = new mapboxgl.Map({
 });
 
 // let markerPoints = [];
-// let features = [];
-// $.ajax({
-//     type: "GET",
-//     url: "https://pride-api.onrender.com/api/events",
-//     success: function (eventsDataFromApi) {
+let features = [];
+$.ajax({
+    type: "GET",
+    url: "https://pride-api.onrender.com/api/events",
+    success: function (eventsDataFromApi) {
+        // get country for event from api
+        for (let eventFromApi in eventsDataFromApi) {
+            // get values for event from api
+            let lat = eventsDataFromApi[eventFromApi].lat;
+            let long = eventsDataFromApi[eventFromApi].long;
+            let country = eventsDataFromApi[eventFromApi].country;
+            let region = eventsDataFromApi[eventFromApi].region;
+            features.push({
+                type: "Feature",
+                geometry: {
+                    type: "Point",
+                    coordinates: [long, lat],
+                },
+                properties: {
+                    title: country,
+                    description: region,
+                },
+            });
 
-//         // get country for event from api
-//         for (let eventFromApi in eventsDataFromApi) {
-//             // get country for event from api
+            // Create geojson feature
+            const geojson = {
+                type: "FeatureCollection",
+                features: features,
+            };
 
-//             let lat = eventsDataFromApi[eventFromApi].lat;
-//             let long = eventsDataFromApi[eventFromApi].long;
-//             let country = eventsDataFromApi[eventFromApi].country;
-//             let region = eventsDataFromApi[eventFromApi].region;
-//             features.push({
-//               'type': 'Feature',
-//               'geometry': {
-//               'type': 'Point',
-//               'coordinates': [long, lat]
-//               },
-//               'properties': {
-//               'title': country,
-//               'description': region
-//               }});
-//         }
+            // Loop through and add markers
+            for (const feature of geojson.features) {
+                // create a HTML element for each feature
+                const el = document.createElement("div");
+                el.className = "marker";
 
-//     },
-//     error: function(jqXHR, textStatus, errorThrown) {
+                // make a marker for each feature and add it to the map
+                new mapboxgl.Marker(el)
+                    .setLngLat(feature.geometry.coordinates)
+                    .setPopup(
+                        new mapboxgl.Popup({ offset: 0 }) // add popups
+                            .setHTML(
+                                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+                            )
+                    )
+                    .addTo(map);
+            }
+        }
+    },
+    error: function (jqXHR, textStatus, errorThrown) {
+        // Handle other error cases
+        console.log("AJAX request error:", textStatus, errorThrown);
+        Swal.fire({
+            title: "Error",
+            text: "An error occurred while fetching markers for the map. Please try again later.",
+            confirmButtonText: "Close",
+            icon: "error",
+        });
+    },
+});
 
-//           // Handle other error cases
-//           console.log("AJAX request error:", textStatus, errorThrown);
-//           Swal.fire({
-//             title: "Error",
-//             text: "An error occurred while fetching markers for the map. Please try again later.",
-//             confirmButtonText: "Close",
-//             icon: "error"
-//           });
-//         }
-// });
 
-// console.log("features", features)
-// const geojson = {
-//   'type': 'FeatureCollection',
-//   'features': features};
-
-// add markers to map
-// for (const feature of features) {
-//   // create a HTML element for each feature
-//   const el = document.createElement('div');
-//   el.className = 'marker';
-
-//   // make a marker for each feature and add it to the map
-//   new mapboxgl.Marker(el)
-//   .setLngLat(feature.geometry.coordinates)
-//   .setPopup(
-//   new mapboxgl.Popup({ offset: 25 }) // add popups
-//   .setHTML(
-//   `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-//   )
-//   )
-//   .addTo(map);
-//   }
-
-const geojson = {
-    type: "FeatureCollection",
-    features: [
-        {
-            type: "Feature",
-            geometry: {
-                type: "Point",
-                coordinates: [-77.032, 38.913],
-            },
-            properties: {
-                title: "Mapbox",
-                description: "Washington, D.C.",
-            },
-        },
-        {
-            type: "Feature",
-            geometry: {
-                type: "Point",
-                coordinates: [-122.414, 37.776],
-            },
-            properties: {
-                title: "Mapbox",
-                description: "San Francisco, California",
-            },
-        },
-    ],
-};
-
-// add markers to map
-for (const feature of geojson.features) {
-    // create a HTML element for each feature
-    const el = document.createElement("div");
-    el.className = "marker";
-
-    // make a marker for each feature and add it to the map
-    new mapboxgl.Marker(el)
-        .setLngLat(feature.geometry.coordinates)
-        .setPopup(
-            new mapboxgl.Popup({ offset: 25 }) // add popups
-                .setHTML(
-                    `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-                )
-        )
-        .addTo(map);
-}
-// On map load
 map.on("load", () => {
     map.setFog({});
-
-    // remove labels from map
-    map.style.stylesheet.layers.forEach(function (layer) {
-        if (layer.type === "symbol") {
-            map.removeLayer(layer.id);
-        }
-    });
 
     // the layer for outlining countries (in white originally)
     map.addLayer({
