@@ -1,7 +1,8 @@
 import requestCountry from "./country-search.js";
+import requestPoints from "./load-markers.js";
 
 const api_key =
-  "pk.eyJ1IjoidmFuZGVycGF0cmljayIsImEiOiJjbGl4Z3k0MGIwMjVsM2ZxaHZqb2N1eWRrIn0.0C1bvIus93BFOjdSBb2dMA";
+    "pk.eyJ1IjoidmFuZGVycGF0cmljayIsImEiOiJjbGl4Z3k0MGIwMjVsM2ZxaHZqb2N1eWRrIn0.0C1bvIus93BFOjdSBb2dMA";
 
 mapboxgl.accessToken = api_key;
 
@@ -10,12 +11,12 @@ const map123 = document.querySelector("#map");
 
 // Colours to choose from
 const colorChoice = [
-  "#E30303",
-  "#E67E00",
-  "#E6D600",
-  "#00E642",
-  "#0047E6",
-  "#BD0BDB",
+    "#E30303",
+    "#E67E00",
+    "#E6D600",
+    "#00E642",
+    "#0047E6",
+    "#BD0BDB",
 ];
 
 // Which color in colorCount
@@ -32,34 +33,139 @@ const map = new mapboxgl.Map({
     // scrollZoom: false,
     boxZoom: false,
     doubleClickZoom: false,
-    projection: 'globe',
+    projection: "globe",
     style: {
         version: 8,
-        sources: {
-
-        },
+        sources: {},
         layers: [
-          {
-            id: 'background',
-            type: 'background',
-            paint: { 'background-color': '#0f172a' }
-          }
-        ]
-
-      },
+            {
+                id: "background",
+                type: "background",
+                paint: { "background-color": "#0f172a" },
+            },
+        ],
+    },
 });
-// On map style load 
 
+// let markerPoints = [];
+// let features = [];
+// $.ajax({
+//     type: "GET",
+//     url: "https://pride-api.onrender.com/api/events",
+//     success: function (eventsDataFromApi) {
+
+//         // get country for event from api
+//         for (let eventFromApi in eventsDataFromApi) {
+//             // get country for event from api
+
+//             let lat = eventsDataFromApi[eventFromApi].lat;
+//             let long = eventsDataFromApi[eventFromApi].long;
+//             let country = eventsDataFromApi[eventFromApi].country;
+//             let region = eventsDataFromApi[eventFromApi].region;
+//             features.push({
+//               'type': 'Feature',
+//               'geometry': {
+//               'type': 'Point',
+//               'coordinates': [long, lat]
+//               },
+//               'properties': {
+//               'title': country,
+//               'description': region
+//               }});
+//         }
+
+//     },
+//     error: function(jqXHR, textStatus, errorThrown) {
+
+//           // Handle other error cases
+//           console.log("AJAX request error:", textStatus, errorThrown);
+//           Swal.fire({
+//             title: "Error",
+//             text: "An error occurred while fetching markers for the map. Please try again later.",
+//             confirmButtonText: "Close",
+//             icon: "error"
+//           });
+//         }
+// });
+
+// console.log("features", features)
+// const geojson = {
+//   'type': 'FeatureCollection',
+//   'features': features};
+
+// add markers to map
+// for (const feature of features) {
+//   // create a HTML element for each feature
+//   const el = document.createElement('div');
+//   el.className = 'marker';
+
+//   // make a marker for each feature and add it to the map
+//   new mapboxgl.Marker(el)
+//   .setLngLat(feature.geometry.coordinates)
+//   .setPopup(
+//   new mapboxgl.Popup({ offset: 25 }) // add popups
+//   .setHTML(
+//   `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+//   )
+//   )
+//   .addTo(map);
+//   }
+
+const geojson = {
+    type: "FeatureCollection",
+    features: [
+        {
+            type: "Feature",
+            geometry: {
+                type: "Point",
+                coordinates: [-77.032, 38.913],
+            },
+            properties: {
+                title: "Mapbox",
+                description: "Washington, D.C.",
+            },
+        },
+        {
+            type: "Feature",
+            geometry: {
+                type: "Point",
+                coordinates: [-122.414, 37.776],
+            },
+            properties: {
+                title: "Mapbox",
+                description: "San Francisco, California",
+            },
+        },
+    ],
+};
+
+// add markers to map
+for (const feature of geojson.features) {
+    // create a HTML element for each feature
+    const el = document.createElement("div");
+    el.className = "marker";
+
+    // make a marker for each feature and add it to the map
+    new mapboxgl.Marker(el)
+        .setLngLat(feature.geometry.coordinates)
+        .setPopup(
+            new mapboxgl.Popup({ offset: 25 }) // add popups
+                .setHTML(
+                    `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
+                )
+        )
+        .addTo(map);
+}
 // On map load
 map.on("load", () => {
-  map.setFog({});
-  
-  // remove labels from map
-  map.style.stylesheet.layers.forEach(function (layer) {
-    if (layer.type === "symbol") {
-      map.removeLayer(layer.id);
-    }
-  });
+    map.setFog({});
+
+    // remove labels from map
+    map.style.stylesheet.layers.forEach(function (layer) {
+        if (layer.type === "symbol") {
+            map.removeLayer(layer.id);
+        }
+    });
 
     // the layer for outlining countries (in white originally)
     map.addLayer({
@@ -72,7 +178,7 @@ map.on("load", () => {
         "source-layer": "country_boundaries",
         paint: {
             "fill-color": "#F46D71",
-        }
+        },
     });
     // Then the layer that allows highlighting in blue on hover (hidden on load)
     map.addLayer({
@@ -92,66 +198,65 @@ map.on("load", () => {
         filter: ["==", "iso_3166_1_alpha_2", ""],
     });
 
-  // When the mouse moves over the country layer
-  map.on("mousemove", "countries-layer", (e) => {
-    // Change the mouse to style of pointer
-    map.getCanvas().style.cursor = "pointer";
+    // When the mouse moves over the country layer
+    map.on("mousemove", "countries-layer", (e) => {
+        // Change the mouse to style of pointer
+        map.getCanvas().style.cursor = "pointer";
 
-    // get the GeoJSON features (that include the values that represent the outline of the map)
-    // where the mouse (e.point) is on the map
-    const features = map.queryRenderedFeatures(e.point, {
-      layers: ["countries-layer"],
+        // get the GeoJSON features (that include the values that represent the outline of the map)
+        // where the mouse (e.point) is on the map
+        const features = map.queryRenderedFeatures(e.point, {
+            layers: ["countries-layer"],
+        });
+
+        // If there are features
+        if (features.length > 0) {
+            // set the outline of that country to hoveredCountryISO
+            const hoveredCountryISO = features[0].properties.iso_3166_1_alpha_3;
+            // Then highlight the country you hovered over by setting the filter with hoveredCountryISO
+            map.setFilter("countries-highlighted-layer", [
+                "==",
+                "iso_3166_1_alpha_3",
+                hoveredCountryISO,
+            ]);
+        }
     });
 
-    // If there are features
-    if (features.length > 0) {
-      // set the outline of that country to hoveredCountryISO
-      const hoveredCountryISO = features[0].properties.iso_3166_1_alpha_3;
-      // Then highlight the country you hovered over by setting the filter with hoveredCountryISO
-      map.setFilter("countries-highlighted-layer", [
-        "==",
-        "iso_3166_1_alpha_3",
-        hoveredCountryISO,
-      ]);
-    }
-  });
+    // When mouse leaves a country border change the colour
+    map.on("mouseleave", "countries-highlighted-layer", () => {
+        // If it was 5 reset to first color again
+        if (colorCount == 5) {
+            colorCount = 0;
+        } else {
+            // otherwise use the next color
+            colorCount = colorCount + 1;
+        }
+        // set the color of the border
+        map.setPaintProperty(
+            "countries-highlighted-layer",
+            "line-color",
+            colorChoice[colorCount]
+        );
+    });
 
-  // When mouse leaves a country border change the colour
-  map.on("mouseleave", "countries-highlighted-layer", () => {
-    // If it was 5 reset to first color again
-    if (colorCount == 5) {
-      colorCount = 0;
-    } else {
-      // otherwise use the next color
-      colorCount = colorCount + 1;
-    }
-    // set the color of the border
-    map.setPaintProperty(
-      "countries-highlighted-layer",
-      "line-color",
-      colorChoice[colorCount]
-    );
-  });
+    // When the mouse leaves the county set the outline back to nothing (i.e. empty string)
+    map.on("mouseleave", "countries-layer", () => {
+        map.getCanvas().style.cursor = "";
+        map.setFilter("countries-highlighted-layer", [
+            "==",
+            "iso_3166_1_alpha_3",
+            "",
+        ]);
+    });
 
-  // When the mouse leaves the county set the outline back to nothing (i.e. empty string)
-  map.on("mouseleave", "countries-layer", () => {
-    map.getCanvas().style.cursor = "";
-    map.setFilter("countries-highlighted-layer", [
-      "==",
-      "iso_3166_1_alpha_3",
-      "",
-    ]);
-  });
+    // On clicking the countries layer
+    map.on("click", "countries-layer", (e) => {
+        // get data for clicked feature
+        const clickedFeature = e.features[0];
 
-  // On clicking the countries layer
-  map.on("click", "countries-layer", (e) => {
-    // get data for clicked feature
-    const clickedFeature = e.features[0];
-
-    // get country name from this data
-    const mapCountryName = clickedFeature.properties.name_en;
-    // make call to api for events data
-    requestCountry(mapCountryName);
-  });
-  
+        // get country name from this data
+        const mapCountryName = clickedFeature.properties.name_en;
+        // make call to api for events data
+        requestCountry(mapCountryName);
+    });
 });
