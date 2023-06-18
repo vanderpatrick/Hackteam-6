@@ -1,4 +1,4 @@
-# Hackteam-6
+# Rainbow Mappers
 
 # Out and About: Interactive World Map of Pride Events
 
@@ -43,14 +43,19 @@
 In this section, we will briefly discuss how our team addressed the applicable criteria:
 
 - ✨ What Framework was used?
+  - **Tailwind CSS** Framework for the Frontend of this Project. For the Backend, **Flask** with **PostgreSQL** database was used for the custom made API, and a third party API **Mapbox API** was used for the interactive map on the main page of the site.
 - ✨ How innovative is the idea and project?
+  - The idea was born out of the interest to have a simple and interesting way to find out the information, especially the beginnings, of the Pride movement around the world. The interactive world map was the logic conclusion of that thought.
 - ✨ Was the README Template used and expanded upon?
+  - The README Template given at the beginning of the Hackathon was used and expanded with more detail in order to give a better picture of the complexity of the project.
 - ✨ Was the GitHub Project used to plan and execute the project?
+  - The GitHub Project was used to plan and execute the project.
 - ✨ Is the project completed and deployed?
+  - The project is completed and deployed.
 
 ## Intro
 
-Out and About is an exciting project that aims to create an interactive world map showcasing Pride events happening across different countries. The project focuses on promoting inclusivity, diversity, and the celebration of LGBTQ+ communities worldwide.
+Out and About is an exciting project that aims to create an interactive world map showcasing Pride events happening across different countries. This Full Stack project focuses on promoting inclusivity, diversity, and the celebration of LGBTQ+ communities worldwide.
 With the Out and About platform, users will have the opportunity to explore a dynamic map that highlights some important Pride events. By clicking on specific countries, users can access some general information about each event, including dates, locations, and event descriptions or can contribute to the project by sending updated or missing information. Out and About aims to serve as a comprehensive resource for the LGBTQ+ community and allies, fostering a sense of unity and awareness about Pride celebrations worldwide.
 
 ## User Experience
@@ -131,29 +136,21 @@ The website is supposed to enable the **user** to:
 - get the information in a form of a short text about history and an image of the event.
 - suggest a change or an update of the information on the site.
 
-Taking all into consideration, the following strategy table shows the corrispondence of importance and viability.
-
-<details>
-<summary>Importance and Viability Table</summary>
-
-![Viability Table](#)
-
-</details>
-
 #### Scope
 
 The scope plane defines requirements based on the goals established on the strategy plane. So, accordingly, the identified required features are broken into the following categories:
 
 - Content Requirements:
-  - ## The user will be looking for:
-    - the information about some significant Pride event in particular country.
-    - the information about the interaction on the Map Page.
-    - the form by which they will be able to contribute to the info on the site.
+  - The user will be looking for:
+    1. the information about some significant Pride event in particular country.
+    2. the information about the interaction on the Map Page.
+    3. the form by which they will be able to contribute to the info on the site.
 - Functionality Requirements:
-  - ## The user will be able to:
-    - easily navigate through the pages wether they want to know more about the site, use the world map interactively to retrieve the info, or send the contributing information.
-    - hover over the world map and select the country about which they want to retrieve the info about Pride.
-    - send the information about the Pride events that aren't presented on the world map or update the existing ones by contact form.
+  - The user will be able to:
+    1. easily navigate through the pages wether they want to know more about the site, use the world map interactively to retrieve the info, or send the contributing information.
+    2. hover over the world map and select the country about which they want to retrieve the info about Pride.
+    3. retrieve the Pride events in a certain country by its name in a search bar.
+    4. send the information about the Pride events that aren't presented on the world map or update the existing ones by contact form.
 
 #### Structure
 
@@ -162,7 +159,7 @@ The above mentioned information were organized in a site map, showing how users 
 <details>
 <summary>Site Map</summary>
 
-![Site Map](#)
+![Site Map](./docs/sitemap.png)
 
 </details>
 
@@ -193,41 +190,20 @@ _Phone Wireframes_
 #### Colour Scheme
 
 The default colour scheme was made by [Canva Color Palette Generator](https://www.canva.com/colors/color-palette-generator/).
-
-![Pastel Colour Palette](./docs/readme_images/pridepalette1.png)
-
-#ED8E98
-#F7B685
-#F3EBA5
-#94C691
-#9BD6D9
-#B4A8E0
-
-linear-gradient(90deg, #ED8E89 0%, #F7B685 19%, #F3EBA5 39%, #94C691 60%, #9BD6D9 80%, #B4A8E0 100%);
-
-![Bright Colour Palette](./docs/readme_images/pridepalette2.png)
-
-#E30303
-#E67E00
-#E6D600
-#00E642
-#0047E6
-#BD0BDB
-linear-gradient(90deg, #e30303 0%, #e67e00 19%, #e6d600 39%, #00e642 60%, #0047e6 80%, #bd0bdb 100%);
+The colours were selected from existing Tailwind CSS classes. They were chosen as they correspond nicely with the hero image.
 
 <details>
 <summary>Colour Palette</summary>
     
-![Colour Palette](./assets/readme_files/canva-colour-palette.png)
+![Colour Palette](./docs/colour-palette.png)
 
 </details>
 
-To that colour scheme, there was added Medium Turquoise colour (#38D2D2) for the buttons with 3d effect from the website [Beautiful CSS buttons examples](https://getcssscan.com/css-buttons-examples).
-The same colour was used for the gradient effect on the navbar, with the help of [CSS Gradient](https://cssgradient.io/) web app.
+Default black and white colours were generally used for the paragraphs and text elements.
 
 #### Typography
 
-Fonts used on the website are from the [Google Fonts](https://fonts.google.com/), namely **Carter One** and **Oxygen**. Carter One appears in the Logo, whilst Oxygen in the rest of the website.
+Fonts used on the website are from the [Google Fonts](https://fonts.google.com/), namely **Oxygen** and **Oswald**.
 
 #### Imagery
 
@@ -244,47 +220,51 @@ The images are taken from the different sources and are credited in the Credits 
 Each page within the site has a consistent and responsive navigation system. The details of features on the site are detailed below.
 
 - The **Header** with the **Navigation Bar** is positioned at the top of the page.
-- The **Footer** stays at the bottom of the screen at all times, on all screen sizes. All social media links on the footer open in a new tab. They are Instagram, GitHub and Facebook pages of the _[SCRUM Master]_. The copyright info quotes _[COPYRIGHT INFO]_ . --> _X or we could add the GitHub links of the whole team??? X_
+- The **Footer** stays at the bottom of the screen at all times, on all screen sizes. All social media links on the footer open in a new tab. They are Facebook, Twitter and GitHub pages. The copyright info quotes **© 2023 Team Out and About**.
 
 ### Existing Features
 
-- **Navigation Bar** - Appears on every page for a consistently easy and intuitive navigable system, except of the 404 page.
-- **Social Media Icons** - Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the developers Instagram, GitHub and Facebook accounts. The icons appear in the centre of the footer.
-- **[Home Page](# "PAGE")** - It is in fact the About page that contains the description of the page and instructions for the Map page features.
-- **[Map Page](# "MAP")** - An interactive page containing the world map on which the user can find the information about the significant Pride Events by hovering and clicking on a desired country.
+#### Frontend
+
+- **Navigation Bar** - Appears on every page for a consistently easy and intuitive navigable system.
+- **Social Media Icons** - Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the developers Instagram, GitHub and Facebook accounts together with credits.
+- **[Home Page](# "PAGE")** - It is in fact the About page that contains the description of the site and instructions for the Map page features.
+- **[Map Page](# "MAP")** - An interactive page containing the 3d globe world map on which the user can find the information about the significant Pride Events by hovering and clicking on a desired country. There is an option to make a search for a country by search bar that apears at the center over the world map.
 - **[Contact Page](# "CONTACT")** - The page on which there's a form for a user to fill in if wanting to contribute with an update or addition to the map information.
 - **[404 Page](# "404 PAGE")** - 404 error page Pride Themed .
 
+#### Backend
+
 #### Database Models
 
-A PostgreSQL database hosted on render.com was used to hold the data collected for pride events. 
+A PostgreSQL database hosted on render.com was used to hold the data collected for pride events.
 
 ##### Pride Event Model
 
 Model describing a pride related event that happen across the world.
 
-| Key         | Name        | Type         | Extra Info      |
-|-------------|-------------|--------------|-----------------|
-| PrimaryKey  | id          | Integer      | Unique id       |
-|             | event       | String       | Title of Event  |
-|             | date        | Date         | Date event happened |
-|             | country     | String       | Country event happened in |
-|             | region      | String       | Region event happened in |
-|             | description | String       | Description of even |
-|             | image_link  | String       | Link to related image |
-|             | lat         | String       |                 |
-|             | long        | String       |                 |
+| Key        | Name        | Type    | Extra Info                |
+| ---------- | ----------- | ------- | ------------------------- |
+| PrimaryKey | id          | Integer | Unique id                 |
+|            | event       | String  | Title of Event            |
+|            | date        | Date    | Date event happened       |
+|            | country     | String  | Country event happened in |
+|            | region      | String  | Region event happened in  |
+|            | description | String  | Description of even       |
+|            | image_link  | String  | Link to related image     |
+|            | lat         | String  |                           |
+|            | long        | String  |                           |
 
 ##### Contact Event Model
 
 Model describing the information provided through contact form
 
-| Key         | Name        | Type         | Extra Info      |
-|-------------|-------------|--------------|-----------------|
-| PrimaryKey  | id          | Integer      |                 |
-|             | email       | String       | email of contact|
-|             | country     | String       | Country event happened in |
-|             | description | String       | Description of even |
+| Key        | Name        | Type    | Extra Info                |
+| ---------- | ----------- | ------- | ------------------------- |
+| PrimaryKey | id          | Integer |                           |
+|            | email       | String  | email of contact          |
+|            | country     | String  | Country event happened in |
+|            | description | String  | Description of even       |
 
 #### API for pride events
 
@@ -339,6 +319,7 @@ Package sent with `POST` request:
   "long": "string"
 }
 ```
+
 On a successful request it returns it returns `200` and the newly added event with an `id`:
 
 ```
@@ -378,6 +359,7 @@ Package sent with `PUT` request:
 }
 
 ```
+
 Returns with status `200` and the event you just edited:
 
 ```
@@ -401,7 +383,6 @@ Type of HTTP request: DELETE
 URL: {BASE_URL}//api/events/{id}
 
 Where `id` is the id of the event you want to delete.
-
 
 ##### Search events by country
 
@@ -432,7 +413,7 @@ On a successful request it returns a status of `200` and all the events in the d
 ]
 ```
 
-##### Get all contact form submissions 
+##### Get all contact form submissions
 
 Type of HTTP request: `GET`
 
@@ -469,6 +450,7 @@ Package provided with request:
   "description": "string"
 }
 ```
+
 On a successful request it returns a status of `200` and the newly added contact with an `id`:
 
 ```
@@ -480,10 +462,10 @@ On a successful request it returns a status of `200` and the newly added contact
 }
 ```
 
-
 ### Features to Implement in the future
 
-- ...
+- **Direct info input on the map** - This feature would allow user to pinpoint into the map and choose to add the details directly by a pop-up window. The information would be sent to the API and the admin could decide to validate it if proven credible.
+- **Image display of the events** - Although planned in the database as a possibility, the display of an image related to the event recorded in the database wasn't implemented because of lack of time.
 
 [Back to top ⇧](#)
 
@@ -536,10 +518,9 @@ The goal section provides a concise summary of the main objective or purpose of 
 - [GitHub](https://github.com/ "Link to GitHub") - GitHub was used to store the project after pushing
 - [Balsamiq](https://balsamiq.com/ "Link to Balsamiq homepage")
   - Balsamiq was used to create the wireframes during the design phase of the project.
-- [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage")
-
-  - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
-
+- [Figma](https://www.figma.com/)
+  - Figma was used to site map for the readme.
+- [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage") - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
 - [Peek](https://github.com/phw/peek)
   - Peek was used to make screencasts for the documentation.
 
