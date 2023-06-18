@@ -86,9 +86,6 @@ $.ajax({
                 // make a marker for each feature and add it to the map
                 new mapboxgl.Marker(el)
                     .setLngLat(feature.geometry.coordinates)
-                    .setPopup(
-                        new mapboxgl.Popup({ offset: 0 }) // add popups
-                    )
                     .addTo(map);
             }
         }
