@@ -1,5 +1,5 @@
 
-
+// Instructions pop up on Map page
 document.getElementById("instructionsButton").onclick = function () {
 
   Swal.fire({

@@ -3,7 +3,6 @@ body {
     background-color: #10182b;
 }
 
-/* NAVIGATION BAR */
 .navbar {
     border-bottom: solid 6px rgb(248 113 113);
     font-family: "Oxygen", sans-serif;
@@ -17,28 +16,20 @@ body {
     font-weight: 800;
 }
 
-/* .hero-img {
-    background-color: #0047e6;
-    background-image: url(/assets/images/Screenshot\ 2023-06-16\ at\ 23.36.03.png);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding-top: 400px;
-    padding-bottom: 400px;
-} */
+
 
 .hero {
     height: 1000px;
 }
 
-/* FOOTER */
+
 
 footer {
     border-top: solid 6px rgb(248 113 113);
     font-family: "Oxygen", sans-serif;
 }
 
-/* 404 page */
+
 .rainbow-text {
     background: -webkit-linear-gradient(
         0deg,
