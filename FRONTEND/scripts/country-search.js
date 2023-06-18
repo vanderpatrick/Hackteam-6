@@ -14,8 +14,7 @@ function requestCountry(countryName) {
         type: "GET",
         url: "https://pride-api.onrender.com/api/events/" + countryName,
         success: function (eventsDataFromApi) {
-            // get country for event from api
-            let apiCountryName = eventsDataFromApi.country;
+            
             // If the countries match up
             popupModal(eventsDataFromApi);
         },
