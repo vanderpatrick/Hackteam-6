@@ -223,6 +223,8 @@ Each page within the site has a consistent and responsive navigation system. The
 
 ### Existing Features
 
+####**Frontend**
+
 - **Navigation Bar** - Appears on every page for a consistently easy and intuitive navigable system.
 - **Social Media Icons** - Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the developers Instagram, GitHub and Facebook accounts together with credits.
 - **[Home Page](# "PAGE")** - It is in fact the About page that contains the description of the site and instructions for the Map page features.
@@ -230,9 +232,25 @@ Each page within the site has a consistent and responsive navigation system. The
 - **[Contact Page](# "CONTACT")** - The page on which there's a form for a user to fill in if wanting to contribute with an update or addition to the map information.
 - **[404 Page](# "404 PAGE")** - 404 error page Pride Themed .
 
+####**Backend**
+
+- **Custom made API** - for this project an API was made on Flask Framework with PostgreSQL database.
+  - **Database structure**
+    | key | value |
+    |---|---|
+    | title | string |
+    | date | string |
+    | country | string |
+    | region | string |
+    | description | string |
+    | image_link | string |
+    |lat| string|
+    |long| string |
+
 ### Features to Implement in the future
 
-- The possibility for a user to pinpoint into the map and choose to add the details directly by a pop-up window. The information would be sent to the API and the admin could decide to validate it if proven credible.
+- **Direct info input on the map** - This feature would allow user to pinpoint into the map and choose to add the details directly by a pop-up window. The information would be sent to the API and the admin could decide to validate it if proven credible.
+- **Image display of the events** - Although planned in the database as a possibility, the display of an image related to the event recorded in the database wasn't implemented because of lack of time.
 
 [Back to top ⇧](#)
 
@@ -287,10 +305,7 @@ The goal section provides a concise summary of the main objective or purpose of 
   - Balsamiq was used to create the wireframes during the design phase of the project.
 - [Figma](https://www.figma.com/)
   - Figma was used to site map for the readme.
-- [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage")
-
-  - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
-
+- [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage") - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
 - [Peek](https://github.com/phw/peek)
   - Peek was used to make screencasts for the documentation.
 
