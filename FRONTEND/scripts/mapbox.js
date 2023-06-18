@@ -26,12 +26,13 @@ const map = new mapboxgl.Map({
     container: map123,
     style: "mapbox://styles/mapbox/light-v10",
     center: [0, 0],
-    zoom: -5,
+    zoom: 1,
     // dragPan: false,
     renderWorldCopies: false,
-    scrollZoom: false,
+    // scrollZoom: false,
     boxZoom: false,
     doubleClickZoom: false,
+    projection: 'globe',
     style: {
         version: 8,
         sources: {
@@ -53,6 +54,13 @@ map.on('style.load', function (){
 })
 // On map load
 map.on("load", () => {
+  map.setFog({
+    'horizon-blend': ,
+    'color': 'white',
+    'high-color': '#add8e6',
+    'space-color': '#d8f2ff',
+    });
+  
   let intervalID;
   // remove labels from map
   map.style.stylesheet.layers.forEach(function (layer) {
