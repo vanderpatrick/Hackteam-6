@@ -96,7 +96,7 @@ The primary goal of the project is to create an interactive website which allows
 
 1. As a returning user, I want to be able to send information about events I think should be featured on the map to the site owners.
 2. As a returning user, I want to be able to view the site on a range of different devices.
-3. As a returning user, I want to be able to contact the site owners to suggest an update to the information featured on the site.
+3. As a returning user, I want to be able to follow the site owners on social media.
 
 ### Development Planes
 
@@ -565,7 +565,64 @@ The goal section provides a concise summary of the main objective or purpose of 
 
 #### New User Goals:
 
-#### Current User Goals:
+1. As a new user, I want to identify the purpose of the website.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| Home Page | Navigate to the home page and scroll down | Identify the site's purpose | Works as expected |
+
+2. As a new user, I want to navigate the site intuitively and with ease.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| "Explore our World Map" buttons | Click on the explore button | Go to the map page | Works as expected |
+| Links in the Navigation Bar | Click on links | Go to the corresponding page | Works as expected |
+| "Contribute to the Map" link in the footer | Click on the link | Go to the contact form page | Works as expected |
+| 404 Page | Click on the Home link | Return to the Home page | Works as expected |
+
+3. As a new user, I want the instructions to be easily found, clear, and concise.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| "Want to explore?" section on the home page | Go to the Home page and scroll down | Find the instructions | Works as expected |
+
+4. As a new user, I want the visual content to be attractive, appealing and relevant to the site content.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| CSS Styling | N/A | Styling consistent and attractive | Styling consistent across the website |
+
+5. As a new user, I want to be able to easily find more information about the project.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| Home Page | Navigate to the Home page and scroll down | Locate the main paragraph | Works as expected |
+| Read More button | Click on the button | Find out more information about the project | Works as expected |
+
+#### Returning User Goals:
+
+1. As a returning user, I want to be able to send information about events I think should be featured on the map to the site owners.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| 'Contribute to the map' link in the footer | Click on the link | See the contact form | Works as expected |
+| 'Submit' link in the navbar | Click on the link | See the contact form | Works as expected |
+| Contact form | Fill out the form and click submit | See a 'thank you' pop-up | Works as expected |
+
+2. As a returning user, I want to be able to view the site on a range of different devices.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| Home Page | View the Home page on your device | Page adapts to the screen size | Works as expected |
+| Map Page | View the Map page on your device | Page adapts to the screen size | Works as expected |
+| Submit Page | View the Submit page on your device | Page adapts to the screen size | Works as expected |
+| 404 Page | View the Home page on your device | Page adapts to the screen size | Works as expected |
+
+3. As a returning user, I want to be able to follow the site owners on social media.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| Social media icons | See the footer | Click on the icons | Works as expected |
 
 ### Manual Testing
 

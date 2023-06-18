@@ -11,21 +11,11 @@ body {
 }
 
 #logo {
-    text-transform: capitalize;
-    font-family: "Oxygen", sans-serif;
+    font-family: "Oswald", sans-serif;
     letter-spacing: 2.5px;
     font-weight: 800;
+    text-transform: uppercase;
 }
-
-/* .hero-img {
-    background-color: #0047e6;
-    background-image: url(/assets/images/Screenshot\ 2023-06-16\ at\ 23.36.03.png);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding-top: 400px;
-    padding-bottom: 400px;
-} */
 
 .hero {
     height: 1000px;
