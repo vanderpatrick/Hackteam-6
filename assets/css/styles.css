@@ -1,5 +1,6 @@
 body {
     font-family: "Oxygen", sans-serif;
+    background-color: #10182b;
 }
 
 /* NAVIGATION BAR */
@@ -76,7 +77,11 @@ footer {
 
     #searchButton {
         width: 100px;
-        
+    }
+
+    #nav-on-map {
+        background-color: #0f172a;
+        z-index: 99;
     }
 }
 
@@ -91,5 +96,19 @@ footer {
     #searchInput {
         height: 28px;
         width: 35vw;
+    }
+}
+
+@media screen and (min-height: 582px) {
+    nav {
+        height: 58px !important;
+    }
+
+    footer {
+        height: 40px !important;
+    }
+
+    #map {
+        height: 75vh !important;
     }
 }

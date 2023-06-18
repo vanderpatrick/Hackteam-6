@@ -1,12 +1,10 @@
-# Rainbow Mappers
+## **_Team Rainbow Mappers_**
 
 # Out and About: Interactive World Map of Pride Events
 
+![Am I Responsive Screenshot](./docs/amiresponsive.png)
+
 [Live link](https://vanderpatrick.github.io/Hackteam-6/)
-
-# 🌈 Pride Representation 🥳
-
-![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
 
 <p align="left"> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.postgresql.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original-wordmark.svg" alt="postgresql" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> </p>
 
@@ -37,6 +35,10 @@
    3. [Responsiveness](#responsiveness)
    4. [Automated Testing](#automated-testing)
 8. [Credits](#credits)
+
+# 🌈 Pride Representation 🥳
+
+![Pride Representation Banner](https://res.cloudinary.com/djdefbnij/image/upload/v1685616402/pride2023banner_s33wvv.jpg)
 
 ## Criteria
 
@@ -520,7 +522,7 @@ The goal section provides a concise summary of the main objective or purpose of 
   - Balsamiq was used to create the wireframes during the design phase of the project.
 - [Figma](https://www.figma.com/)
   - Figma was used to site map for the readme.
-- [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage") - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
+- [Am I Responsive?](https://ui.dev/amiresponsive "Link to Am I Responsive Homepage") - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
 - [Peek](https://github.com/phw/peek)
   - Peek was used to make screencasts for the documentation.
 
@@ -803,7 +805,30 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
 
-- 🙌 [Contributor 1]
-- 🙌 [Contributor 2]
-- 🌐 [External Resource 1]
-- 🌐 [External Resource 2]
+### Resources
+
+### Code Features
+
+- [Tailgrail](https://tailgrail.com/tailwind/about-us)
+  - Assisted in styling the about us page
+- [Kindacode](https://www.kindacode.com/article/tailwind-css-creating-a-read-more-read-less-button/)
+  - Assisted in adding interactivity to about us page
+- [Daily Dev Tips](https://daily-dev-tips.com/posts/making-gradient-text-with-tailwind-css/)
+  - Helped create a gradient text
+
+### Media
+
+#### About Us images:
+
+- **Pride image one** - [https://images.pexels.com/photos/11677294/pexels-photo-11677294.jpeg](https://images.pexels.com/photos/11677294/pexels-photo-11677294.jpeg)
+- **Pride image two** [https://images.pexels.com/photos/2907679/pexels-photo-2907679.jpeg](https://images.pexels.com/photos/2907679/pexels-photo-2907679.jpeg)
+
+## Team **Rainbow Mappers**
+
+- 🙌 [Paul Clarke](https://github.com/pjrclarke), _Scrum Master_ -> codename: **Mr. Cool**
+- 🙌 [Patrick Alexander Lucas Van Der Flier](https://github.com/vanderpatrick), _Project Manager_ -> codename: **'dunkin' Genius**
+- 🙌 [Sean Meade](https://github.com/sean-meade) -> codename: **API Wizard**
+- 🙌 [Philip Whitty](https://github.com/phillywhitty) -> codename: **Art Magician**
+- 🙌 [Lauren Pechey](https://github.com/pecheylauren02) -> codename: **Rainbow Hermione**
+- 🙌 [Martyna](https://github.com/mmnowak) -> codename: **Supergirl**
+- 🙌 [Tomislav Dukez](https://github.com/tomdu3)
