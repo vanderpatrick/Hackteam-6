@@ -42,22 +42,18 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 #map {
     background-color: #0f182f;
 }
+
 #contactpage {
-    height:88vh;
+    width: 60vw;
+    margin: auto;
+    padding: 50px 0;
 }
 
-/* @media only screen and (min-width: 1024px) and (min-height: 1000px) {
-    .newsletter-div h1 {
-        padding: 2.7rem 0;
-    }
 
-    #newsletter-signup {
-        padding: 3.3rem 0;
-    }
-} */
 
 @media screen and (max-width: 770px) {
     #country-search {
@@ -100,5 +96,9 @@ footer {
 
     #map {
         height: 75vh !important;
+    }
+
+    #contactformcontainer {
+        height: 75vh;
     }
 }
