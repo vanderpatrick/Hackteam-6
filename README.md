@@ -233,6 +233,37 @@ Each page within the site has a consistent and responsive navigation system. The
 - **[Contact Page](# "CONTACT")** - The page on which there's a form for a user to fill in if wanting to contribute with an update or addition to the map information.
 - **[404 Page](# "404 PAGE")** - 404 error page Pride Themed .
 
+##### Map features
+
+**Search by country**
+
+![Search By Country](docs/imgs/map-features/country-search.png "Search By Country")
+
+A search box to find the information of a specific country without the need of the globe.
+
+**Globe**
+
+A 3rd model of Earth that can be rotated and zoomed on using mouse or touch screen.
+
+![Globe](docs/imgs/map-features/globe.png "Globe")
+
+**Country Highlight on Hover**
+
+When hovering over a country the border is highlighted with alternating colors.
+
+![Country Highlight on Hover](docs/imgs/map-features/highlight-country.png "Country Highlight on Hover")
+
+**Info On country on click**
+
+When a country is clicked it will either show information related to that country that is in our database:
+
+![Info On country on click](docs/imgs/map-features/info-on-country.png "Info On country on click")
+
+Or return a message to ask to go to contact page if the person has some information they would like share:
+
+![No Info on click](docs/imgs/map-features/if-no-info.png "No Info on click")
+
+
 #### Backend
 
 #### Database Models
