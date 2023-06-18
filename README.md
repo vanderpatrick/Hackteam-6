@@ -294,11 +294,11 @@ BASE_URL = https://pride-api.onrender.com
 
 ##### Get all events
 
-Type of HTTP request: GET
+Type of HTTP request: `GET`
 
 URL: {BASE_URL}/api/events
 
-On a successful request it returns a status of `200` and all the events in the database as a list in the format of:
+On a successful request it returns a status of `200` and all the events in the database as a list:
 
 ```
 [
@@ -321,11 +321,11 @@ On a successful request it returns a status of `200` and all the events in the d
 
 ##### Add an event
 
-Type of HTTP request: PUT
+Type of HTTP request: `POST`
 
 URL: {BASE_URL}/api/events
 
-Package sent with PUT request is sent in the following format:
+Package sent with `POST` request:
 
 ```
 {
@@ -339,60 +339,145 @@ Package sent with PUT request is sent in the following format:
   "long": "string"
 }
 ```
-On a successful request it returns it returns `200` and the newly added event with an `id` in the 
+On a successful request it returns it returns `200` and the newly added event with an `id`:
 
 ```
-
+{
+  "id": 0,
+  "event": "string",
+  "date": "string",
+  "country": "string",
+  "region": "string",
+  "description": "string",
+  "image_link": "string",
+  "lat": "string",
+  "long": "string"
+}
 ```
 
-##### 
+##### Edit an existing event in the database
 
-Type of HTTP request: 
+Type of HTTP request: `PUT`
 
-URL: {BASE_URL}
+URL: {BASE_URL}//api/events/{id}
 
-```
+Where `id` is the id of the event you want to edit.
 
-```
-
-##### 
-
-Type of HTTP request: 
-
-URL: {BASE_URL}
+Package sent with `PUT` request:
 
 ```
+{
+  "event": "string",
+  "date": "string",
+  "country": "string",
+  "region": "string",
+  "description": "string",
+  "image_link": "string",
+  "lat": "string",
+  "long": "string"
+}
 
 ```
-
-##### 
-
-Type of HTTP request: 
-
-URL: {BASE_URL}
+Returns with status `200` and the event you just edited:
 
 ```
-
+{
+  "id": 0,
+  "event": "string",
+  "date": "string",
+  "country": "string",
+  "region": "string",
+  "description": "string",
+  "image_link": "string",
+  "lat": "string",
+  "long": "string"
+}
 ```
 
-##### 
+##### Delete an existing event from the database
 
-Type of HTTP request: 
+Type of HTTP request: DELETE
 
-URL: {BASE_URL}
+URL: {BASE_URL}//api/events/{id}
+
+Where `id` is the id of the event you want to delete.
+
+
+##### Search events by country
+
+Type of HTTP request: `GET`
+
+URL: {BASE_URL}/api/events/{country}
+
+Where `country` is the name of the country you are searching for (currently case sensitive).
+
+On a successful request it returns a status of `200` and all the events in the database with that country name:
 
 ```
-
+[
+  {
+    "id": 0,
+    "event": "string",
+    "date": "string",
+    "country": "string",
+    "region": "string",
+    "description": "string",
+    "image_link": "string",
+    "lat": "string",
+    "long": "string"
+  },
+  .
+  .
+  .
+]
 ```
 
-##### 
+##### Get all contact form submissions 
 
-Type of HTTP request: 
+Type of HTTP request: `GET`
 
-URL: {BASE_URL}
+URL: {BASE_URL}/api/contacts
+
+On a successful request it returns a status of `200` and all the contact form submissions in the database as a list:
 
 ```
+[
+  {
+    "id": 0,
+    "email": "string",
+    "country": "string",
+    "description": "string"
+  },
+  .
+  .
+  .
+]
+```
 
+##### Add contact form submission to database
+
+Type of HTTP request: `POST`
+
+URL: {BASE_URL}/api/contacts
+
+Package provided with request:
+
+```
+{
+  "email": "string",
+  "country": "string",
+  "description": "string"
+}
+```
+On a successful request it returns a status of `200` and the newly added contact with an `id`:
+
+```
+{
+  "id": 0,
+  "email": "string",
+  "country": "string",
+  "description": "string"
+}
 ```
 
 
