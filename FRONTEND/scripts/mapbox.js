@@ -88,9 +88,6 @@ $.ajax({
                     .setLngLat(feature.geometry.coordinates)
                     .setPopup(
                         new mapboxgl.Popup({ offset: 0 }) // add popups
-                            .setHTML(
-                                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-                            )
                     )
                     .addTo(map);
             }

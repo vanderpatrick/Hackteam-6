@@ -17,16 +17,6 @@ body {
     font-weight: 800;
 }
 
-/* .hero-img {
-    background-color: #0047e6;
-    background-image: url(/assets/images/Screenshot\ 2023-06-16\ at\ 23.36.03.png);
-    background-size: cover;
-    background-position: center;
-    color: white;
-    padding-top: 400px;
-    padding-bottom: 400px;
-} */
-
 .hero {
     height: 1000px;
 }
@@ -52,22 +42,18 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 #map {
     background-color: #0f182f;
 }
+
 #contactpage {
-    height:88vh;
+    width: 60vw;
+    margin: auto;
+    padding: 50px 0;
 }
 
-/* @media only screen and (min-width: 1024px) and (min-height: 1000px) {
-    .newsletter-div h1 {
-        padding: 2.7rem 0;
-    }
 
-    #newsletter-signup {
-        padding: 3.3rem 0;
-    }
-} */
 
 @media screen and (max-width: 770px) {
     #country-search {
@@ -110,5 +96,9 @@ footer {
 
     #map {
         height: 75vh !important;
+    }
+
+    #contactformcontainer {
+        height: 75vh;
     }
 }
