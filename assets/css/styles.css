@@ -49,6 +49,14 @@ footer {
 #contactpage {
     height:88vh;
 }
+#contactbackground {
+    background-image: url("../images/contactimage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contactpage {
+    background-color: rgba(15, 24, 47, 0.7);
+}
 
 @media screen and (max-width: 770px) {
     #country-search {
