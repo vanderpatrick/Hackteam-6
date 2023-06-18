@@ -30,3 +30,19 @@ event_input_model = api.model("EventInput", {
     "lat": fields.String,
     'long': fields.String
 })
+
+# format for an contact message returned
+contact_model = api.model("Contact Message", {
+    'id': fields.Integer,
+    'email': fields.String,
+    'country': fields.String,
+    'description': fields.String,
+})
+
+# format for inputting an event (create or edit)
+contact_input_model = api.model("Contact Message Input", {
+    'email': fields.String,
+    'country': fields.String,
+    'description': fields.String,
+})
+

@@ -7,7 +7,15 @@ class Event(db.Model):
     date = db.Column(db.Date)
     country = db.Column(db.String(30))
     region = db.Column(db.String(30))
-    description = db.Column(db.String(350))
+    description = db.Column(db.String(1200))
     image_link = db.Column(db.String(350))
     lat = db.Column(db.String(12))
     long = db.Column(db.String(12))
+
+# DB model for contact
+class Contact(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    email = db.Column(db.String(50))
+    country = db.Column(db.String(30))
+    description = db.Column(db.String(1200))
+    
