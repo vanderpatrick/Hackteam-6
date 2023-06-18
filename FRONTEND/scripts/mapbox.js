@@ -1,4 +1,4 @@
-import popupModal from "./modal.js";
+import requestCountry from "./country-search.js";
 
 const api_key =
   "pk.eyJ1IjoidmFuZGVycGF0cmljayIsImEiOiJjbGl4Z3k0MGIwMjVsM2ZxaHZqb2N1eWRrIn0.0C1bvIus93BFOjdSBb2dMA";
@@ -54,7 +54,7 @@ const map = new mapboxgl.Map({
 map.on("load", () => {
   map.setFog({});
   
-  let intervalID;
+  
   // remove labels from map
   map.style.stylesheet.layers.forEach(function (layer) {
     if (layer.type === "symbol") {
@@ -95,18 +95,6 @@ map.on("load", () => {
 
   // When the mouse moves over the country layer
   map.on("mousemove", "countries-layer", (e) => {
-    clearInterval(intervalID);
-    intervalID = setInterval(() => {
-      // Increment the colorCount variable
-      colorCount = (colorCount + 1) % colorChoice.length;
-
-      // Set the color of the border
-      map.setPaintProperty(
-        "countries-highlighted-layer",
-        "line-color",
-        colorChoice[colorCount]
-      );
-    }, 1500);
     // Change the mouse to style of pointer
     map.getCanvas().style.cursor = "pointer";
 
@@ -163,52 +151,8 @@ map.on("load", () => {
 
     // get country name from this data
     const mapCountryName = clickedFeature.properties.name_en;
-    const mapCountryRegion = clickedFeature.properties.region;
     // make call to api for events data
-    test(mapCountryName);
+    requestCountry(mapCountryName);
   });
-  var searchButton = document.getElementById("searchButton");
-  var searchInput = document.getElementById("searchInput");
-  var countries = ["United States", "Canada", "United Kingdom", "Germany", "France", "Japan", "Australia", "Brazil", "India", "China"];
-
-
-  searchButton.addEventListener("click", handleSearch);
-
-  function handleSearch() {
-    var inputText = searchInput.value;
-    var autoCompleteResults = countries.filter(function(country) {
-      return country.toLowerCase().startsWith(inputText.toLowerCase());
-    });
   
-    if (autoCompleteResults.length > 0) {
-      var filteredName = autoCompleteResults[0];
-      searchInput.value = filteredName;
-      test(filteredName);
-    }
-  }
-  function test(NAME) {
-    $.ajax({
-      type: "GET",
-      url: "https://pride-api.onrender.com/api/events",
-      success: function (eventsDataFromApi) {
-        // Loop through events
-        for (let i = 0; i < eventsDataFromApi.length; i++) {
-          // get country for event from api
-          let apiCountryName = eventsDataFromApi[i].country;
-          // If the countries match up
-          if (apiCountryName == NAME) {
-            popupModal(eventsDataFromApi[i]);
-            break;
-          } else {
-            // If no data is in the database for the clicked country display generic message
-            Swal.fire({
-              title: NAME,
-              text: "Sorry we currently have no information on this country. Please head to the Submit page and tell us of any events you know have happened in this are. We would love to add them.",
-              confirmButtonText: "Close",
-            });
-          }
-        }
-      },
-    });
-  }
 });
