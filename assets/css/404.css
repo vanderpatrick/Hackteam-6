@@ -1,0 +1,46 @@
+body {
+    font-family: "Oxygen", sans-serif;
+    background-color: #10182b;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    border-bottom: solid 6px rgb(248 113 113);
+    font-family: "Oxygen", sans-serif;
+    font-weight: 900;
+}
+
+#logo {
+    text-transform: capitalize;
+    font-family: "Oxygen", sans-serif;
+    letter-spacing: 2.5px;
+    font-weight: 800;
+}
+
+
+/* FOOTER */
+
+footer {
+    border-top: solid 6px rgb(248 113 113);
+    font-family: "Oxygen", sans-serif;
+}
+
+/* 404 page */
+.rainbow-text {
+    background: -webkit-linear-gradient(
+        0deg,
+        #e30303 0%,
+        #e67e00 19%,
+        #e6d600 39%,
+        #00e642 60%,
+        #0047e6 80%,
+        #bd0bdb 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
