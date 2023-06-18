@@ -3,7 +3,6 @@ body {
     background-color: #10182b;
 }
 
-/* NAVIGATION BAR */
 .navbar {
     border-bottom: solid 6px rgb(248 113 113);
     font-family: "Oxygen", sans-serif;
@@ -17,18 +16,23 @@ body {
     font-weight: 800;
 }
 
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 8fdf91730e6d06ddf44ca8d5e4833f99099a8ce7
 .hero {
     height: 1000px;
 }
 
-/* FOOTER */
+
 
 footer {
     border-top: solid 6px rgb(248 113 113);
     font-family: "Oxygen", sans-serif;
 }
 
-/* 404 page */
+
 .rainbow-text {
     background: -webkit-linear-gradient(
         0deg,
@@ -48,12 +52,19 @@ footer {
 }
 
 #contactpage {
-    width: 60vw;
+    width: 100vw;
     margin: auto;
     padding: 50px 0;
 }
-
-
+#contactbackground {
+    background-image: url("../images/contactimage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contactpage {
+    background-color: rgba(15, 24, 47, 0.7);
+    background-size: cover;
+}
 
 @media screen and (max-width: 770px) {
     #country-search {
