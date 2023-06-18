@@ -141,15 +141,16 @@ The website is supposed to enable the **user** to:
 The scope plane defines requirements based on the goals established on the strategy plane. So, accordingly, the identified required features are broken into the following categories:
 
 - Content Requirements:
-  - ## The user will be looking for:
-    - the information about some significant Pride event in particular country.
-    - the information about the interaction on the Map Page.
-    - the form by which they will be able to contribute to the info on the site.
+  - The user will be looking for:
+    1. the information about some significant Pride event in particular country.
+    2. the information about the interaction on the Map Page.
+    3. the form by which they will be able to contribute to the info on the site.
 - Functionality Requirements:
-  - ## The user will be able to:
-    - easily navigate through the pages wether they want to know more about the site, use the world map interactively to retrieve the info, or send the contributing information.
-    - hover over the world map and select the country about which they want to retrieve the info about Pride.
-    - send the information about the Pride events that aren't presented on the world map or update the existing ones by contact form.
+  - The user will be able to:
+    1. easily navigate through the pages wether they want to know more about the site, use the world map interactively to retrieve the info, or send the contributing information.
+    2. hover over the world map and select the country about which they want to retrieve the info about Pride.
+    3. retrieve the Pride events in a certain country by its name in a search bar.
+    4. send the information about the Pride events that aren't presented on the world map or update the existing ones by contact form.
 
 #### Structure
 
