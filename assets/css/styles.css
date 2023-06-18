@@ -57,3 +57,39 @@ footer {
 #contactpage {
     height:88vh;
 }
+
+/* @media only screen and (min-width: 1024px) and (min-height: 1000px) {
+    .newsletter-div h1 {
+        padding: 2.7rem 0;
+    }
+
+    #newsletter-signup {
+        padding: 3.3rem 0;
+    }
+} */
+
+@media screen and (max-width: 770px) {
+    #country-search {
+        width: 50vw !important;
+        margin: auto;
+    }
+
+    #searchButton {
+        width: 100px;
+        
+    }
+}
+
+@media screen and (max-width: 620px) {
+    #country-search {
+        width: 80vw !important;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 390px) {
+    #searchInput {
+        height: 28px;
+        width: 35vw;
+    }
+}
