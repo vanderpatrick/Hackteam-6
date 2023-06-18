@@ -49,17 +49,10 @@ const map = new mapboxgl.Map({
       },
 });
 // On map style load 
-map.on('style.load', function (){
-  map.setPaintProperty('background', 'background-color', '#0f182')
-})
+
 // On map load
 map.on("load", () => {
-  map.setFog({
-    'horizon-blend': ,
-    'color': 'white',
-    'high-color': '#add8e6',
-    'space-color': '#d8f2ff',
-    });
+  map.setFog({});
   
   let intervalID;
   // remove labels from map
@@ -67,7 +60,6 @@ map.on("load", () => {
     if (layer.type === "symbol") {
       map.removeLayer(layer.id);
     }
-    map.setPaintProperty('background', 'background-color', '#0f182')
   });
 
     // the layer for outlining countries (in white originally)
