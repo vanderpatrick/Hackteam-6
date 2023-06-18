@@ -6,6 +6,10 @@ form.addEventListener('submit', function (event) {
   const formData = new FormData(form);
 
   const jsonData = JSON.stringify(Object.fromEntries(formData));
+  if (Object.fromEntries(formData).email == "" || Object.fromEntries(formData).country == "" || Object.fromEntries(formData).description == "") {
+    Swal.fire('Error', 'Fields cannot be blank.', 'error');
+    return;
+  } else {
 
   fetch('https://pride-api.onrender.com/api/contacts', {
     method: 'POST',
@@ -23,4 +27,5 @@ form.addEventListener('submit', function (event) {
       console.error(error);
       Swal.fire('Error', 'An error occurred while submitting the form.', 'error');
     });
+  }
 });
