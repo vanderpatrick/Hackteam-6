@@ -803,7 +803,30 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 We would like to give credit to the following individuals, organizations, and resources that have contributed to the project or provided inspiration:
 
-- 🙌 [Contributor 1]
-- 🙌 [Contributor 2]
-- 🌐 [External Resource 1]
-- 🌐 [External Resource 2]
+### Resources
+
+### Code Features
+
+- [Tailgrail](https://tailgrail.com/tailwind/about-us)
+  - Assisted in styling the about us page
+- [Kindacode](https://www.kindacode.com/article/tailwind-css-creating-a-read-more-read-less-button/)
+  - Assisted in adding interactivity to about us page
+- [Daily Dev Tips](https://daily-dev-tips.com/posts/making-gradient-text-with-tailwind-css/)
+  - Helped create a gradient text
+
+### Media
+
+#### About Us images:
+
+- **Pride image one** - [https://images.pexels.com/photos/11677294/pexels-photo-11677294.jpeg](https://images.pexels.com/photos/11677294/pexels-photo-11677294.jpeg)
+- **Pride image two** [https://images.pexels.com/photos/2907679/pexels-photo-2907679.jpeg](https://images.pexels.com/photos/2907679/pexels-photo-2907679.jpeg)
+
+## Team **Rainbow Mappers**
+
+- 🙌 [Paul Clarke](https://github.com/pjrclarke), _Scrum Master_ -> codename: **Mr. Cool**
+- 🙌 [Patrick Alexander Lucas Van Der Flier](https://github.com/vanderpatrick), _Project Manager_ -> codename: **'dunkin' Genius**
+- 🙌 [Sean Meade](https://github.com/sean-meade) -> codename: **API Wizard**
+- 🙌 [Philip Whitty](https://github.com/phillywhitty) -> codename: **Art Magician**
+- 🙌 [Lauren Pechey](https://github.com/pecheylauren02), codename: **Rainbow Hermione**
+- 🙌 [Martyna](https://github.com/mmnowak), codename: **Supergirl**
+- 🙌 [Tomislav Dukez](https://github.com/tomdu3)
