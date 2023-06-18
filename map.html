@@ -32,7 +32,7 @@
   <body class="flex flex-col">
     
 <!-- Navbar snippet taken from the Tailwind CSS Documentation -->
-<nav class="flex flex-wrap p-3 navbar items-center justify-between bg-slate-900">
+<nav class="flex flex-wrap p-3 navbar items-center justify-between bg-slate-900" style="height: 10vh;">
   <div class="flex flex-shrink-0 text-red-400 mr-6">
     <span class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-yellow-600" id="logo">
       <a href="index.html"><h1>Out-and-About</h1></a>
@@ -60,7 +60,7 @@
   </div>
   </div>
 </nav>
-     <div class="w-full" style="background-color: #0f172a;">
+     <div class="w-full" style="background-color: #0f172a; height: 12vh">
       <div class="m-auto w-80">
         <input class="border rounded my-2 py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline" type="text" id="searchInput" placeholder="Enter country name">
       <button class="inline-block w-full md:w-auto mb-1 py-1 px-3 text-sm font-bold uppercase border-2 border-transparent bg-red-400 rounded hover:bg-gray-100 text-gray-800 transition duration-200" id="searchButton">Search</button>
@@ -72,7 +72,7 @@
     </div>
     
  <!-- Footer -->
- <footer class="bottom-0 flex-grow w-full text-center bg-slate-900">
+ <footer class="bottom-0 w-full text-center bg-slate-900" style="height: 10vh;">
   <div class="grid md:grid-cols-2 lg:grid-cols-2 place-items-center m-3">
       <div class="text-red-400">
       <a class="m-1" href="http://facebook.com" target="_blank" rel="noopener"
@@ -84,7 +84,6 @@
       <br><p class="text-red-400 text-xs">© 2023 Team Out and About</p>
       </div>
   <div class="text-red-400 hover:text-yellow-600 oxygen"><a href="contactform.html">Contribute to the map</a></div>
-  <div>
 </footer>
 
     <script src="FRONTEND/scripts/mapbox.js" type="module" ></script>
