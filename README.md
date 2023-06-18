@@ -43,10 +43,15 @@
 In this section, we will briefly discuss how our team addressed the applicable criteria:
 
 - ✨ What Framework was used?
+  - **Tailwind CSS** Framework for the Frontend of this Project. For the Backend, **Flask** with **PostgreSQL** database was used for the custom made API, and a third party API **Mapbox API** was used for the interactive map on the main page of the site.
 - ✨ How innovative is the idea and project?
+  - The idea was born out of the interest to have a simple and interesting way to find out the information, especially the beginnings, of the Pride movement around the world. The interactive world map was the logic conclusion of that thought.
 - ✨ Was the README Template used and expanded upon?
+  - The README Template given at the beginning of the Hackathon was used and expanded with more detail in order to give a better picture of the complexity of the project.
 - ✨ Was the GitHub Project used to plan and execute the project?
+  - The GitHub Project was used to plan and execute the project.
 - ✨ Is the project completed and deployed?
+  - The project is completed and deployed.
 
 ## Intro
 
@@ -193,12 +198,11 @@ The colours were selected from existing Tailwind CSS classes. They were chosen a
 
 </details>
 
-To that colour scheme, there was added Medium Turquoise colour (#38D2D2) for the buttons with 3d effect from the website [Beautiful CSS buttons examples](https://getcssscan.com/css-buttons-examples).
-The same colour was used for the gradient effect on the navbar, with the help of [CSS Gradient](https://cssgradient.io/) web app.
+Default black and white colours were generally used for the paragraphs and text elements.
 
 #### Typography
 
-Fonts used on the website are from the [Google Fonts](https://fonts.google.com/), namely **Carter One** and **Oxygen**. Carter One appears in the Logo, whilst Oxygen in the rest of the website.
+Fonts used on the website are from the [Google Fonts](https://fonts.google.com/), namely **Oxygen** and **Oswald**.
 
 #### Imagery
 
@@ -219,16 +223,16 @@ Each page within the site has a consistent and responsive navigation system. The
 
 ### Existing Features
 
-- **Navigation Bar** - Appears on every page for a consistently easy and intuitive navigable system, except of the 404 page.
-- **Social Media Icons** - Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the developers Instagram, GitHub and Facebook accounts. The icons appear in the centre of the footer.
-- **[Home Page](# "PAGE")** - It is in fact the About page that contains the description of the page and instructions for the Map page features.
-- **[Map Page](# "MAP")** - An interactive page containing the world map on which the user can find the information about the significant Pride Events by hovering and clicking on a desired country.
+- **Navigation Bar** - Appears on every page for a consistently easy and intuitive navigable system.
+- **Social Media Icons** - Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the developers Instagram, GitHub and Facebook accounts together with credits.
+- **[Home Page](# "PAGE")** - It is in fact the About page that contains the description of the site and instructions for the Map page features.
+- **[Map Page](# "MAP")** - An interactive page containing the 3d globe world map on which the user can find the information about the significant Pride Events by hovering and clicking on a desired country. There is an option to make a search for a country by search bar that apears at the center over the world map.
 - **[Contact Page](# "CONTACT")** - The page on which there's a form for a user to fill in if wanting to contribute with an update or addition to the map information.
 - **[404 Page](# "404 PAGE")** - 404 error page Pride Themed .
 
 ### Features to Implement in the future
 
-- ...
+- The possibility for a user to pinpoint into the map and choose to add the details directly by a pop-up window. The information would be sent to the API and the admin could decide to validate it if proven credible.
 
 [Back to top ⇧](#)
 
@@ -281,6 +285,8 @@ The goal section provides a concise summary of the main objective or purpose of 
 - [GitHub](https://github.com/ "Link to GitHub") - GitHub was used to store the project after pushing
 - [Balsamiq](https://balsamiq.com/ "Link to Balsamiq homepage")
   - Balsamiq was used to create the wireframes during the design phase of the project.
+- [Figma](https://www.figma.com/)
+  - Figma was used to site map for the readme.
 - [Am I Responsive?](https://amiresponsive.co.uk/ "Link to Am I Responsive Homepage")
 
   - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
