@@ -45,7 +45,7 @@
 <nav class="flex flex-wrap p-3 navbar items-center justify-between bg-slate-900" style="height: 10vh;">
   <div class="flex flex-shrink-0 text-red-400 mr-6">
     <span class="font-bold text-xl text-transparent bg-clip-text bg-gradient-to-r from-red-400 to-yellow-600" id="logo">
-      <a href="index.html"><h1>Out-and-About</h1></a>
+      <a href="index.html">Out and About</a>
     </span>
   </div>
   <!-- Dropdown menu snippet taken from https://flowbite.com/docs/ -->
@@ -68,23 +68,18 @@
       </li>
     </ul>
   </div>
-  </div>
 </nav>
      <div class="w-full" style="background-color: #0f172a; height: 12vh">
       <div class="m-auto w-80">
         <input class="border rounded my-2 py-2 px-3 text-gray-700 focus:outline-none focus:shadow-outline" type="text" id="searchInput" placeholder="Enter country name">
-        <button class="inline-block w-full md:w-auto mb-1 py-1 px-3 text-sm font-bold uppercase border-2 border-transparent bg-red-400 rounded hover:bg-gray-100 text-gray-800 transition duration-200" id="searchButton">Search</button>
-      </div>
-        
-      </div>
-      
+        <button class="m-2 ml-4 inline-block w-full md:w-auto mb-1 py-1 px-3 text-sm font-bold uppercase border-2 border-transparent bg-red-400 rounded hover:bg-gray-100 text-gray-800 transition duration-200" id="searchButton">Search</button>
+        <button class="m-2 inline-block w-full md:w-auto mb-1 py-1 px-3 text-sm font-bold uppercase border-2 border-transparent bg-red-400 rounded hover:bg-gray-100 text-gray-800 transition duration-200" id="instructionsButton">Instructions</button>
+    </div>      
      </div>
       <div id='map' style='height: 68vh; overflow: hidden;'></div>
-
-    </div>
-    
+   
  <!-- Footer -->
- <footer class="bottom-0 w-full text-center bg-slate-900" style="height: 10vh;">
+ <footer class="bottom-0 flex-grow w-full text-center bg-slate-900">
   <div class="grid md:grid-cols-2 lg:grid-cols-2 place-items-center m-3">
       <div class="text-red-400">
       <a class="m-1" href="http://facebook.com" target="_blank" rel="noopener"
@@ -92,10 +87,10 @@
       <a class="m-1" href="http://twitter.com" target="_blank" rel="noopener"
         aria-label="Our Twitter Page (opens in a new tab)"><i class="fab fa-twitter hover:text-yellow-600"></i></a>
       <a class="m-1" href="https://github.com/vanderpatrick/Hackteam-6" target="_blank"
-        rel="noopener" aria-label="Our Github repo (opens in a new tab)"><i class="fa-brands fa-github hover:text-yellow-600"></i></i></a>
-      <br><p class="text-red-400 text-xs">© 2023 Team Out and About</p>
+        rel="noopener" aria-label="Our Github repo (opens in a new tab)"><i class="fa-brands fa-github hover:text-yellow-600"></i></a>
+      <br><p class="text-red-400 text-xs">© 2023 Rainbow Mappers</p>
       </div>
-  <div class="text-red-400 hover:text-yellow-600 oxygen"><a href="contactform.html">Contribute to the map</a></div>
+  <div class="text-red-400 hover:text-yellow-600 oxygen"><a href="contactform.html">Contribute to the map</a></div></div>
 </footer>
 
     <script src="FRONTEND/scripts/mapbox.js" type="module" ></script>

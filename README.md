@@ -579,7 +579,7 @@ Manual testing was conducted on the following elements that appear on every page
 
 <summary>Navbar links</summary>
 
-![Navbar links](#)
+![Navbar links](docs/manualtesting/navbarlinks.gif)
 
 </details>
 
@@ -588,7 +588,7 @@ Manual testing was conducted on the following elements that appear on every page
 <details>
 <summary>Navbar hover effect</summary>
 
-![Navbar hover effect](#)
+![Navbar hover effect](docs/manualtesting/hover.gif)
 
 </details>
      
@@ -631,7 +631,7 @@ Manual testing was conducted on the following elements that appear on every page
 <details>
 <summary>Home Page</summary>
 
-![Home Page](#)
+![Home Page](docs/userstorytesting/userstoryn5.gif)
 
 </details>
 
@@ -642,7 +642,7 @@ Manual testing was conducted on the following elements that appear on every page
 <details>
 <summary>Map hover and zoom</summary>
 
-![Map Hover and Zoom](#)
+![Map Hover and Zoom](docs/manualtesting/maphover.gif)
 
 </details>
 
@@ -651,14 +651,13 @@ Manual testing was conducted on the following elements that appear on every page
 <details>
 <summary>Map click</summary>
 
-![Map Hover and Click](#)
+![Map Hover and Click](docs/manualtesting/mapclick.gif)
 
 </details>
 
 #### Contact Page
 
-- Manual testing was conducted on the Contact Page [Contact Page](#).
-  ...
+- Manual testing was conducted on the Contact Page ![Contact Page](docs/manualtesting/contactmanualtest.png)
 
 ### Responsiveness
 
@@ -715,7 +714,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>Home Page HTML Validation</summary>
 
-![Home Page HTML Validation](#)
+[Home Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Findex.html)
 
 </details>
 
@@ -724,7 +723,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>Map Page HTML Validation</summary>
 
-![Map Page HTML Validation](#)
+[Map Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Fmap.html)
 
 </details>
 
@@ -733,7 +732,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>Contact Page HTML Validation</summary>
 
-![Contact Page HTML Validation](#)
+[Contact Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Fcontactform.html)
 
 </details>
 
@@ -742,7 +741,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>404 Page HTML Validation Results</summary>
 
-![404 Page HTML Validation Results](#)
+[404 Page HTML Validation Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2F404.html)
 
 </details>
 <br>
@@ -752,7 +751,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>Style Sheet Validation</summary>
 
-![Style Sheet Validation](#)
+![Style Sheet Validation](docs/cssvalid.png)
 
 </details>
 
@@ -862,4 +861,4 @@ We would like to give credit to the following individuals, organizations, and re
 - 🙌 [Philip Whitty](https://github.com/phillywhitty) -> codename: **Art Magician**
 - 🙌 [Lauren Pechey](https://github.com/pecheylauren02) -> codename: **Rainbow Hermione**
 - 🙌 [Martyna](https://github.com/mmnowak) -> codename: **Supergirl**
-- 🙌 [Tomislav Dukez](https://github.com/tomdu3)
+- 🙌 [Tomislav Dukez](https://github.com/tomdu3) -> codename: **Croatian David Attenborough**
