@@ -45,9 +45,9 @@
 In this section, we will briefly discuss how our team addressed the applicable criteria:
 
 - ✨ What Framework was used?
-  - **Tailwind CSS** Framework for the Frontend of this Project. For the Backend, **Flask** with **PostgreSQL** database was used for the custom made API, and a third party API **Mapbox API** was used for the interactive map on the main page of the site.
+  - **Tailwind CSS** Framework for the Frontend of this Project. For the Backend, **Flask** with **PostgreSQL** database was used for the custom-made API, and a third-party API **Mapbox API** was used for the interactive map on the main page of the site.
 - ✨ How innovative is the idea and project?
-  - The idea was born out of the interest to have a simple and interesting way to find out the information, especially the beginnings, of the Pride movement around the world. The interactive world map was the logic conclusion of that thought.
+  - The idea was born out of the interest to have a simple and interesting way to find out information, especially the beginnings, of the Pride movement around the world. The interactive world map was the logical conclusion of that thought.
 - ✨ Was the README Template used and expanded upon?
   - The README Template given at the beginning of the Hackathon was used and expanded with more detail in order to give a better picture of the complexity of the project.
 - ✨ Was the GitHub Project used to plan and execute the project?
@@ -96,7 +96,7 @@ The primary goal of the project is to create an interactive website which allows
 
 1. As a returning user, I want to be able to send information about events I think should be featured on the map to the site owners.
 2. As a returning user, I want to be able to view the site on a range of different devices.
-3. As a returning user, I want to be able to contact the site owners to suggest an update to the information featured on the site.
+3. As a returning user, I want to be able to follow the site owners on social media.
 
 ### Development Planes
 
@@ -106,7 +106,7 @@ In order to create an interactive website that allows the user to get useful inf
 
 #### Strategy
 
-Strategy incorporates user needs as well as product objectives. This website will focus on the following target audience, divided into three main categories:
+The strategy incorporates user needs as well as product objectives. This website will focus on the following target audience, divided into three main categories:
 
 - **Roles:**
 
@@ -121,9 +121,9 @@ Strategy incorporates user needs as well as product objectives. This website wil
 
   - Lifestyles:
 
-    - Interest in LGBTQ+ community
+    - Interest in the LGBTQ+ community
     - Interest in human rights
-    - Interest in traveling and knowing about the LBTQ+ events of the country they visit
+    - Interest in travelling and knowing about the LBTQ+ events of the country they visit
 
   - Personality/Attitudes:
     - Open-minded
@@ -135,7 +135,7 @@ The website is supposed to enable the **user** to:
 
 - select a country by moving and clicking the mouse.
 - retrieve the information on the history of the Pride movement events in a particular country.
-- get the information in a form of a short text about history and an image of the event.
+- get the information in a form of a short text about the history and an image of the event.
 - suggest a change or an update of the information on the site.
 
 #### Scope
@@ -144,19 +144,19 @@ The scope plane defines requirements based on the goals established on the strat
 
 - Content Requirements:
   - The user will be looking for:
-    1. the information about some significant Pride event in particular country.
+    1. the information about some significant Pride events in a particular country.
     2. the information about the interaction on the Map Page.
     3. the form by which they will be able to contribute to the info on the site.
 - Functionality Requirements:
   - The user will be able to:
-    1. easily navigate through the pages wether they want to know more about the site, use the world map interactively to retrieve the info, or send the contributing information.
+    1. easily navigate through the pages whether they want to know more about the site, use the world map interactively to retrieve the info, or send the contributing information.
     2. hover over the world map and select the country about which they want to retrieve the info about Pride.
     3. retrieve the Pride events in a certain country by its name in a search bar.
     4. send the information about the Pride events that aren't presented on the world map or update the existing ones by contact form.
 
 #### Structure
 
-The above mentioned information were organized in a site map, showing how users can navigate through the site with ease and efficiency:
+The above mentioned information was organized in a site map, showing how users can navigate through the site with ease and efficiency:
 
 <details>
 <summary>Site Map</summary>
@@ -209,10 +209,10 @@ Fonts used on the website are from the [Google Fonts](https://fonts.google.com/)
 
 #### Imagery
 
-The images are taken from the different sources and are credited in the Credits of this file. The main sources were:
+The images are taken from different sources and are credited in the Credits of this file. The main sources were:
 
 - [Pixabay](https://pixabay.com/) for the front face of the cards,
-- [Unsplash](https://unsplash.com/) for the image for 404 page.
+- [Unsplash](https://unsplash.com/) for the image for the 404 page.
 - [The Pattern Library](http://thepatternlibrary.com/) for the background images.
 
 ## Features
@@ -229,9 +229,9 @@ Each page within the site has a consistent and responsive navigation system. The
 #### Frontend
 
 - **Navigation Bar** - Appears on every page for a consistently easy and intuitive navigable system.
-- **Social Media Icons** - Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the developers Instagram, GitHub and Facebook accounts together with credits.
+- **Social Media Icons** - Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the developers' Instagram, GitHub and Facebook accounts together with credits.
 - **[Home Page](# "PAGE")** - It is in fact the About page that contains the description of the site and instructions for the Map page features.
-- **[Map Page](# "MAP")** - An interactive page containing the 3d globe world map on which the user can find the information about the significant Pride Events by hovering and clicking on a desired country. There is an option to make a search for a country by search bar that apears at the center over the world map.
+- **[Map Page](# "MAP")** - An interactive page containing the 3d globe world map on which the user can find information about the significant Pride Events by hovering and clicking on a desired country. There is an option to search for a country by search bar that appears at the top of the world map.
 - **[Contact Page](# "CONTACT")** - The page on which there's a form for a user to fill in if wanting to contribute with an update or addition to the map information.
 - **[404 Page](# "404 PAGE")** - 404 error page Pride Themed .
 
@@ -241,11 +241,11 @@ Each page within the site has a consistent and responsive navigation system. The
 
 ![Search By Country](docs/imgs/map-features/country-search.png "Search By Country")
 
-A search box to find the information of a specific country without the need of the globe.
+A search box to find the information of a specific country without the need for the globe.
 
 **Globe**
 
-A 3rd model of Earth that can be rotated and zoomed on using mouse or touch screen.
+A 3rd model of Earth that can be rotated and zoomed on using a mouse or touch screen.
 
 ![Globe](docs/imgs/map-features/globe.png "Globe")
 
@@ -261,7 +261,7 @@ When a country is clicked it will either show information related to that countr
 
 ![Info On country on click](docs/imgs/map-features/info-on-country.png "Info On country on click")
 
-Or return a message to ask to go to contact page if the person has some information they would like share:
+Or return a message to ask to go to the contact page if the person has some information they would like to share:
 
 ![No Info on click](docs/imgs/map-features/if-no-info.png "No Info on click")
 
@@ -274,7 +274,7 @@ A PostgreSQL database hosted on render.com was used to hold the data collected f
 
 ##### Pride Event Model
 
-Model describing a pride related event that happen across the world.
+A model describing a pride-related event that happen across the world.
 
 | Key        | Name        | Type    | Extra Info                |
 | ---------- | ----------- | ------- | ------------------------- |
@@ -283,14 +283,14 @@ Model describing a pride related event that happen across the world.
 |            | date        | Date    | Date event happened       |
 |            | country     | String  | Country event happened in |
 |            | region      | String  | Region event happened in  |
-|            | description | String  | Description of even       |
+|            | description | String  | Description of event       |
 |            | image_link  | String  | Link to related image     |
 |            | lat         | String  |                           |
 |            | long        | String  |                           |
 
 ##### Contact Event Model
 
-Model describing the information provided through contact form
+A model describing the information provided through the contact form
 
 | Key        | Name        | Type    | Extra Info                |
 | ---------- | ----------- | ------- | ------------------------- |
@@ -301,7 +301,7 @@ Model describing the information provided through contact form
 
 #### API for pride events
 
-An API was built using Flask and flask_restx to handle different query's between the website and the database. It was hosted as a Web Service on render.com. The query's and url paths are explained below.
+An API was built using Flask and flask_restx to handle different queries between the website and the database. It was hosted as a Web Service on render.com. The queries and url paths are explained below.
 
 BASE_URL = https://pride-api.onrender.com
 
@@ -353,7 +353,7 @@ Package sent with `POST` request:
 }
 ```
 
-On a successful request it returns it returns `200` and the newly added event with an `id`:
+On a successful request it returns `200` and the newly added event with an `id`:
 
 ```
 {
@@ -474,7 +474,7 @@ Type of HTTP request: `POST`
 
 URL: {BASE_URL}/api/contacts
 
-Package provided with request:
+The package provided with the request:
 
 ```
 {
@@ -495,9 +495,9 @@ On a successful request it returns a status of `200` and the newly added contact
 }
 ```
 
-### Features to Implement in the future
+### Features to Implement in future
 
-- **Direct info input on the map** - This feature would allow user to pinpoint into the map and choose to add the details directly by a pop-up window. The information would be sent to the API and the admin could decide to validate it if proven credible.
+- **Direct info input on the map** - This feature would allow the user to pinpoint into the map and choose to add the details directly by a pop-up window. The information would be sent to the API and the admin could decide to validate it if proven credible.
 - **Image display of the events** - Although planned in the database as a possibility, the display of an image related to the event recorded in the database wasn't implemented because of lack of time.
 
 [Back to top ⇧](#)
@@ -543,7 +543,7 @@ The goal section provides a concise summary of the main objective or purpose of 
 - [CSS Gradient](https://cssgradient.io/)
   - CSS Gradient web app was used to make gradient colour backgrounds.
 - [Google Fonts](https://fonts.google.com/ "Link to Google Fonts")
-  - Google fonts was used to import the fonts "xxx", into the style.css file. These fonts were used throughout the project.
+  - Google onts was used to import the fonts "xxx", into the style.css file. These fonts were used throughout the project.
 - [Font Awesome](https://fontawesome.com/ "Link to FontAwesome")
   - Font Awesome was used on almost all pages throughout the website to import icons (e.g. social media icons) for UX purposes.
 - [GitPod](https://gitpod.io/ "Link to GitPod homepage")
@@ -553,7 +553,7 @@ The goal section provides a concise summary of the main objective or purpose of 
   - Balsamiq was used to create the wireframes during the design phase of the project.
 - [Figma](https://www.figma.com/)
   - Figma was used to site map for the readme.
-- [Am I Responsive?](https://ui.dev/amiresponsive "Link to Am I Responsive Homepage") - Am I Responsive was used to test responsivenes and generate design for the mockup imagery used at the beginning of this documentation.
+- [Am I Responsive?](https://ui.dev/amiresponsive "Link to Am I Responsive Homepage") - Am I Responsive was used to test responsiveness and generate a design for the mockup imagery used at the beginning of this documentation.
 - [Peek](https://github.com/phw/peek)
   - Peek was used to make screencasts for the documentation.
 
@@ -565,7 +565,103 @@ The goal section provides a concise summary of the main objective or purpose of 
 
 #### New User Goals:
 
-#### Current User Goals:
+1. As a new user, I want to identify the purpose of the website.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| Home Page | Navigate to the home page and scroll down | Identify the site's purpose | Works as expected |
+
+<details><summary>See here</summary>
+<img src="docs/userstorytesting/userstory1.png">
+</details>
+
+
+2. As a new user, I want to navigate the site intuitively and with ease.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| "Explore our World Map" buttons | Click on the explore button | Go to the map page | Works as expected |
+| Links in the Navigation Bar | Click on links | Go to the corresponding page | Works as expected |
+| "Contribute to the Map" link in the footer | Click on the link | Go to the contact form page | Works as expected |
+| 404 Page | Click on the Home link | Return to the Home page | Works as expected |
+
+<details><summary>See here</summary>
+<img src="docs/userstorytesting/userstoryn2.gif">
+<img src="docs/userstorytesting/userstoryn2b.gif">
+<img src="docs/userstorytesting/userstoryn2c.gif">
+</details>
+
+
+3. As a new user, I want the instructions to be easily found, clear, and concise.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| "Want to explore?" section on the home page | Go to the Home page and scroll down | Find the instructions | Works as expected |
+| "Instructions" button on the Map page | Go to the Map page and click on the instructions button | Find the instructions | Works as expected |
+
+<details><summary>See here</summary>
+<img src="docs/userstorytesting/userstoryn3b.gif">
+</details>
+
+
+4. As a new user, I want the visual content to be attractive, appealing and relevant to the site content.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| CSS Styling | N/A | Styling consistent and attractive | Styling consistent across the website |
+
+<details><summary>See here</summary>
+<img src="docs/userstorytesting/userstory4.png">
+</details>
+
+
+5. As a new user, I want to be able to easily find more information about the project.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| Home Page | Navigate to the Home page and scroll down | Locate the main paragraph | Works as expected |
+| Read More button | Click on the button | Find out more information about the project | Works as expected |
+
+<details><summary>See here</summary>
+<img src="docs/userstorytesting/userstoryn5.gif">
+</details>
+
+
+#### Returning User Goals:
+
+1. As a returning user, I want to be able to send information about events I think should be featured on the map to the site owners.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| 'Contribute to the map' link in the footer | Click on the link | See the contact form | Works as expected |
+| 'Submit' link in the navbar | Click on the link | See the contact form | Works as expected |
+| Contact form | Fill out the form and click submit | See a 'thank you' pop-up | Works as expected |
+
+<details><summary>See here</summary>
+<img src="docs/userstorytesting/userstoryr1a.gif">
+</details>
+
+
+2. As a returning user, I want to be able to view the site on a range of different devices.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| Home Page | View the Home page on your device | Page adapts to the screen size | Works as expected |
+| Map Page | View the Map page on your device | Page adapts to the screen size | Works as expected |
+| Submit Page | View the Submit page on your device | Page adapts to the screen size | Works as expected |
+| 404 Page | View the Home page on your device | Page adapts to the screen size | Works as expected |
+
+
+3. As a returning user, I want to be able to follow the site owners on social media.
+
+| **Feature** | **Action** | **Expected Result** | **Actual Result** |
+|:-----------:|:----------:|:-------------------:|:-----------------:|
+| Social media icons | See the footer | Click on the icons | Works as expected |
+
+<details><summary>See here</summary>
+<img src="docs/userstorytesting/userstoryr3.gif">
+</details>
+
 
 ### Manual Testing
 
@@ -637,7 +733,7 @@ Manual testing was conducted on the following elements that appear on every page
 
 #### Map Page
 
-- Hovering over the world map shows the country that is positioned under the mouse. By clicking on the chosen country, the modal appears with the information of the Pride event in that country. The map can be zoomed in or out.
+- Hovering over the world map shows the country that is positioned under the mouse. By clicking on the chosen country, the modal appears with the information about the Pride event in that country. The map can be zoomed in or out.
 
 <details>
 <summary>Map hover and zoom</summary>
@@ -669,14 +765,14 @@ Manual testing was conducted on all three site pages for responsiveness:
 <details>
 <summary>Resposiveness - Home Page</summary>
 
-![Resposiveness - Home Page](#)
+![Responsiveness - Home Page](#)
 
 </details>
      
 - Responsiveness of Map Page.
 
 <details>
-<summary>Resposiveness - Contact Page</summary>
+<summary>Responsiveness - Contact Page</summary>
 
 ![Resposiveness - Map Page](#)
 
@@ -685,18 +781,18 @@ Manual testing was conducted on all three site pages for responsiveness:
 - Responsiveness of Contact Page.
 
 <details>
-<summary>Resposiveness - Contact</summary>
+<summary>Responsiveness - Contact</summary>
 
-![Resposiveness - Contact Page](#)
+![Responsiveness - Contact Page](#)
 
 </details>
 
 - Responsiveness of 404 Page.
 
 <details>
-<summary>Resposiveness - 404 Page</summary>
+<summary>Responsiveness - 404 Page</summary>
 
-![Resposiveness - 404 Page](#)
+![Responsiveness - 404 Page](#)
 
 </details>
 
@@ -706,7 +802,7 @@ Manual testing was conducted on all three site pages for responsiveness:
 
 #### Code Validation
 
-The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the `HTML` and `CSS` code used. The [JSHint JavaScript Code Quality Tool](https://jshint.com/) was also used to validate the sites `JS` code. Python validation was made by the Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) validation web app.
+The [W3C Markup Validator](https://validator.w3.org/) service was used to validate the `HTML` and `CSS` code used. The [JSHint JavaScript Code Quality Tool](https://jshint.com/) was also used to validate the site's `JS` code. Python validation was made by the Code Institute [CI Python Linter](https://pep8ci.herokuapp.com/) validation web app.
 
 **Results:**
 
@@ -843,7 +939,7 @@ We would like to give credit to the following individuals, organizations, and re
 - [Tailgrail](https://tailgrail.com/tailwind/about-us)
   - Assisted in styling the about us page
 - [Kindacode](https://www.kindacode.com/article/tailwind-css-creating-a-read-more-read-less-button/)
-  - Assisted in adding interactivity to about us page
+  - Assisted in adding interactivity to the about us page
 - [Daily Dev Tips](https://daily-dev-tips.com/posts/making-gradient-text-with-tailwind-css/)
   - Helped create a gradient text
 
@@ -862,4 +958,4 @@ We would like to give credit to the following individuals, organizations, and re
 - 🙌 [Philip Whitty](https://github.com/phillywhitty) -> codename: **Art Magician**
 - 🙌 [Lauren Pechey](https://github.com/pecheylauren02) -> codename: **Rainbow Hermione**
 - 🙌 [Martyna](https://github.com/mmnowak) -> codename: **Supergirl**
-- 🙌 [Tomislav Dukez](https://github.com/tomdu3)
+- 🙌 [Tomislav Dukez](https://github.com/tomdu3) -> codename: **Croatian David Attenborough**
