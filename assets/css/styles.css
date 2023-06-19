@@ -3,7 +3,6 @@ body {
     background-color: #10182b;
 }
 
-/* NAVIGATION BAR */
 .navbar {
     border-bottom: solid 6px rgb(248 113 113);
     font-family: "Oxygen", sans-serif;
@@ -11,10 +10,10 @@ body {
 }
 
 #logo {
-    text-transform: capitalize;
-    font-family: "Oxygen", sans-serif;
+    font-family: "Oswald", sans-serif;
     letter-spacing: 2.5px;
     font-weight: 800;
+    text-transform: uppercase;
 }
 
 .hero {
@@ -26,7 +25,7 @@ footer {
     font-family: "Oxygen", sans-serif;
 }
 
-/* 404 page */
+
 .rainbow-text {
     background: -webkit-linear-gradient(
         0deg,
@@ -40,22 +39,25 @@ footer {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+
 #map {
     background-color: #0f182f;
 }
+
 #contactpage {
-    height:88vh;
+    width: 100vw;
+    margin: auto;
+    padding: 50px 0;
 }
-
-/* @media only screen and (min-width: 1024px) and (min-height: 1000px) {
-    .newsletter-div h1 {
-        padding: 2.7rem 0;
-    }
-
-    #newsletter-signup {
-        padding: 3.3rem 0;
-    }
-} */
+#contactbackground {
+    background-image: url("../images/contactimage.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#contactpage {
+    background-color: rgba(15, 24, 47, 0.7);
+    background-size: cover;
+}
 
 @media screen and (max-width: 770px) {
     #country-search {
@@ -98,5 +100,9 @@ footer {
 
     #map {
         height: 75vh !important;
+    }
+
+    #contactformcontainer {
+        height: 75vh;
     }
 }

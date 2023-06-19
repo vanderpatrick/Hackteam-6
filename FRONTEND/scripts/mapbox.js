@@ -27,9 +27,9 @@ const map = new mapboxgl.Map({
     style: "mapbox://styles/mapbox/light-v10",
     center: [0, 0],
     zoom: 1,
-    // dragPan: false,
+   
     renderWorldCopies: false,
-    // scrollZoom: false,
+    
     boxZoom: false,
     doubleClickZoom: false,
     projection: "globe",
@@ -46,7 +46,7 @@ const map = new mapboxgl.Map({
     },
 });
 
-// let markerPoints = [];
+
 let features = [];
 $.ajax({
     type: "GET",
@@ -86,12 +86,6 @@ $.ajax({
                 // make a marker for each feature and add it to the map
                 new mapboxgl.Marker(el)
                     .setLngLat(feature.geometry.coordinates)
-                    .setPopup(
-                        new mapboxgl.Popup({ offset: 0 }) // add popups
-                            .setHTML(
-                                `<h3>${feature.properties.title}</h3><p>${feature.properties.description}</p>`
-                            )
-                    )
                     .addTo(map);
             }
         }

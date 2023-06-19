@@ -30,8 +30,7 @@ function requestCountry(countryName) {
               // Handle other error cases
               console.log("AJAX request error:", textStatus, errorThrown);
               Swal.fire({
-                title: "Error",
-                text: "An error occurred while fetching data for " + countryName + ". Please try again later.",
+                text: "Please enter the name of the country you want to see.",
                 confirmButtonText: "Close",
                 icon: "error"
               });
