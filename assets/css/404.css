@@ -41,6 +41,8 @@ footer {
         #0047e6 80%,
         #bd0bdb 100%
     );
+    background-clip: text;
     -webkit-background-clip: text;
+    color: transparent;
     -webkit-text-fill-color: transparent;
 }
