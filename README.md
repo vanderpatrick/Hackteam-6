@@ -230,10 +230,10 @@ Each page within the site has a consistent and responsive navigation system. The
 
 - **Navigation Bar** - Appears on every page for a consistently easy and intuitive navigable system.
 - **Social Media Icons** - Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the developers' Instagram, GitHub and Facebook accounts together with credits.
-- **[Home Page](# "PAGE")** - It is in fact the About page that contains the description of the site and instructions for the Map page features.
-- **[Map Page](# "MAP")** - An interactive page containing the 3d globe world map on which the user can find information about the significant Pride Events by hovering and clicking on a desired country. There is an option to search for a country by search bar that appears at the top of the world map.
-- **[Contact Page](# "CONTACT")** - The page on which there's a form for a user to fill in if wanting to contribute with an update or addition to the map information.
-- **[404 Page](# "404 PAGE")** - 404 error page Pride Themed .
+- **[Home Page](./index.html "PAGE")** - It is in fact the About page that contains the description of the site and instructions for the Map page features.
+- **[Map Page](./map.html "MAP")** - An interactive page containing the 3d globe world map on which the user can find information about the significant Pride Events by hovering and clicking on a desired country. There is an option to search for a country by search bar that appears at the top of the world map.
+- **[Contact Page](./contactform.html "CONTACT")** - The page on which there's a form for a user to fill in if wanting to contribute with an update or addition to the map information.
+- **[404 Page](./404.html "404 PAGE")** - 404 error page Pride Themed .
 
 ##### Map features
 
@@ -500,13 +500,6 @@ On a successful request it returns a status of `200` and the newly added contact
 - **Image display of the events** - Although planned in the database as a possibility, the display of an image related to the event recorded in the database wasn't implemented because of lack of time.
 
 [Back to top ⇧](#)
-
-The goal section provides a concise summary of the main objective or purpose of the project or software described in this README. It addresses the following aspects:
-
-- ➡️ Problem Statement
-- ➡️ Objective(s)
-- ➡️ Target Audience
-- ➡️ Benefits
 
 ## Technologies Used
 
