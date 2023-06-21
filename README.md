@@ -230,10 +230,10 @@ Each page within the site has a consistent and responsive navigation system. The
 
 - **Navigation Bar** - Appears on every page for a consistently easy and intuitive navigable system.
 - **Social Media Icons** - Appearing on every page, the icons are appropriate representations of the Social Media platforms, linking users to the developers' Instagram, GitHub and Facebook accounts together with credits.
-- **[Home Page](# "PAGE")** - It is in fact the About page that contains the description of the site and instructions for the Map page features.
-- **[Map Page](# "MAP")** - An interactive page containing the 3d globe world map on which the user can find information about the significant Pride Events by hovering and clicking on a desired country. There is an option to search for a country by search bar that appears at the top of the world map.
-- **[Contact Page](# "CONTACT")** - The page on which there's a form for a user to fill in if wanting to contribute with an update or addition to the map information.
-- **[404 Page](# "404 PAGE")** - 404 error page Pride Themed .
+- **[Home Page](./index.html "PAGE")** - It is in fact the About page that contains the description of the site and instructions for the Map page features.
+- **[Map Page](./map.html "MAP")** - An interactive page containing the 3d globe world map on which the user can find information about the significant Pride Events by hovering and clicking on a desired country. There is an option to search for a country by search bar that appears at the top of the world map.
+- **[Contact Page](./contactform.html "CONTACT")** - The page on which there's a form for a user to fill in if wanting to contribute with an update or addition to the map information.
+- **[404 Page](./404.html "404 PAGE")** - 404 error page Pride Themed .
 
 ##### Map features
 
@@ -265,7 +265,6 @@ Or return a message to ask to go to the contact page if the person has some info
 
 ![No Info on click](docs/imgs/map-features/if-no-info.png "No Info on click")
 
-
 #### Backend
 
 #### Database Models
@@ -283,7 +282,7 @@ A model describing a pride-related event that happen across the world.
 |            | date        | Date    | Date event happened       |
 |            | country     | String  | Country event happened in |
 |            | region      | String  | Region event happened in  |
-|            | description | String  | Description of event       |
+|            | description | String  | Description of event      |
 |            | image_link  | String  | Link to related image     |
 |            | lat         | String  |                           |
 |            | long        | String  |                           |
@@ -502,13 +501,6 @@ On a successful request it returns a status of `200` and the newly added contact
 
 [Back to top ⇧](#)
 
-The goal section provides a concise summary of the main objective or purpose of the project or software described in this README. It addresses the following aspects:
-
-- ➡️ Problem Statement
-- ➡️ Objective(s)
-- ➡️ Target Audience
-- ➡️ Benefits
-
 ## Technologies Used
 
 ### Main Languages Used
@@ -567,23 +559,22 @@ The goal section provides a concise summary of the main objective or purpose of 
 
 1. As a new user, I want to identify the purpose of the website.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|:-----------:|:----------:|:-------------------:|:-----------------:|
-| Home Page | Navigate to the home page and scroll down | Identify the site's purpose | Works as expected |
+| **Feature** |                **Action**                 |     **Expected Result**     | **Actual Result** |
+| :---------: | :---------------------------------------: | :-------------------------: | :---------------: |
+|  Home Page  | Navigate to the home page and scroll down | Identify the site's purpose | Works as expected |
 
 <details><summary>See here</summary>
 <img src="docs/userstorytesting/userstory1.png">
 </details>
 
-
 2. As a new user, I want to navigate the site intuitively and with ease.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|:-----------:|:----------:|:-------------------:|:-----------------:|
-| "Explore our World Map" buttons | Click on the explore button | Go to the map page | Works as expected |
-| Links in the Navigation Bar | Click on links | Go to the corresponding page | Works as expected |
-| "Contribute to the Map" link in the footer | Click on the link | Go to the contact form page | Works as expected |
-| 404 Page | Click on the Home link | Return to the Home page | Works as expected |
+|                **Feature**                 |         **Action**          |     **Expected Result**      | **Actual Result** |
+| :----------------------------------------: | :-------------------------: | :--------------------------: | :---------------: |
+|      "Explore our World Map" buttons       | Click on the explore button |      Go to the map page      | Works as expected |
+|        Links in the Navigation Bar         |       Click on links        | Go to the corresponding page | Works as expected |
+| "Contribute to the Map" link in the footer |      Click on the link      | Go to the contact form page  | Works as expected |
+|                  404 Page                  |   Click on the Home link    |   Return to the Home page    | Works as expected |
 
 <details><summary>See here</summary>
 <img src="docs/userstorytesting/userstoryn2.gif">
@@ -591,77 +582,70 @@ The goal section provides a concise summary of the main objective or purpose of 
 <img src="docs/userstorytesting/userstoryn2c.gif">
 </details>
 
-
 3. As a new user, I want the instructions to be easily found, clear, and concise.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|:-----------:|:----------:|:-------------------:|:-----------------:|
-| "Want to explore?" section on the home page | Go to the Home page and scroll down | Find the instructions | Works as expected |
-| "Instructions" button on the Map page | Go to the Map page and click on the instructions button | Find the instructions | Works as expected |
+|                 **Feature**                 |                       **Action**                        |  **Expected Result**  | **Actual Result** |
+| :-----------------------------------------: | :-----------------------------------------------------: | :-------------------: | :---------------: |
+| "Want to explore?" section on the home page |           Go to the Home page and scroll down           | Find the instructions | Works as expected |
+|    "Instructions" button on the Map page    | Go to the Map page and click on the instructions button | Find the instructions | Works as expected |
 
 <details><summary>See here</summary>
 <img src="docs/userstorytesting/userstoryn3b.gif">
 </details>
 
-
 4. As a new user, I want the visual content to be attractive, appealing and relevant to the site content.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|:-----------:|:----------:|:-------------------:|:-----------------:|
-| CSS Styling | N/A | Styling consistent and attractive | Styling consistent across the website |
+| **Feature** | **Action** |        **Expected Result**        |           **Actual Result**           |
+| :---------: | :--------: | :-------------------------------: | :-----------------------------------: |
+| CSS Styling |    N/A     | Styling consistent and attractive | Styling consistent across the website |
 
 <details><summary>See here</summary>
 <img src="docs/userstorytesting/userstory4.png">
 </details>
 
-
 5. As a new user, I want to be able to easily find more information about the project.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|:-----------:|:----------:|:-------------------:|:-----------------:|
-| Home Page | Navigate to the Home page and scroll down | Locate the main paragraph | Works as expected |
-| Read More button | Click on the button | Find out more information about the project | Works as expected |
+|   **Feature**    |                **Action**                 |             **Expected Result**             | **Actual Result** |
+| :--------------: | :---------------------------------------: | :-----------------------------------------: | :---------------: |
+|    Home Page     | Navigate to the Home page and scroll down |          Locate the main paragraph          | Works as expected |
+| Read More button |            Click on the button            | Find out more information about the project | Works as expected |
 
 <details><summary>See here</summary>
 <img src="docs/userstorytesting/userstoryn5.gif">
 </details>
 
-
 #### Returning User Goals:
 
 1. As a returning user, I want to be able to send information about events I think should be featured on the map to the site owners.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|:-----------:|:----------:|:-------------------:|:-----------------:|
-| 'Contribute to the map' link in the footer | Click on the link | See the contact form | Works as expected |
-| 'Submit' link in the navbar | Click on the link | See the contact form | Works as expected |
-| Contact form | Fill out the form and click submit | See a 'thank you' pop-up | Works as expected |
+|                **Feature**                 |             **Action**             |   **Expected Result**    | **Actual Result** |
+| :----------------------------------------: | :--------------------------------: | :----------------------: | :---------------: |
+| 'Contribute to the map' link in the footer |         Click on the link          |   See the contact form   | Works as expected |
+|        'Submit' link in the navbar         |         Click on the link          |   See the contact form   | Works as expected |
+|                Contact form                | Fill out the form and click submit | See a 'thank you' pop-up | Works as expected |
 
 <details><summary>See here</summary>
 <img src="docs/userstorytesting/userstoryr1a.gif">
 </details>
 
-
 2. As a returning user, I want to be able to view the site on a range of different devices.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|:-----------:|:----------:|:-------------------:|:-----------------:|
-| Home Page | View the Home page on your device | Page adapts to the screen size | Works as expected |
-| Map Page | View the Map page on your device | Page adapts to the screen size | Works as expected |
+| **Feature** |             **Action**              |      **Expected Result**       | **Actual Result** |
+| :---------: | :---------------------------------: | :----------------------------: | :---------------: |
+|  Home Page  |  View the Home page on your device  | Page adapts to the screen size | Works as expected |
+|  Map Page   |  View the Map page on your device   | Page adapts to the screen size | Works as expected |
 | Submit Page | View the Submit page on your device | Page adapts to the screen size | Works as expected |
-| 404 Page | View the Home page on your device | Page adapts to the screen size | Works as expected |
-
+|  404 Page   |  View the Home page on your device  | Page adapts to the screen size | Works as expected |
 
 3. As a returning user, I want to be able to follow the site owners on social media.
 
-| **Feature** | **Action** | **Expected Result** | **Actual Result** |
-|:-----------:|:----------:|:-------------------:|:-----------------:|
-| Social media icons | See the footer | Click on the icons | Works as expected |
+|    **Feature**     |   **Action**   | **Expected Result** | **Actual Result** |
+| :----------------: | :------------: | :-----------------: | :---------------: |
+| Social media icons | See the footer | Click on the icons  | Works as expected |
 
 <details><summary>See here</summary>
 <img src="docs/userstorytesting/userstoryr3.gif">
 </details>
-
 
 ### Manual Testing
 
@@ -689,32 +673,12 @@ Manual testing was conducted on the following elements that appear on every page
 </details>
      
  
-- Clicking on the Social Media links will open a new tab
-
-- Facebook
+- Footer contains Social Media links and Contribute link. Clicking on the Social Media links will open a new tab, while the *Contribute to the map* link opens the contact page.
 
 <details>
-<summary>Facebook Social Media link</summary>
+<summary>Footer links</summary>
 
-![LinkedIn Social Media link](./assets/readme_files/testing/facebook.gif)
-
-- Twitter
-
-<details>
-<summary>Twitter Social Media link</summary>
-
-![Twitter Social Media link](./assets/readme_files/testing/twitter.gif)
-
-</details>
-
-- GitHub
-
-<details>
-<summary>GitHub Social Media link</summary>
-
-![GitHub Social Media link](./assets/readme_files/testing/github.gif)
-
-</details>
+![Footer links](./docs/manualtesting/footer-links.gif)
 
 </details>
 
@@ -753,7 +717,14 @@ Manual testing was conducted on the following elements that appear on every page
 
 #### Contact Page
 
-- Manual testing was conducted on the Contact Page ![Contact Page](docs/manualtesting/contactmanualtest.png)
+- Manual testing was conducted on the Contact Page
+
+<details>
+<summary>Contact Page</summary>
+
+![Contact Page](docs/manualtesting/contactmanualtest.png)
+
+</details>
 
 ### Responsiveness
 
@@ -764,25 +735,25 @@ Manual testing was conducted on all three site pages for responsiveness:
 <details>
 <summary>Resposiveness - Home Page</summary>
 
-![Responsiveness - Home Page](#)
+![Responsiveness - Home Page](./docs/manualtesting/homepage-responsive.gif)
 
 </details>
      
 - Responsiveness of Map Page.
 
 <details>
-<summary>Responsiveness - Contact Page</summary>
+<summary>Responsiveness - Map Page</summary>
 
-![Resposiveness - Map Page](#)
+![Resposiveness - Map Page](./docs/manualtesting/map-responsiveness.gif)
 
 </details>
 
 - Responsiveness of Contact Page.
 
 <details>
-<summary>Responsiveness - Contact</summary>
+<summary>Responsiveness - Contact Page</summary>
 
-![Responsiveness - Contact Page](#)
+![Responsiveness - Contact Page](./docs/manualtesting/contact-us-responsiveness.gif)
 
 </details>
 
@@ -791,7 +762,7 @@ Manual testing was conducted on all three site pages for responsiveness:
 <details>
 <summary>Responsiveness - 404 Page</summary>
 
-![Responsiveness - 404 Page](#)
+![Responsiveness - 404 Page](./docs/manualtesting/404-responsiveness.gif)
 
 </details>
 
@@ -807,39 +778,20 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 - Home Page
 
-<details>
-<summary>Home Page HTML Validation</summary>
-
-[Home Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Findex.html)
-
-</details>
+  - [Home Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Findex.html)
 
 - Map Page
 
-<details>
-<summary>Map Page HTML Validation</summary>
-
-[Map Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Fmap.html)
-
-</details>
+  - [Map Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Fmap.html)
 
 - Contact Page
 
-<details>
-<summary>Contact Page HTML Validation</summary>
-
-[Contact Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Fcontactform.html)
-
-</details>
+  - [Contact Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Fcontactform.html)
 
 - 404 Page
 
-<details>
-<summary>404 Page HTML Validation Results</summary>
+  - [404 Page HTML Validation Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2F404.html)
 
-[404 Page HTML Validation Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2F404.html)
-
-</details>
 <br>
 
 - CSS Stylesheet
@@ -872,19 +824,6 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 </details>
 
-#### Browser Validation
-
-- Google Chrome
-
-<details>
-<summary>Google Chrome Validation </summary>
-
-![Google Chrome Test Image](#)
-
-</details>
-
-- ...
-
 [Back to top ⇧](#)
 
 #### Lighthouse Validation
@@ -894,7 +833,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>Home Page Lighthouse Validation</summary>
 
-![Home Page Lighthouse Validation](#)
+![Home Page Lighthouse Validation](./docs/automated-testing/homepage-lighthouse.png)
 
 </details>
 
@@ -903,7 +842,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>Map Page Lighthouse Validation</summary>
 
-![Map Page Lighthouse Validation](#)
+![Map Page Lighthouse Validation](./docs/automated-testing/map-lighthouse.png)
 
 </details>
 
@@ -912,7 +851,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>Contact Page Lighthouse Validation</summary>
 
-![Contact Page Lighthouse Validation](#)
+![Contact Page Lighthouse Validation](./docs/automated-testing/contactpage-lighthouse.png)
 
 </details>
 
@@ -921,7 +860,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>404 Page Lighthouse Validation</summary>
 
-![404 Page Lighthouse Validation](#)
+![404 Page Lighthouse Validation](./docs/automated-testing/404page-lighthouse.png)
 
 </details>
 
@@ -956,5 +895,5 @@ We would like to give credit to the following individuals, organizations, and re
 - 🙌 [Sean Meade](https://github.com/sean-meade) -> codename: **API Wizard**
 - 🙌 [Philip Whitty](https://github.com/phillywhitty) -> codename: **Art Magician**
 - 🙌 [Lauren Pechey](https://github.com/pecheylauren02) -> codename: **Rainbow Hermione**
-- 🙌 [Martyna](https://github.com/mmnowak) -> codename: **Supergirl**
+- 🙌 [Martyna Nowak](https://github.com/mmnowak) -> codename: **Supergirl**
 - 🙌 [Tomislav Dukez](https://github.com/tomdu3) -> codename: **Croatian David Attenborough**
