@@ -778,39 +778,20 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 - Home Page
 
-<details>
-<summary>Home Page HTML Validation</summary>
-
-[Home Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Findex.html)
-
-</details>
+  - [Home Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Findex.html)
 
 - Map Page
 
-<details>
-<summary>Map Page HTML Validation</summary>
-
-[Map Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Fmap.html)
-
-</details>
+  - [Map Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Fmap.html)
 
 - Contact Page
 
-<details>
-<summary>Contact Page HTML Validation</summary>
-
-[Contact Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Fcontactform.html)
-
-</details>
+  - [Contact Page HTML Validation](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2Fcontactform.html)
 
 - 404 Page
 
-<details>
-<summary>404 Page HTML Validation Results</summary>
+  - [404 Page HTML Validation Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2F404.html)
 
-[404 Page HTML Validation Results](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvanderpatrick.github.io%2FHackteam-6%2F404.html)
-
-</details>
 <br>
 
 - CSS Stylesheet
@@ -843,19 +824,6 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 
 </details>
 
-#### Browser Validation
-
-- Google Chrome
-
-<details>
-<summary>Google Chrome Validation </summary>
-
-![Google Chrome Test Image](#)
-
-</details>
-
-- ...
-
 [Back to top ⇧](#)
 
 #### Lighthouse Validation
@@ -865,7 +833,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>Home Page Lighthouse Validation</summary>
 
-![Home Page Lighthouse Validation](#)
+![Home Page Lighthouse Validation](./docs/automated-testing/homepage-lighthouse.png)
 
 </details>
 
@@ -874,7 +842,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>Map Page Lighthouse Validation</summary>
 
-![Map Page Lighthouse Validation](#)
+![Map Page Lighthouse Validation](./docs/automated-testing/map-lighthouse.png)
 
 </details>
 
@@ -883,7 +851,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>Contact Page Lighthouse Validation</summary>
 
-![Contact Page Lighthouse Validation](#)
+![Contact Page Lighthouse Validation](./docs/automated-testing/contactpage-lighthouse.png)
 
 </details>
 
@@ -892,7 +860,7 @@ The [W3C Markup Validator](https://validator.w3.org/) service was used to valida
 <details>
 <summary>404 Page Lighthouse Validation</summary>
 
-![404 Page Lighthouse Validation](#)
+![404 Page Lighthouse Validation](./docs/automated-testing/404page-lighthouse.png)
 
 </details>
 
