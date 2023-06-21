@@ -673,32 +673,12 @@ Manual testing was conducted on the following elements that appear on every page
 </details>
      
  
-- Clicking on the Social Media links will open a new tab
-
-- Facebook
+- Footer contains Social Media links and Contribute link. Clicking on the Social Media links will open a new tab, while the *Contribute to the map* link opens the contact page.
 
 <details>
-<summary>Facebook Social Media link</summary>
+<summary>Footer links</summary>
 
-![LinkedIn Social Media link](./assets/readme_files/testing/facebook.gif)
-
-- Twitter
-
-<details>
-<summary>Twitter Social Media link</summary>
-
-![Twitter Social Media link](./assets/readme_files/testing/twitter.gif)
-
-</details>
-
-- GitHub
-
-<details>
-<summary>GitHub Social Media link</summary>
-
-![GitHub Social Media link](./assets/readme_files/testing/github.gif)
-
-</details>
+![Footer links](./docs/manualtesting/footer-links.gif)
 
 </details>
 
