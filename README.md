@@ -717,7 +717,14 @@ Manual testing was conducted on the following elements that appear on every page
 
 #### Contact Page
 
-- Manual testing was conducted on the Contact Page ![Contact Page](docs/manualtesting/contactmanualtest.png)
+- Manual testing was conducted on the Contact Page
+
+<details>
+<summary>Contact Page</summary>
+
+![Contact Page](docs/manualtesting/contactmanualtest.png)
+
+</details>
 
 ### Responsiveness
 
@@ -728,25 +735,25 @@ Manual testing was conducted on all three site pages for responsiveness:
 <details>
 <summary>Resposiveness - Home Page</summary>
 
-![Responsiveness - Home Page](#)
+![Responsiveness - Home Page](./docs/manualtesting/homepage-responsive.gif)
 
 </details>
      
 - Responsiveness of Map Page.
 
 <details>
-<summary>Responsiveness - Contact Page</summary>
+<summary>Responsiveness - Map Page</summary>
 
-![Resposiveness - Map Page](#)
+![Resposiveness - Map Page](./docs/manualtesting/map-responsiveness.gif)
 
 </details>
 
 - Responsiveness of Contact Page.
 
 <details>
-<summary>Responsiveness - Contact</summary>
+<summary>Responsiveness - Contact Page</summary>
 
-![Responsiveness - Contact Page](#)
+![Responsiveness - Contact Page](./docs/manualtesting/contact-us-responsiveness.gif)
 
 </details>
 
@@ -755,7 +762,7 @@ Manual testing was conducted on all three site pages for responsiveness:
 <details>
 <summary>Responsiveness - 404 Page</summary>
 
-![Responsiveness - 404 Page](#)
+![Responsiveness - 404 Page](./docs/manualtesting/404-responsiveness.gif)
 
 </details>
 
